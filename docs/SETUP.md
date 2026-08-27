@@ -241,6 +241,73 @@ once produced 54 rejections that were misread as 28 behavioural regressions.
 
 ---
 
+---
+
+## 7a · If you are sharing a server with a live deployment
+
+**Read this before you run anything** if your machine also hosts a running instance that someone
+else depends on. Four things will bite you, and two of them are visible to *other people*.
+
+### 1 · 🔴 Never run the index build from someone else's directory
+
+`ingest.py` **deletes and recreates** the search index. Run it from the wrong working directory
+and you rebuild **their** index — taking a live service down, mid-use, with no warning.
+
+**Before running it, confirm where you are:**
+
+```bash
+pwd     # must be YOUR clone's backend/, not anyone else's
+```
+
+### 2 · 🔴 Clear any inherited API key
+
+A key exported in the shell **silently overrides your `.env`** — the process environment wins.
+On a shared box you may inherit someone else's key without ever seeing it, which puts your
+traffic on their account, their bill, and their rate limit.
+
+```bash
+echo "${OPENAI_API_KEY:+A KEY IS EXPORTED — clear it}"   # prints a warning if set
+unset OPENAI_API_KEY OPENAI_BASE_URL
+```
+
+The `env -u ...` prefix in §5 does this per-command. On a shared server, do it for the whole
+shell.
+
+### 3 · Use your own ports
+
+A live instance is probably already on the default ports. Pick your own and keep them together:
+
+```bash
+# backend
+python3 -m uvicorn main:app --host 127.0.0.1 --port 9765
+
+# frontend — it must be told where your backend is
+python3 -m streamlit run app.py --server.port 9501
+```
+
+> ⚠️ **The frontend has the backend's address hardcoded near the top of its main file, with no
+> environment override.** If you move the backend and don't edit that constant, your UI will
+> connect to **whatever else is on the default port** — i.e. the other instance. Everything will
+> appear to work, you'll be debugging someone else's process, and you'll be consuming their rate
+> limit while doing it.
+>
+> Making that constant read an environment variable (falling back to today's default) is a small,
+> genuinely useful first contribution.
+
+Check what's already taken before you choose:
+
+```bash
+ss -tlnp | grep LISTEN
+```
+
+### 4 · Don't restart shared services
+
+If the live instance runs under the same login as you, you can stop it by accident. Start your
+own processes **in the foreground, in your own terminals** — don't touch anything you didn't
+start.
+
+---
+
 ## 8 · The live acceptance suite
 
 Beyond the fast checks, there's a layer that talks to a running backend and **spends real money**:
