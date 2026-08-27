@@ -1,0 +1,348 @@
+[
+  {
+    "chunk_id": "mg-writing-purposes",
+    "source_document": "Writing Modes, Genres, & Formats.pdf",
+    "tier": 1,
+    "content_type": "mode_taxonomy",
+    "source_category": "taxonomy",
+    "copilot_mode": "both",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "all",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": 2,
+    "section_name": "Writing Modes & Purposes",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 0,
+    "content": "Writing Modes & Purposes (Smekens)\n\nWriting modes define the writer's PURPOSE. The same topic can be written\nin any mode depending on what the writer is trying to do.\n\nTHREE MODES (aligned to Common Core writing standards):\n\n1. PERSUASIVE / ARGUMENTATIVE\nPurpose: To persuade the reader to agree with a side or position on a\ndebatable topic.\nStandard: Write arguments to support claims in an analysis of substantive\ntopics or texts, using valid reasoning and relevant and sufficient evidence.\n\n2. INFORMATIVE / EXPLANATORY\nPurpose: To provide the reader specific information about a topic; to\nclarify or explain something.\nStandard: Write informative/explanatory texts to examine and convey\ncomplex ideas and information clearly and accurately through the effective\nselection, organization, and analysis of content.\n\n3. NARRATIVE / ENTERTAIN\nPurpose: To entertain the reader with a real or imaginary problem and\nsolution.\nStandard: Write narratives to develop real or imagined experiences or\nevents using effective technique, well-chosen details, and well-structured\nevent sequences.\n\nTeachers should vary genres within mini-units and provide multiple\nopportunities for students to write for different purposes. Formats are\nmode-flexible — the same format (letter, email, essay, speech) can be\nwritten in any mode depending on the writer's purpose.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Writing Modes & Purposes",
+    "is_scripted_lesson": false,
+    "priority_rank": 3,
+    "topic_keywords": [
+      "modes",
+      "purposes",
+      "smekens",
+      "define",
+      "purpose",
+      "same",
+      "topic",
+      "written",
+      "mode",
+      "depending",
+      "trying",
+      "aligned",
+      "common",
+      "core",
+      "standards",
+      "persuasive",
+      "argumentative",
+      "persuade",
+      "reader",
+      "agree"
+    ],
+    "book_reference": "Smekens Writing Modes, Genres, & Formats — Writing Modes & Purposes",
+    "pie_tags_by_band": {
+      "K-2": [
+        "E",
+        "I",
+        "P"
+      ],
+      "3-5": [
+        "E",
+        "I",
+        "P"
+      ],
+      "6-8": [
+        "E",
+        "I",
+        "P"
+      ],
+      "9-12": [
+        "E",
+        "I",
+        "P"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "mg-genres-persuasive",
+    "source_document": "Writing Modes, Genres, & Formats.pdf",
+    "tier": 1,
+    "content_type": "mode_taxonomy",
+    "source_category": "taxonomy",
+    "copilot_mode": "both",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Persuade",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": 1,
+    "section_name": "Persuasive / Argumentative Genres & Formats",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 0,
+    "content": "Persuasive / Argumentative Genres & Formats (Smekens)\n\nPersuasive and argumentative writing share the purpose of convincing a\nreader to agree with a claim or opinion. Genres range from informal\nopinion pieces to formal research papers.\n\nMODE-SPECIFIC GENRES:\n• Opinion\n• Testimonial\n• Advice Column\n• Review / Critique\n• Advertisement / Commercial\n• Sign, Poster, Bumper Sticker\n• Persuasive Letter / Essay\n• Editorial / Letter to the Editor\n• Constructed Response\n• Perspective / Position Paper\n• Argumentative Research Paper\n• Evaluate an Argument / Argumentative Analysis\n\nSTRUCTURE & PATTERNS:\nPersuasive writing centers on:\n• What I think\n• Why I think it\n\nArgumentative writing escalates to:\n• Claim\n• Reasons\n• Evidence from credible sources\n• Counterclaim awareness\n\nKEY FORMS:\n• A PROPOSAL persuades someone to approve an idea or fund a project.\n• A SUGGESTION offers a brief, informal opinion on ways to improve something.\n• A REQUEST is more formal persuasive writing asking for specific\n  information, permission, or resources.\n• A RECOMMENDATION is a personal endorsement of a product, service,\n  person, or idea — aiming to convince others to do/not do something.\n• A DEBATE is a spoken exchange where opposing sides present strong points\n  to win over an audience.\n• An ARGUMENTATIVE RESEARCH PAPER is an in-depth report relying on facts\n  and evidence to prove a position while addressing other viewpoints.\n• An ARGUMENTATIVE ANALYSIS evaluates how effectively the author supported\n  his claim and addressed counterclaims.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Persuasive / Argumentative Genres & Formats",
+    "is_scripted_lesson": false,
+    "priority_rank": 3,
+    "topic_keywords": [
+      "persuasive",
+      "argumentative",
+      "genres",
+      "formats",
+      "smekens",
+      "share",
+      "purpose",
+      "convincing",
+      "reader",
+      "agree",
+      "claim",
+      "opinion",
+      "range",
+      "informal",
+      "pieces",
+      "formal",
+      "research",
+      "papers",
+      "mode",
+      "specific"
+    ],
+    "book_reference": "Smekens Writing Modes, Genres, & Formats — Persuasive / Argumentative Genres & Formats",
+    "pie_tags_by_band": {
+      "K-2": [
+        "P"
+      ],
+      "3-5": [
+        "P"
+      ],
+      "6-8": [
+        "P"
+      ],
+      "9-12": [
+        "P"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "mg-genres-informative",
+    "source_document": "Writing Modes, Genres, & Formats.pdf",
+    "tier": 1,
+    "content_type": "mode_taxonomy",
+    "source_category": "taxonomy",
+    "copilot_mode": "both",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": 1,
+    "section_name": "Informative / Explanatory Genres & Formats",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 0,
+    "content": "Informative / Explanatory Genres & Formats (Smekens)\n\nInformative writing provides factual information about a topic or explains\na process, concept, or event.\n\nMODE-SPECIFIC GENRES:\n• Explanation\n• Encyclopedia Entry\n• Summary\n• Brochure / Pamphlet\n• Report\n• Speech\n• Research Paper\n• Application Essay\n• Compare-Contrast\n• Comparative Analysis\n• Literary Analysis\n• Newspaper Article\n• Biography\n• Book Report\n• Invitation\n• Thank-You Note\n• Friendly Letter\n• Business Letter\n• Interview\n• Instructions\n• Directions\n• Recipe\n\nSTRUCTURE & PATTERNS:\n• Broad topic or subject\n• Specific details grouped by subtopic\n\nKEY FORMS:\n• An EXPLANATION clearly describes how or why something happens, helping\n  the reader understand a process, concept, or event.\n• An ENCYCLOPEDIA ENTRY gives short, factual information about a topic,\n  including key details like definitions, dates, and examples.\n• DIRECTIONS give step-by-step instructions that tell someone how to do or\n  make something, often using command verbs and clear sequencing.\n• An INFORMATIVE RESEARCH PAPER is a longer report that collects facts\n  from multiple sources to teach the reader about a topic.\n• A COMPARE-CONTRAST WRITING presents information about two or more topics\n  or texts, helping the reader understand each individually and in\n  relation to one another.\n• An INTERVIEW presents real questions and answers from a conversation\n  with a person who has experience or knowledge about a topic.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Informative / Explanatory Genres & Formats",
+    "is_scripted_lesson": false,
+    "priority_rank": 3,
+    "topic_keywords": [
+      "informative",
+      "explanatory",
+      "genres",
+      "formats",
+      "smekens",
+      "provides",
+      "factual",
+      "information",
+      "topic",
+      "explains",
+      "process",
+      "concept",
+      "event",
+      "mode",
+      "specific",
+      "explanation",
+      "encyclopedia",
+      "entry",
+      "summary",
+      "brochure"
+    ],
+    "book_reference": "Smekens Writing Modes, Genres, & Formats — Informative / Explanatory Genres & Formats",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "mg-genres-narrative",
+    "source_document": "Writing Modes, Genres, & Formats.pdf",
+    "tier": 1,
+    "content_type": "mode_taxonomy",
+    "source_category": "taxonomy",
+    "copilot_mode": "both",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Entertain",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": 1,
+    "section_name": "Narrative / Entertain Genres & Formats",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 0,
+    "content": "Narrative / Entertain Genres & Formats (Smekens)\n\nNarrative writing develops real or imagined events, entertaining the\nreader with a problem and solution.\n\nMODE-SPECIFIC GENRES:\n• Fairy Tale\n• Legend\n• Fable\n• Myth\n• Tall Tale\n• Mystery\n• Personal Narrative\n• Imaginary Narrative\n• Realistic Fiction (fiction based on fact)\n• Historical Fiction (fiction based on fact)\n• Science Fiction (fiction based on fact)\n• Sequel (what happens next / next time)\n• Rewrite from a Different Perspective\n• Add in the Missing Page / Part\n• Memoir\n• Anecdote\n• Diary Entry\n• Scene\n• Satire\n• Spoof\n• Adventure Story\n• Apology\n• Complaint\n\nSTRUCTURE & PATTERNS:\n• Character & setting\n• Problem / Conflict\n• Solution / Resolution\n\nKEY FORMS:\n• A PERSONAL NARRATIVE is a true story about one's own experience.\n• REALISTIC FICTION is a made-up story that COULD happen in real life\n  (e.g., a short story, adventure story, or mystery).\n• FANTASY involves magical or supernatural elements (e.g., fairy tales,\n  fables, myths, legends).\n• A GRAPHIC NOVEL tells a story through a mix of visual art and text.\n• A REWRITE FROM A DIFFERENT PERSPECTIVE retells a familiar story through\n  the eyes of a different character, showing his unique thoughts,\n  feelings, or experiences.\n• A FICTION BASED ON FACT is a made-up story that includes real people,\n  places, or events gleaned from informational text — blending facts with\n  imaginary characters or situations.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Narrative / Entertain Genres & Formats",
+    "is_scripted_lesson": false,
+    "priority_rank": 3,
+    "topic_keywords": [
+      "narrative",
+      "entertain",
+      "genres",
+      "formats",
+      "smekens",
+      "develops",
+      "real",
+      "imagined",
+      "events",
+      "entertaining",
+      "reader",
+      "problem",
+      "solution",
+      "mode",
+      "specific",
+      "fairy",
+      "tale",
+      "legend",
+      "fable",
+      "myth"
+    ],
+    "book_reference": "Smekens Writing Modes, Genres, & Formats — Narrative / Entertain Genres & Formats",
+    "pie_tags_by_band": {
+      "K-2": [
+        "E"
+      ],
+      "3-5": [
+        "E"
+      ],
+      "6-8": [
+        "E"
+      ],
+      "9-12": [
+        "E"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "mg-mode-flexible-formats",
+    "source_document": "Writing Modes, Genres, & Formats.pdf",
+    "tier": 1,
+    "content_type": "mode_taxonomy",
+    "source_category": "taxonomy",
+    "copilot_mode": "both",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "all",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": 3,
+    "section_name": "Mode-Flexible Formats",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 0,
+    "content": "Mode-Flexible Formats (Smekens)\n\nFormats are mode-flexible — the same format can be used across writing\nmodes. Emphasize the writing PURPOSE over the format. A letter can be\npersuasive, informative, or narrative depending on what the writer is\ntrying to do.\n\nLETTER:\n• Persuasive: Complaint, Persuasive business letter, Request for something\n• Informative: Friendly letter giving updates, Business letter, Story\n  shared within a letter (narrative)\n• Narrative: Shared story\nStructure: Includes a date, greeting, body, closing, and signature. May\nbe formatted informally or formally.\n\nEMAIL:\nStructure: Includes a to/from address, subject line, body, and signature\nline. May include a greeting and closing.\n\nESSAY:\n• Persuasive: Argumentative essay\n• Informative: Informative essay\n• Narrative: Narrative essay\nStructure: Organized in multiple paragraphs with a clear introduction,\nbody, and conclusion. Written in full sentences.\n\nSPEECH:\n• Persuasive: Persuasive speech, Promotion of an idea or event\n• Informative: Informational speech\n• Narrative: Narrative speech\nStructure: Written in full sentences and paragraphs. May include bold\nwords, pauses, or annotations for emphasis and tone.\n\nPOSTER:\nStructure: Uses key words and short phrases. Includes visual elements\nlike images, bold fonts, and color for emphasis.\n\nARTICLE:\n• Persuasive: Editorial\n• Informative: Information on a topic, News report, Feature story\n• Narrative: Report on something\nStructure: Structured in paragraphs with headings or subheadings.\nWritten in full sentences. May include a byline or dateline.\n\nSCRIPT:\n• Persuasive: TV advertisement/commercial script\n• Informative: Informational script or skit\n• Narrative: Play\nStructure: Written as dialogue with speaker labels. May include stage\ndirections or delivery notes.\n\nSUMMARY:\n• Persuasive: Summary of someone else's argument\n• Informative: Summary of an informational text\n• Narrative: Summary of a narrative text, Teaser for a movie\nStructure: Condensed into short paragraphs or bullet points. Focuses\nonly on main ideas and essential details.\n\nLITERARY ANALYSIS:\n• Persuasive: Literary critique, Evaluation of an argument\n• Informative: Character analysis, Theme explanation\n• Narrative: N/A (literary analysis is inherently persuasive or informative)\nStructure: Structured in full paragraphs. Includes analysis of a literary\ntechnique supported with text evidence.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Mode-Flexible Formats",
+    "is_scripted_lesson": false,
+    "priority_rank": 3,
+    "topic_keywords": [
+      "mode",
+      "flexible",
+      "formats",
+      "smekens",
+      "same",
+      "format",
+      "used",
+      "across",
+      "modes",
+      "emphasize",
+      "purpose",
+      "letter",
+      "persuasive",
+      "informative",
+      "narrative",
+      "depending",
+      "trying",
+      "complaint",
+      "business",
+      "request"
+    ],
+    "book_reference": "Smekens Writing Modes, Genres, & Formats — Mode-Flexible Formats",
+    "pie_tags_by_band": {
+      "K-2": [
+        "E",
+        "I",
+        "P"
+      ],
+      "3-5": [
+        "E",
+        "I",
+        "P"
+      ],
+      "6-8": [
+        "E",
+        "I",
+        "P"
+      ],
+      "9-12": [
+        "E",
+        "I",
+        "P"
+      ]
+    },
+    "lesson_trigger": []
+  }
+]

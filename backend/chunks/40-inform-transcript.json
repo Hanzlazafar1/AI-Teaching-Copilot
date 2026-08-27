@@ -1,0 +1,1916 @@
+[
+  {
+    "chunk_id": "inform-transcript-section-01-welcome-logistics-and-workshop-overview",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 1: Welcome, Logistics, and Workshop Overview",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 1,
+    "content": "Teaching the Research Report — Section 1: Welcome, Logistics, and Workshop Overview\n\nWelcome, everybody. I’m Kristina Smekens, and today we’re working through the Research Report micro workshop. Let’s dive right in.\n\nInformative writing is one of the three major modes of writing. Let’s be clear with our language here. We have the opinion, persuasive, or argumentative mode. We have the informative mode, which some standards call explanatory or expository writing. And then we have narrative writing.\n\nToday, we’re focusing on writing about information. Within that mode, there are many different types or genres. These are the different ways writers convey information.\n\nA writer can summarize, which means pulling together the key information about something. A writer can explain. A writer can compare two different things, such as topics, texts, characters, or even body systems. A writer can write directions or procedural steps.\n\nAll of these share the same purpose: to inform the reader. We are writing to teach, explain, describe, and inform.\n\nOur focus today is the research report as a specific genre within informative writing. What makes this genre particularly unique is that it requires a source text. You can write a how-to piece without a source. You can write a compare-contrast about indoor versus outdoor recess without a source. You can summarize an event from yesterday without a source. But research or report writing requires text. It is writing from sources.\n\nThat distinction is what we’re going to dive into today.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Welcome, Logistics, and Workshop Overview",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "welcome",
+      "logistics",
+      "workshop",
+      "overview",
+      "everybody",
+      "kristina",
+      "smekens",
+      "working",
+      "through",
+      "research",
+      "report",
+      "micro",
+      "dive",
+      "right",
+      "informative",
+      "major",
+      "modes",
+      "clear",
+      "language",
+      "opinion"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 1: Welcome, Logistics, and Workshop Overview",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-02-understanding-the-standard",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 2: Understanding the Standard",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 2,
+    "content": "Teaching the Research Report — Section 2: Understanding the Standard\n\nLet’s draw our attention to the expectations for informative writing and, more specifically, for research and report writing.\n\nWhen we think about teaching informative writing—whether your standards call it informative, expository, or explanatory—the goal is always the same: informing an audience about a specific concept, complex idea, or topic.\n\nOne of the essential facets of research writing is the use of sources. Students are writing with facts, quotes, paraphrases, and citations.\n\nAnd this is not a standard reserved only for students who are writing in full paragraphs. Even our youngest writers have this expectation. When we think about teaching report writing, we need to get our arms around everything this includes.\n\nThe standards often focus heavily on the product—the finished piece. They describe the ingredients that should appear in the final writing. But writing instruction is about building skills within writers.\n\nIt is not simply about producing the right piece. It is about building habits, stamina, perseverance, and strategic thinking so students can continue moving forward as writers.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Understanding the Standard",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "understanding",
+      "standard",
+      "draw",
+      "attention",
+      "expectations",
+      "informative",
+      "specifically",
+      "research",
+      "report",
+      "think",
+      "teaching",
+      "whether",
+      "standards",
+      "call",
+      "expository",
+      "explanatory",
+      "goal",
+      "always",
+      "same",
+      "informing"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 2: Understanding the Standard",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-03-why-research-writing-feels-so-heavy",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 3: Why Research Writing Feels So Heavy",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 3,
+    "content": "Teaching the Research Report — Section 3: Why Research Writing Feels So Heavy\n\nResearch or report writing is one of those units that, for many teachers, feels painful.\n\nIt is long.\nIt is complicated.\nAnd often everyone is simply relieved when it is over.\n\nWhen we stop and list the writer skills involved, it quickly becomes clear why these units take so long.\n\nStudents must first choose a topic. That alone can take days.\n\nThey may need to narrow the topic and create a focus statement or guiding question.\n\nThen there is the entire process of collecting information from sources:\n\ngenerating questions \n\nlocating facts \n\ntaking notes \n\ndeciding how many sources are required \n\ndistinguishing between primary and secondary sources \n\nnavigating digital texts \n\ndetermining whether a source is credible and relevant \n\nThat is all before they even begin writing.\n\nThen students must read, collect, and take notes.\n\nFor primary students, this might mean reading about an animal and lifting facts from a shared text.\n\nFor older students, it may involve multiple print and digital sources.\n\nEither way, students must learn how to gather facts from text and then keep track of where those facts came from.\n\nAfter that comes organization.\n\nThis is one of the most overlooked skills in research writing.\n\nStudents often know how to collect facts, but they do not know what to do next.\n\nThey need explicit instruction in how to organize what they have gathered in preparation for writing.\n\nThis is all still prewriting.\n\nNone of it is the first draft yet.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Why Research Writing Feels So Heavy",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "research",
+      "feels",
+      "heavy",
+      "report",
+      "units",
+      "many",
+      "teachers",
+      "painful",
+      "long",
+      "complicated",
+      "often",
+      "everyone",
+      "simply",
+      "relieved",
+      "stop",
+      "list",
+      "involved",
+      "quickly",
+      "becomes",
+      "clear"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 3: Why Research Writing Feels So Heavy",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-04-the-first-draft-is-only-one-part",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 4: The First Draft Is Only One Part",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 4,
+    "content": "Teaching the Research Report — Section 4: The First Draft Is Only One Part\n\nThe informative writing standard often describes what should be visible in the final product:\n\na beginning \n\ndeveloped middle ideas \n\nan ending \n\ntransitions \n\nprecise word choice \n\ntext features \n\nBut all of those visible features rest on a large number of invisible writer skills.\n\nChoosing a topic, collecting facts, organizing ideas, and planning structure are all skills students must possess before they ever write the first sentence.\n\nOnly then do we finally get to the draft itself.\n\nAt this stage, students need to write:\n\nan introduction \n\na focus statement or main idea \n\ndeveloped body sections \n\ntransitions \n\na conclusion \n\nFor younger students, this may be a simple report booklet with pages about body parts, habitat, diet, and predators.\n\nFor older students, it may be multiple paragraphs with headings and text features.\n\nBut the principle is the same.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "The First Draft Is Only One Part",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "first",
+      "draft",
+      "part",
+      "informative",
+      "standard",
+      "often",
+      "describes",
+      "visible",
+      "final",
+      "product",
+      "beginning",
+      "developed",
+      "middle",
+      "ideas",
+      "ending",
+      "transitions",
+      "precise",
+      "word",
+      "choice",
+      "text"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 4: The First Draft Is Only One Part",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-05-a-better-approach-short-and-sustained-research",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 5: A Better Approach: Short and Sustained Research",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 5,
+    "content": "Teaching the Research Report — Section 5: A Better Approach: Short and Sustained Research\n\nOne of the most important ideas in this workshop is this:\n\nStudents should not do only one giant research report each year.\n\nThe standards specifically call for short as well as sustained research projects.\n\nThat means students need more than one opportunity.\n\nIf students only do one long report each year, they approach it every time as if it is brand new.\n\nThey struggle with note-taking.\nThey struggle with organization.\nThey struggle with writing from sources.\n\nThe better approach is to do multiple shorter research experiences.\n\nInstead of one enormous unit, consider several shorter report units across the year.\n\nThis gives students repeated practice with the core skills.\n\nThey become better because they do it more than once.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "A Better Approach: Short and Sustained Research",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "better",
+      "approach",
+      "short",
+      "sustained",
+      "research",
+      "important",
+      "ideas",
+      "workshop",
+      "giant",
+      "report",
+      "year",
+      "standards",
+      "specifically",
+      "call",
+      "well",
+      "projects",
+      "means",
+      "need",
+      "opportunity",
+      "long"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 5: A Better Approach: Short and Sustained Research",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-06-the-first-research-unit-teach-only-a-few-skills",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 6: The First Research Unit: Teach Only a Few Skills",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 6,
+    "content": "Teaching the Research Report — Section 6: The First Research Unit: Teach Only a Few Skills\n\nIn the first short report unit, do not teach everything.\n\nFocus on just a few key skills.\n\nFor example:\n\nlifting fact phrases from sources \n\norganizing collected information into categories \n\nwriting a simple topic sentence \n\ndeveloping body sections \n\ngrouping related facts \n\ndrafting a first version \n\nThat’s it.\n\nDo not spend time on topic choice.\nDo not spend time on source evaluation.\nDo not spend time on final drafts and heavy revision.\n\nInstead, provide:\n\nthe topic \n\nthe source texts \n\nthe structure \n\nThis allows instruction to focus on the writer moves that matter most.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "The First Research Unit: Teach Only a Few Skills",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "first",
+      "research",
+      "unit",
+      "teach",
+      "short",
+      "report",
+      "everything",
+      "focus",
+      "example",
+      "lifting",
+      "fact",
+      "phrases",
+      "sources",
+      "organizing",
+      "collected",
+      "information",
+      "categories",
+      "simple",
+      "topic",
+      "sentence"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 6: The First Research Unit: Teach Only a Few Skills",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-07-the-core-problem-students-freeze-at-organization",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 7: The Core Problem: Students Freeze at Organization",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 7,
+    "content": "Teaching the Research Report — Section 7: The Core Problem: Students Freeze at Organization\n\nOne of the biggest problems students face is not gathering information.\n\nIt is knowing what to do with it afterward.\n\nThey can collect facts.\n\nBut then they freeze.\n\nThey do not know:\n\nwhat comes first \n\nwhat belongs together \n\nhow to group information \n\nhow to build sections or paragraphs \n\nThis is where explicit instruction matters.\n\nStudents need to be taught how to put like ideas together.\n\nThis skill transfers across every report topic:\n\nanimals \n\nhistorical figures \n\ninventions \n\nscience concepts \n\ninformational reading responses \n\nThe topic changes.\nThe organizational thinking stays the same.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "The Core Problem: Students Freeze at Organization",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "core",
+      "problem",
+      "freeze",
+      "organization",
+      "biggest",
+      "problems",
+      "face",
+      "gathering",
+      "information",
+      "knowing",
+      "afterward",
+      "they",
+      "collect",
+      "facts",
+      "then",
+      "know",
+      "comes",
+      "first",
+      "belongs",
+      "together"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 7: The Core Problem: Students Freeze at Organization",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-08-teaching-fact-phrases-note-taking-and-organization",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 8: Teaching Fact Phrases, Note-Taking, and Organization",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 8,
+    "content": "Teaching the Research Report — Section 8: Teaching Fact Phrases, Note-Taking, and Organization\n\nIf we want students to improve at research writing, we have to stop assuming they already know how to take notes.\n\nToo often, we simply tell students, “Take notes,” and then we’re frustrated when they copy entire sentences, rewrite whole paragraphs from the source, or jot down something so brief that it no longer has meaning.\n\nThe problem is not that students are unwilling.\n\nThe problem is that note-taking is a skill that must be explicitly taught.\n\nStudents need to be shown what a useful fact phrase looks like.\n\nA fact phrase is not a complete sentence copied from the text.\n\nIt is also not a single random word with no context.\n\nIt is just enough language to preserve the meaning of the fact without rewriting the entire source.\n\nFor example, if the text says, Polar bears have thick layers of blubber that help them stay warm in Arctic temperatures, a student should not copy the whole sentence.\n\nInstead, they might jot:\n\nthick blubber keeps body warm\n\nThat phrase is short, efficient, and still preserves the meaning.\n\nThis is the kind of thinking we must model.\n\nWe need to show students how to read a sentence, pause, think about the essential idea, and then condense it into a quick phrase.\n\nThat process needs to be modeled over and over again.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Teaching Fact Phrases, Note-Taking, and Organization",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "teaching",
+      "fact",
+      "phrases",
+      "note",
+      "taking",
+      "organization",
+      "want",
+      "improve",
+      "research",
+      "stop",
+      "assuming",
+      "they",
+      "already",
+      "know",
+      "take",
+      "notes",
+      "often",
+      "simply",
+      "tell",
+      "then"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 8: Teaching Fact Phrases, Note-Taking, and Organization",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-09-teaching-students-what-is-worth-writing-down",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 9: Teaching Students What Is Worth Writing Down",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 9,
+    "content": "Teaching the Research Report — Section 9: Teaching Students What Is Worth Writing Down\n\nAnother key challenge is that students do not always know what information is worth keeping.\n\nWhen reading from a source, not every detail carries equal weight.\n\nSome details are central to the topic.\n\nOthers are supporting examples.\n\nStill others may be interesting but unnecessary.\n\nStudents need help learning how to decide what belongs in their notes.\n\nThis is where the teacher’s think-aloud becomes critical.\n\nAs you read aloud from the source, stop and say things like:\n\n“This sentence tells me where the animal lives. That feels important because habitat is one of the big categories I know I’ll need later.”\n\nOr:\n\n“This detail is interesting, but it’s more of an example than a main fact. I’m going to leave it out for now.”\n\nStudents need to hear the invisible decision-making behind note-taking.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Teaching Students What Is Worth Writing Down",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "teaching",
+      "worth",
+      "another",
+      "challenge",
+      "always",
+      "know",
+      "information",
+      "keeping",
+      "reading",
+      "source",
+      "every",
+      "detail",
+      "carries",
+      "equal",
+      "weight",
+      "details",
+      "central",
+      "topic",
+      "others",
+      "supporting"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 9: Teaching Students What Is Worth Writing Down",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-10-organizing-information-into-categories",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 10: Organizing Information Into Categories",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 10,
+    "content": "Teaching the Research Report — Section 10: Organizing Information Into Categories\n\nOnce students have collected facts, the next step is organization.\n\nThis is where many students freeze.\n\nThey can gather information, but they do not know how to sort it into meaningful sections.\n\nThis is why organization must be taught as its own mini-lesson.\n\nI often tell students that research writing is really about putting like ideas together.\n\nIf we are writing about an animal, facts about body parts belong together.\n\nFacts about habitat belong together.\n\nFacts about diet belong together.\n\nFacts about predators belong together.\n\nThose categories then become the structure of the writing.\n\nEach category turns into a paragraph, a page, or a section.\n\nThe key is helping students physically sort their facts.\n\nSometimes this means moving note cards.\n\nSometimes it means highlighting related details in the same color.\n\nSometimes it means cutting apart fact strips and regrouping them.\n\nThe method can vary.\n\nWhat matters is that students experience the thinking process of grouping related ideas.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Organizing Information Into Categories",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "organizing",
+      "information",
+      "categories",
+      "once",
+      "collected",
+      "facts",
+      "next",
+      "step",
+      "organization",
+      "many",
+      "freeze",
+      "they",
+      "gather",
+      "know",
+      "sort",
+      "meaningful",
+      "sections",
+      "must",
+      "taught",
+      "mini"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 10: Organizing Information Into Categories",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-11-moving-from-notes-to-writing",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 11: Moving From Notes to Writing",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 11,
+    "content": "Teaching the Research Report — Section 11: Moving From Notes to Writing\n\nOnce information is grouped, students are much more prepared to draft.\n\nNow they are no longer staring at a random collection of facts.\n\nInstead, they can clearly see the sections of their report.\n\nFor example:\n\nTopic: Polar Bears\n\nBody Features \n\nHabitat \n\nDiet \n\nSurvival Skills \n\nEach of these becomes a writing section.\n\nThis dramatically reduces overwhelm.\n\nStudents no longer feel like they have to write everything all at once.\n\nThey simply write one section at a time.\n\nThat is an important mindset shift.\n\nWe are not asking them to write an entire report.\n\nWe are asking them to write about one category of information.\n\nThen the next.\n\nThen the next.\n\nThat sequencing helps students build confidence.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Moving From Notes to Writing",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "moving",
+      "notes",
+      "once",
+      "information",
+      "grouped",
+      "much",
+      "prepared",
+      "draft",
+      "they",
+      "longer",
+      "staring",
+      "random",
+      "collection",
+      "facts",
+      "instead",
+      "clearly",
+      "sections",
+      "report",
+      "example",
+      "topic"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 11: Moving From Notes to Writing",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-12-why-repetition-matters",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 12: Why Repetition Matters",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 12,
+    "content": "Teaching the Research Report — Section 12: Why Repetition Matters\n\nThis is why I strongly advocate for multiple short research experiences during the year.\n\nStudents need repeated practice with:\n\nlifting fact phrases \n\ndetermining importance \n\ngrouping information \n\ndrafting from organized notes \n\nThe first time they do this, it will feel slow.\n\nThe second time, they improve.\n\nBy the third time, the process starts to feel natural.\n\nThat is how writer habits are built.\n\nOne giant report does not build fluency.\n\nRepeated shorter experiences do.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Why Repetition Matters",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "repetition",
+      "matters",
+      "strongly",
+      "advocate",
+      "multiple",
+      "short",
+      "research",
+      "experiences",
+      "during",
+      "year",
+      "need",
+      "repeated",
+      "practice",
+      "lifting",
+      "fact",
+      "phrases",
+      "determining",
+      "importance",
+      "grouping",
+      "information"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 12: Why Repetition Matters",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-13-building-the-body-paragraphs-and-drafting-from-organized-categories",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 13: Building the Body Paragraphs and Drafting From Organized Categories",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 13,
+    "content": "Teaching the Research Report — Section 13: Building the Body Paragraphs and Drafting From Organized Categories\n\nOnce students have collected and organized their facts, the real focus of research writing begins: the body.\n\nThis is where I want teachers to put the majority of their instructional energy.\n\nToo often, we spend so much time on the opening that the middle of the report becomes rushed.\n\nBut the heart of informative writing is not the introduction.\n\nThe heart is the body.\n\nThis is where students teach the reader.\n\nThis is where they explain the information they gathered from their sources.\n\nThis is where the categories they created during prewriting finally become visible in the product.\n\nEach category should now become its own section.\n\nFor primary students, that might be a page in a booklet.\n\nFor older students, it becomes a paragraph or a full section with a heading.\n\nThe structure is the same.\n\nIf the report is about an animal, one section might focus on body parts, another on habitat, another on diet, and another on survival behaviors.\n\nIf the report is about a historical figure, the sections might include early life, major accomplishments, challenges, and legacy.\n\nThe exact topic changes, but the writing move stays the same:\n\ntake one organized category and stretch it into developed writing.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Building the Body Paragraphs and Drafting From Organized Categories",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "building",
+      "body",
+      "paragraphs",
+      "drafting",
+      "organized",
+      "categories",
+      "once",
+      "collected",
+      "facts",
+      "real",
+      "focus",
+      "research",
+      "begins",
+      "want",
+      "teachers",
+      "majority",
+      "instructional",
+      "energy",
+      "often",
+      "spend"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 13: Building the Body Paragraphs and Drafting From Organized Categories",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-14-teaching-students-to-stay-within-one-category",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 14: Teaching Students to Stay Within One Category",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 14,
+    "content": "Teaching the Research Report — Section 14: Teaching Students to Stay Within One Category\n\nOne of the biggest challenges in body writing is helping students stay focused.\n\nStudents often bounce from one idea to another because all of the facts are sitting in front of them.\n\nThis is why the organization work from Part 2 matters so much.\n\nI want students to look only at one group of facts at a time.\n\nI often frame it this way:\n\n“Right now, we are only writing about habitat.”\n\n“Stay in this one lane.”\n\n“Everything in this paragraph must match this category.”\n\nThat language helps students understand paragraph unity.\n\nThey are not just writing random facts.\n\nThey are developing one idea thoroughly before moving on.\n\nThis is one of the most important habits in research writing.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Teaching Students to Stay Within One Category",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "teaching",
+      "stay",
+      "within",
+      "category",
+      "biggest",
+      "challenges",
+      "body",
+      "helping",
+      "focused",
+      "often",
+      "bounce",
+      "idea",
+      "another",
+      "because",
+      "facts",
+      "sitting",
+      "front",
+      "them",
+      "organization",
+      "work"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 14: Teaching Students to Stay Within One Category",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-15-from-fact-phrases-to-full-sentences",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 15: From Fact Phrases to Full Sentences",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 15,
+    "content": "Teaching the Research Report — Section 15: From Fact Phrases to Full Sentences\n\nThe next step is teaching students how to stretch fact phrases into full explanatory sentences.\n\nThis is where they move from notes to writing.\n\nFor example, a student note might say:\n\nthick blubber keeps body warm\n\nThat is not yet a sentence for the report.\n\nNow we teach the stretch.\n\nA student might turn that into:\n\nPolar bears have a thick layer of blubber that helps keep their bodies warm in the cold Arctic climate.\n\nThis is where the teacher think-aloud is so important.\n\nStudents need to hear how we go from shorthand notes to full written language.\n\nI would model this very explicitly:\n\n“I’m looking at my note phrase: thick blubber keeps body warm.”\n\n“Now I’m asking myself, how do I say that in a way that teaches my reader?”\n\n“I want to explain what the blubber does and why it matters.”\n\nThis helps students understand that note-taking and drafting are different stages of the process.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "From Fact Phrases to Full Sentences",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "fact",
+      "phrases",
+      "full",
+      "sentences",
+      "next",
+      "step",
+      "teaching",
+      "stretch",
+      "explanatory",
+      "they",
+      "move",
+      "notes",
+      "example",
+      "student",
+      "note",
+      "might",
+      "thick",
+      "blubber",
+      "keeps",
+      "body"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 15: From Fact Phrases to Full Sentences",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-16-teaching-elaboration-within-informative-writing",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 16: Teaching Elaboration Within Informative Writing",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 16,
+    "content": "Teaching the Research Report — Section 16: Teaching Elaboration Within Informative Writing\n\nStudents also need to learn that informative writing is more than listing facts.\n\nA list is not yet a paragraph.\n\nWe want explanation.\n\nWe want development.\n\nWe want students to answer the invisible reader question:\n\nWhy does this matter?\n\nFor example:\n\nPolar bears have thick blubber.\n\nThat is technically a fact.\n\nBut it is not yet developed.\n\nA stronger version would be:\n\nPolar bears have thick blubber beneath their skin, which helps insulate their bodies and keep them warm in freezing Arctic temperatures.\n\nNow the reader learns something.\n\nThat is the shift from fact listing to informative writing.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Teaching Elaboration Within Informative Writing",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "teaching",
+      "elaboration",
+      "within",
+      "informative",
+      "need",
+      "learn",
+      "listing",
+      "facts",
+      "list",
+      "paragraph",
+      "want",
+      "explanation",
+      "development",
+      "answer",
+      "invisible",
+      "reader",
+      "question",
+      "matter",
+      "example",
+      "polar"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 16: Teaching Elaboration Within Informative Writing",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-17-building-one-section-at-a-time",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 17: Building One Section at a Time",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 17,
+    "content": "Teaching the Research Report — Section 17: Building One Section at a Time\n\nI strongly encourage building the body one section at a time.\n\nDo not ask students to draft the entire report in one sitting.\n\nInstead, teach them to complete one category fully.\n\nFor example:\n\nDay 1 — habitat\nDay 2 — diet\nDay 3 — body features\nDay 4 — survival behaviors\n\nThis pacing helps students stay focused and reduces overwhelm.\n\nIt also allows the teacher to model and guide each section.\n\nStudents experience repeated practice with the same writing move:\n\nlook at organized facts \n\nconvert notes into sentences \n\nexplain the information \n\nstay within one category \n\nThat repetition builds transfer.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Building One Section at a Time",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "building",
+      "section",
+      "time",
+      "strongly",
+      "encourage",
+      "body",
+      "draft",
+      "entire",
+      "report",
+      "sitting",
+      "instead",
+      "teach",
+      "them",
+      "complete",
+      "category",
+      "fully",
+      "example",
+      "habitat",
+      "diet",
+      "features"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 17: Building One Section at a Time",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-18-why-the-middle-matters-most",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 18: Why the Middle Matters Most",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 18,
+    "content": "Teaching the Research Report — Section 18: Why the Middle Matters Most\n\nThis is the most important idea in this section:\n\nThe body is where the teaching happens.\n\nThe introduction is important, but it is not the focus.\n\nThe body is where students demonstrate their ability to write from sources.\n\nThat is why this portion of the workshop places so much emphasis on:\n\ncategories \n\nparagraph unity \n\nstretching fact phrases \n\nelaboration \n\nsection-by-section drafting \n\nThis is where research writing instruction truly lives.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Why the Middle Matters Most",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "middle",
+      "matters",
+      "important",
+      "idea",
+      "section",
+      "body",
+      "teaching",
+      "happens",
+      "introduction",
+      "focus",
+      "demonstrate",
+      "ability",
+      "sources",
+      "portion",
+      "workshop",
+      "places",
+      "much",
+      "emphasis",
+      "categories",
+      "paragraph"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 18: Why the Middle Matters Most",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-19-teaching-introductions-conclusions-and-transitions-without-overemphasizing-them",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 19: Teaching Introductions, Conclusions, and Transitions Without Overemphasizing Them",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 19,
+    "content": "Teaching the Research Report — Section 19: Teaching Introductions, Conclusions, and Transitions Without Overemphasizing Them\n\nOnce students have strong body sections in place, we can begin teaching the beginning and the ending.\n\nBut I want to emphasize something important:\n\nDo not let the introduction become the focus of the unit.\n\nToo often, teachers spend enormous amounts of time teaching elaborate hooks, creative openings, and polished introductions, while the body of the report remains underdeveloped.\n\nIn research writing, the introduction has one clear job:\n\nstate the topic and prepare the reader for what is coming.\n\nThat’s it.\n\nEspecially in early report writing experiences, students do not need a long introductory paragraph.\n\nThey need a clear topic sentence.\n\nFor younger students, this may simply be the title page or the first sentence.\n\nFor example:\n\nPolar bears are amazing animals that survive in the Arctic.\n\nThat is enough.\n\nIt names the topic and sets up the writing.\n\nFor older students, this may become a short introductory paragraph, but even then, it should remain concise.\n\nWe do not need to overteach this part.\n\nThe body is still the priority.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Teaching Introductions, Conclusions, and Transitions Without Overemphasizing Them",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "teaching",
+      "introductions",
+      "conclusions",
+      "transitions",
+      "without",
+      "overemphasizing",
+      "them",
+      "once",
+      "strong",
+      "body",
+      "sections",
+      "place",
+      "begin",
+      "beginning",
+      "ending",
+      "want",
+      "emphasize",
+      "something",
+      "important",
+      "introduction"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 19: Teaching Introductions, Conclusions, and Transitions Without Overemphasizing Them",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-20-a-strong-beginning-sentence",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 20: A Strong Beginning Sentence",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 20,
+    "content": "Teaching the Research Report — Section 20: A Strong Beginning Sentence\n\nThe skill I want students to master first is writing a single strong beginning sentence.\n\nI want them to say what the writing is about without relying on weak openings such as:\n\nI am writing about polar bears.\n\nor\n\nThis report is about Abraham Lincoln.\n\nInstead, I want students to learn how to naturally introduce the topic.\n\nFor example:\n\nAbraham Lincoln played a major role in leading the United States during one of its most difficult times.\n\nThat is stronger, more informative, and immediately sets the purpose for the reader.\n\nAgain, the goal is clarity, not creativity.\n\nThis is informative writing.\n\nThe purpose is to teach.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "A Strong Beginning Sentence",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "strong",
+      "beginning",
+      "sentence",
+      "want",
+      "master",
+      "first",
+      "single",
+      "them",
+      "without",
+      "relying",
+      "weak",
+      "openings",
+      "such",
+      "polar",
+      "bears",
+      "report",
+      "abraham",
+      "lincoln",
+      "instead",
+      "learn"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 20: A Strong Beginning Sentence",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-21-teaching-transitions-between-sections",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 21: Teaching Transitions Between Sections",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 21,
+    "content": "Teaching the Research Report — Section 21: Teaching Transitions Between Sections\n\nOnce students move into multiple sections or paragraphs, transitions become important.\n\nBut transitions in informative writing are different from transitions in narrative writing.\n\nWe are not moving through time with words like first, next, and then.\n\nInstead, we are helping the reader move from one category of information to another.\n\nThis might sound like:\n\nIn addition to its physical features…\n\nAnother important aspect of the polar bear’s survival is its habitat.\n\nDiet is another key part of understanding this animal.\n\nThese transitions help the reader understand that the writing is moving into a new section of information.\n\nI like to teach students that transitions are really road signs for the reader.\n\nThey tell the reader where they are headed next.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Teaching Transitions Between Sections",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "teaching",
+      "transitions",
+      "between",
+      "sections",
+      "once",
+      "move",
+      "multiple",
+      "paragraphs",
+      "become",
+      "important",
+      "informative",
+      "different",
+      "narrative",
+      "moving",
+      "through",
+      "time",
+      "words",
+      "first",
+      "next",
+      "then"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 21: Teaching Transitions Between Sections",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-22-teaching-conclusions",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 22: Teaching Conclusions",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 22,
+    "content": "Teaching the Research Report — Section 22: Teaching Conclusions\n\nConclusions in research writing also do not need to be overcomplicated.\n\nThe conclusion should help the reader feel that the teaching is complete.\n\nFor younger students, this may simply be one sentence that wraps up the topic.\n\nFor example:\n\nThese adaptations help polar bears survive in one of the coldest places on Earth.\n\nFor older students, this may become a short concluding paragraph that summarizes the major learning.\n\nAgain, the goal is not length.\n\nThe goal is clarity.\n\nStudents should not simply repeat the introduction.\n\nInstead, they should help the reader leave with the big understanding.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Teaching Conclusions",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "teaching",
+      "conclusions",
+      "research",
+      "need",
+      "overcomplicated",
+      "conclusion",
+      "help",
+      "reader",
+      "feel",
+      "complete",
+      "younger",
+      "simply",
+      "sentence",
+      "wraps",
+      "topic",
+      "example",
+      "adaptations",
+      "polar",
+      "bears",
+      "survive"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 22: Teaching Conclusions",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-23-keep-the-priority-on-the-teaching",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 23: Keep the Priority on the Teaching",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 23,
+    "content": "Teaching the Research Report — Section 23: Keep the Priority on the Teaching\n\nThe biggest idea in this section is that introductions and conclusions support the report, but they are not the core of the work.\n\nThe true teaching happens in the body.\n\nIf students can:\n\nintroduce the topic clearly \n\ntransition smoothly between sections \n\nconclude with a clear takeaway \n\nthen the report is doing its job.\n\nWe do not need to spend disproportionate time polishing openings and endings while the middle remains weak.\n\nKeep the focus where the writing work truly lives.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Keep the Priority on the Teaching",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "keep",
+      "priority",
+      "teaching",
+      "biggest",
+      "idea",
+      "section",
+      "introductions",
+      "conclusions",
+      "support",
+      "report",
+      "they",
+      "core",
+      "work",
+      "true",
+      "happens",
+      "body",
+      "introduce",
+      "topic",
+      "clearly",
+      "transition"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 23: Keep the Priority on the Teaching",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-24-revising-and-using-multiple-short-research-units-across-the-year",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 24: Revising and Using Multiple Short Research Units Across the Year",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 24,
+    "content": "Teaching the Research Report — Section 24: Revising and Using Multiple Short Research Units Across the Year\n\nOne of the most important shifts in this workshop is moving away from the idea that research writing should happen only once a year.\n\nInstead of one long, exhausting report unit, students need multiple short opportunities to write from sources across the year.\n\nThis is what builds skill.\n\nNo one becomes fluent by doing something once.\n\nWriters improve through repetition.\n\nThat means we need several short report experiences that allow students to revisit the same process:\n\ncollect facts \n\norganize information \n\ndraft by category \n\nintroduce the topic \n\ntransition between sections \n\nconclude clearly \n\nEach time they do it, they become more efficient and more independent.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Revising and Using Multiple Short Research Units Across the Year",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "revising",
+      "using",
+      "multiple",
+      "short",
+      "research",
+      "units",
+      "across",
+      "year",
+      "important",
+      "shifts",
+      "workshop",
+      "moving",
+      "away",
+      "idea",
+      "happen",
+      "once",
+      "instead",
+      "long",
+      "exhausting",
+      "report"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 24: Revising and Using Multiple Short Research Units Across the Year",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-25-the-first-unit-should-stay-simple",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 25: The First Unit Should Stay Simple",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 25,
+    "content": "Teaching the Research Report — Section 25: The First Unit Should Stay Simple\n\nThe first research unit of the year should be highly scaffolded.\n\nI would provide:\n\nthe topic \n\nthe sources \n\nthe note-taking structure \n\nthe categories \n\nThis keeps the focus on the core writing moves.\n\nStudents are learning how research writing works.\n\nThey do not need every possible skill introduced at once.\n\nFor example, I would not begin with:\n\nsource evaluation \n\ntopic choice \n\ndigital searching \n\nbibliographies \n\ncitations \n\nformal revision cycles \n\nThose can come later.\n\nThe first unit should focus on writing from sources.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "The First Unit Should Stay Simple",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "first",
+      "unit",
+      "stay",
+      "simple",
+      "research",
+      "year",
+      "highly",
+      "scaffolded",
+      "provide",
+      "topic",
+      "sources",
+      "note",
+      "taking",
+      "structure",
+      "categories",
+      "keeps",
+      "focus",
+      "core",
+      "moves",
+      "learning"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 25: The First Unit Should Stay Simple",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-26-add-more-independence-in-the-second-unit",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 26: Add More Independence in the Second Unit",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 26,
+    "content": "Teaching the Research Report — Section 26: Add More Independence in the Second Unit\n\nBy the second short report unit, we can begin adding another layer of independence.\n\nNow students may:\n\nchoose between two or three teacher-provided topics \n\ngather information from multiple provided texts \n\norganize their own categories \n\ndraft with less teacher support \n\nThis is where we begin to release more responsibility.\n\nBecause students have already practiced the structure once, they are more prepared to handle added complexity.\n\nThis second experience is where growth really becomes visible.\n\nStudents begin to transfer what they learned in the first unit.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Add More Independence in the Second Unit",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "independence",
+      "second",
+      "unit",
+      "short",
+      "report",
+      "begin",
+      "adding",
+      "another",
+      "layer",
+      "choose",
+      "between",
+      "teacher",
+      "provided",
+      "topics",
+      "gather",
+      "information",
+      "multiple",
+      "texts",
+      "organize",
+      "categories"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 26: Add More Independence in the Second Unit",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-27-build-toward-the-larger-research-projectn",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 27: Build Toward the Larger Research Projectn",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 27,
+    "content": "Teaching the Research Report — Section 27: Build Toward the Larger Research Projectn\n\nBy the third unit, students are often ready for a more sustained research project.\n\nNow we can begin layering in:\n\ntopic narrowing \n\nsource searching \n\ncredibility checks \n\nparaphrasing from multiple texts \n\ntext features \n\ncitations \n\nrevision and final drafts \n\nThis is the point where a larger research experience makes sense.\n\nBecause students have already practiced the foundational moves in shorter cycles, they now have the stamina and strategic thinking needed for a longer project.\n\nThe long report should not be the first experience.\n\nIt should be the culminating experience.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Build Toward the Larger Research Projectn",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "build",
+      "toward",
+      "larger",
+      "research",
+      "projectn",
+      "third",
+      "unit",
+      "often",
+      "ready",
+      "sustained",
+      "project",
+      "begin",
+      "layering",
+      "topic",
+      "narrowing",
+      "source",
+      "searching",
+      "credibility",
+      "checks",
+      "paraphrasing"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 27: Build Toward the Larger Research Projectn",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-28-rethinking-revision",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 28: Rethinking Revision",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 28,
+    "content": "Teaching the Research Report — Section 28: Rethinking Revision\n\nAnother important shift is this:\n\nNot every report needs to go through a full revision and final-draft process.\n\nSometimes the instructional goal is simply the first draft.\n\nSometimes the goal is practicing organization.\n\nSometimes the goal is lifting facts from sources.\n\nSometimes the goal is paragraph development.\n\nEvery short unit does not need to end in a polished product.\n\nThis frees teachers to focus on the specific writing skill being taught.\n\nRevision becomes purposeful instead of automatic.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "Rethinking Revision",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "rethinking",
+      "revision",
+      "another",
+      "important",
+      "shift",
+      "every",
+      "report",
+      "needs",
+      "through",
+      "full",
+      "final",
+      "draft",
+      "process",
+      "sometimes",
+      "instructional",
+      "goal",
+      "simply",
+      "first",
+      "practicing",
+      "organization"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 28: Rethinking Revision",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  },
+  {
+    "chunk_id": "inform-transcript-section-29-what-this-looks-like-across-the-year",
+    "source_document": "Inform 2.5h transcript.docx",
+    "tier": 1,
+    "content_type": "training_transcript",
+    "source_category": "workshop_transcript",
+    "copilot_mode": "coaching",
+    "step": "overview",
+    "grade_level": "K-12",
+    "writing_trait": "all",
+    "writing_mode": "Inform",
+    "strategy_name": null,
+    "is_scripted_example": false,
+    "audience": "K-12",
+    "page_number": null,
+    "section_name": "Section 29: What This Looks Like Across the Year",
+    "day_number": null,
+    "mini_lesson_number": null,
+    "episode_number": null,
+    "chunk_index": 29,
+    "content": "Teaching the Research Report — Section 29: What This Looks Like Across the Year\n\nA possible yearly flow might look like this:\n\nUnit 1: Short Guided Report\n\nteacher topic \n\nteacher sources \n\nnote-taking mini-lessons \n\ncategory organization \n\nfirst draft only \n\nUnit 2: Short Semi-Guided Report\n\nlimited topic choice \n\nmultiple provided sources \n\nindependent organization \n\nstronger body paragraphs \n\nUnit 3: Sustained Research Project\n\nstudent topic \n\nsource selection \n\nlonger drafting \n\nrevision and final product \n\nThis approach aligns beautifully with the standard’s expectation of short as well as sustained research projects.\n\nThe Big Takeaway\n\nThe biggest takeaway from this section is this:\n\nResearch writing should be taught as a repeated process, not a one-time event.\n\nStudents need multiple chances to practice the habits of writing from sources.\n\nWhen we spread the work across the year, the instruction becomes more manageable and the student growth becomes much stronger.\n\nThis is how we build confident writers who know what to do with information once they have gathered it.",
+    "book_name": null,
+    "chapter_number": null,
+    "ml_number": null,
+    "skill_title": "What This Looks Like Across the Year",
+    "is_scripted_lesson": false,
+    "priority_rank": 4,
+    "topic_keywords": [
+      "looks",
+      "across",
+      "year",
+      "possible",
+      "yearly",
+      "flow",
+      "might",
+      "look",
+      "unit",
+      "short",
+      "guided",
+      "report",
+      "teacher",
+      "topic",
+      "sources",
+      "note",
+      "taking",
+      "mini",
+      "lessons",
+      "category"
+    ],
+    "book_reference": "Smekens Teaching the Research Report, Section 29: What This Looks Like Across the Year",
+    "pie_tags_by_band": {
+      "K-2": [
+        "I"
+      ],
+      "3-5": [
+        "I"
+      ],
+      "6-8": [
+        "I"
+      ],
+      "9-12": [
+        "I"
+      ]
+    },
+    "lesson_trigger": []
+  }
+]

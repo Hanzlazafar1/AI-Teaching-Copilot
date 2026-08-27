@@ -1,0 +1,133 @@
+{
+  "description": "Canonical skill names mapped to synonyms teachers might use. Loaded by canonicalizer.py. Canonical names are lowercase, space-separated. Synonyms are case-insensitive and may include hyphens, possessives, etc. Used to resolve SkillSpec.canonical from user vocabulary.",
+  "skills": {
+    "topic sentences": [
+      "topic sentence",
+      "topic-sentence",
+      "main idea sentence",
+      "topic sentence and supporting details",
+      "topic sentences and supporting details"
+    ],
+    "supporting details": [
+      "supporting detail",
+      "detail sentences",
+      "leg sentences",
+      "developed details",
+      "details and development"
+    ],
+    "transitions": [
+      "transition",
+      "transition words",
+      "transition phrases",
+      "paragraph transitions",
+      "transitions between paragraphs",
+      "transitions within paragraphs",
+      "transitional words"
+    ],
+    "paragraph writing": [
+      "paragraph",
+      "paragraphs",
+      "paragraphing",
+      "writing paragraphs",
+      "develop a paragraph",
+      "paragraph development"
+    ],
+    "organize information": [
+      "organize details",
+      "organizing writing",
+      "paragraph organization",
+      "group related details",
+      "categorize information"
+    ],
+    "elaboration": [
+      "elaborate",
+      "elaborating ideas",
+      "develop ideas",
+      "expand ideas",
+      "pump up the middle"
+    ],
+    "sentence fluency": [
+      "sentence variety",
+      "vary sentence length",
+      "sentence rhythm",
+      "long and short sentences",
+      "slinky test"
+    ],
+    "sentence fragments": [
+      "fragments",
+      "fix fragments",
+      "incomplete sentences"
+    ],
+    "run-on sentences": [
+      "run-ons",
+      "fix run-ons",
+      "sentence boundaries",
+      "tower test"
+    ],
+    "voice": [
+      "author voice",
+      "voice in writing",
+      "writing voice",
+      "author's voice"
+    ],
+    "word choice": [
+      "vocabulary",
+      "word choice in writing",
+      "powerful words",
+      "precise words"
+    ],
+    "conventions": [
+      "grammar",
+      "spelling",
+      "punctuation",
+      "writing conventions",
+      "editing"
+    ],
+    "ideas": [
+      "idea development",
+      "writing ideas",
+      "generating ideas"
+    ],
+    "thesis statement": [
+      "thesis",
+      "claim",
+      "writing a claim",
+      "constructing a thesis"
+    ],
+    "counterclaim": [
+      "counter argument",
+      "counter-argument",
+      "rebuttal",
+      "opposing viewpoint",
+      "they say i say"
+    ],
+    "collect facts and details": [
+      "research",
+      "collect research",
+      "gather facts",
+      "take notes",
+      "jot fact phrases",
+      "read find say jot"
+    ],
+    "add details to pictures": [
+      "picture details",
+      "drawing details",
+      "details to drawings",
+      "magnify close-up details",
+      "close-up details",
+      "add details to drawings"
+    ],
+    "labeling pictures": [
+      "labels",
+      "labeling",
+      "picture labels",
+      "add labels to pictures",
+      "drawing with labels"
+    ],
+    "writing sentences": [
+      "sentence writing",
+      "early sentences",
+      "first sentences"
+    ]
+  }
+}

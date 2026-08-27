@@ -1,0 +1,408 @@
+{
+  "threshold": 0.9,
+  "total_flagged": 32,
+  "field_stats": {
+    "book_name": {
+      "high": 231,
+      "medium": 0,
+      "low": 0,
+      "null": 353
+    },
+    "chapter_number": {
+      "high": 221,
+      "medium": 0,
+      "low": 0,
+      "null": 363
+    },
+    "ml_number": {
+      "high": 181,
+      "medium": 4,
+      "low": 0,
+      "null": 399
+    },
+    "skill_title": {
+      "high": 426,
+      "medium": 28,
+      "low": 0,
+      "null": 130
+    },
+    "is_scripted_lesson": {
+      "high": 584,
+      "medium": 0,
+      "low": 0,
+      "null": 0
+    },
+    "priority_rank": {
+      "high": 584,
+      "medium": 0,
+      "low": 0,
+      "null": 0
+    },
+    "topic_keywords": {
+      "high": 0,
+      "medium": 584,
+      "low": 0,
+      "null": 0
+    },
+    "book_reference": {
+      "high": 0,
+      "medium": 231,
+      "low": 0,
+      "null": 353
+    }
+  },
+  "entries": [
+    {
+      "chunk_id": "lww312-s4-ml7-adjust-writing-process",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 4: Motivating Writers — Adjust the writing process",
+      "flagged_fields": {
+        "ml_number": 0.8
+      },
+      "extracted": {
+        "ml_number": 7
+      }
+    },
+    {
+      "chunk_id": "lww312-s6-ml1-define-trait-visually-verbally",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 6: Mini-Lesson Series #1 — Define Each Trait Visually & Verbally",
+      "flagged_fields": {
+        "ml_number": 0.8
+      },
+      "extracted": {
+        "ml_number": 1
+      }
+    },
+    {
+      "chunk_id": "lww312-s6-ml3-sing-trait-songs",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 6: Mini-Lesson Series #3 — Sing Trait-Based Songs",
+      "flagged_fields": {
+        "ml_number": 0.8
+      },
+      "extracted": {
+        "ml_number": 3
+      }
+    },
+    {
+      "chunk_id": "lww312-s6-ml4-one-day-rapid-review",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 6: Mini-Lesson Series #4 — Conduct a One-Day Rapid Review",
+      "flagged_fields": {
+        "ml_number": 0.8
+      },
+      "extracted": {
+        "ml_number": 4
+      }
+    },
+    {
+      "chunk_id": "lww312-s9-ml03-alt-abc-chart",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 9: Teaching Organization — ML #3 Alternative: List & organize ABC Chart details",
+      "flagged_fields": {
+        "skill_title": 0.7
+      },
+      "extracted": {
+        "skill_title": "List & organize ABC Chart details"
+      }
+    },
+    {
+      "chunk_id": "lww312-s9-ml04-compare-contrast-additional",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 9: Teaching Organization — ML #4 Additional Resources: Compare-contrast categories",
+      "flagged_fields": {
+        "skill_title": 0.7
+      },
+      "extracted": {
+        "skill_title": "Compare-contrast categories"
+      }
+    },
+    {
+      "chunk_id": "lww312-s10-ml1-detect-name-voice",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 10: Teaching Voice, Mini-Lesson #1",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Detect and name the voice"
+      }
+    },
+    {
+      "chunk_id": "lww312-s10-ml2-show-dont-tell",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 10: Teaching Voice, Mini-Lesson #2",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Show actions, don't tell feelings"
+      }
+    },
+    {
+      "chunk_id": "lww312-s10-ml3-infuse-voice-3-ways",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 10: Teaching Voice, Mini-Lesson #3",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Infuse voice in 3 ways"
+      }
+    },
+    {
+      "chunk_id": "lww312-s10-ml4-choose-voice-pat",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 10: Teaching Voice, Mini-Lesson #4",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Choose voice based on the P.A.T."
+      }
+    },
+    {
+      "chunk_id": "lww312-s10-ml5-test-lady",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 10: Teaching Voice, Mini-Lesson #5",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Introduce the Test Lady"
+      }
+    },
+    {
+      "chunk_id": "lww312-s10-ml6-respectful-tone-arguments",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 10: Teaching Voice, Mini-Lesson #6",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Maintain a respectful tone in arguments"
+      }
+    },
+    {
+      "chunk_id": "lww312-s10-ml7-perspective-pov",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 10: Teaching Voice, Mini-Lesson #7",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Combine perspective and POV"
+      }
+    },
+    {
+      "chunk_id": "lww312-s11-ml1-right-word-right-spot",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 11: Teaching Word Choice, Mini-Lesson #1",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Choose the right word for the right spot"
+      }
+    },
+    {
+      "chunk_id": "lww312-s11-ml2-strong-action-verbs",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 11: Teaching Word Choice, Mini-Lesson #2",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Energize writing with strong action verbs"
+      }
+    },
+    {
+      "chunk_id": "lww312-s11-ml3-dead-retired-verbs",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 11: Teaching Word Choice, Mini-Lesson #3",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Eliminate dead/retired verbs"
+      }
+    },
+    {
+      "chunk_id": "lww312-s11-ml4-minimize-helping-linking-verbs",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 11: Teaching Word Choice, Mini-Lesson #4",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Minimize helping and linking verbs"
+      }
+    },
+    {
+      "chunk_id": "lww312-s11-ml5-close-up-details",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 11: Teaching Word Choice, Mini-Lesson #5",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Weave in close-up details"
+      }
+    },
+    {
+      "chunk_id": "lww312-s12-ml1-assess-sentence-length",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 12: Teaching Sentence Fluency, Mini-Lesson #1",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Assess sentence-length variety"
+      }
+    },
+    {
+      "chunk_id": "lww312-s12-ml2-fluency-narrative",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 12: Teaching Sentence Fluency, Mini-Lesson #2",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Apply fluency in narrative writing"
+      }
+    },
+    {
+      "chunk_id": "lww312-s12-ml3-vary-by-information",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 12: Teaching Sentence Fluency, Mini-Lesson #3",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Vary sentences based on information"
+      }
+    },
+    {
+      "chunk_id": "lww312-s12-ml4-sophistication-persuasive",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 12: Teaching Sentence Fluency, Mini-Lesson #4",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Add sophistication to persuasive sentences"
+      }
+    },
+    {
+      "chunk_id": "lww312-s12-ml5-long-efficient-sentences",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 12: Teaching Sentence Fluency, Mini-Lesson #5",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Create long and efficient sentences"
+      }
+    },
+    {
+      "chunk_id": "lww312-s12-ml6-parallel-structure",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 12: Teaching Sentence Fluency, Mini-Lesson #6",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Add rhythm with parallel structure"
+      }
+    },
+    {
+      "chunk_id": "lww312-s13-ml1-reread-hear-punctuation",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 13: Teaching Conventions, Mini-Lesson #1",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Reread to hear punctuation"
+      }
+    },
+    {
+      "chunk_id": "lww312-s13-ml2-speaking-punctuation",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 13: Teaching Conventions, Mini-Lesson #2",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Introduce a Speaking Punctuation procedure"
+      }
+    },
+    {
+      "chunk_id": "lww312-s13-ml3-indent-new-information",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 13: Teaching Conventions, Mini-Lesson #3",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Indent for new information"
+      }
+    },
+    {
+      "chunk_id": "lww312-s13-ml4-quotation-marks",
+      "source_document": "Launching the Writers Workshop 3-12.pdf",
+      "section_name": "Section 13: Teaching Conventions, Mini-Lesson #4",
+      "flagged_fields": {
+        "skill_title": 0.8
+      },
+      "extracted": {
+        "skill_title": "Apply quotation marks around speech"
+      }
+    },
+    {
+      "chunk_id": "k2-s7-ml1-part1-build-rubric-concept",
+      "source_document": "Launching the Writers Workshop K-2.pdf",
+      "section_name": "Section 7: Building Rubrics — ML #1 Part 1: Build a simple rubric (concept)",
+      "flagged_fields": {
+        "skill_title": 0.7
+      },
+      "extracted": {
+        "skill_title": "Build a simple rubric (concept)"
+      }
+    },
+    {
+      "chunk_id": "k2-s7-ml1-part2-build-writing-rubric",
+      "source_document": "Launching the Writers Workshop K-2.pdf",
+      "section_name": "Section 7: Building Rubrics — ML #1 Part 2: Build a simple writing rubric",
+      "flagged_fields": {
+        "skill_title": 0.7
+      },
+      "extracted": {
+        "skill_title": "Build a simple writing rubric"
+      }
+    },
+    {
+      "chunk_id": "k2-s13-ml16-follow-up-lessons",
+      "source_document": "Launching the Writers Workshop K-2.pdf",
+      "section_name": "Section 13: Drafting Whole Pieces — Mini-Lesson #16 Follow-Up Lessons",
+      "flagged_fields": {
+        "skill_title": 0.5
+      },
+      "extracted": {
+        "skill_title": null
+      }
+    },
+    {
+      "chunk_id": "k2-s13-ml17-follow-up-lessons",
+      "source_document": "Launching the Writers Workshop K-2.pdf",
+      "section_name": "Section 13: Drafting Whole Pieces — Mini-Lesson #17 Follow-Up Lessons",
+      "flagged_fields": {
+        "skill_title": 0.5
+      },
+      "extracted": {
+        "skill_title": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "_comment": "Pilot claim set (~8 diverse claims) for the Brady-alignment campaign. Each requirement is grounded in Brady's DOCUMENTED words (source cited). judge_method/observable match campaign/judge.py dispatch. tier drives the §8 verification bands. The full inventory (six closed sets) is a post-pilot effort.",
+  "claims": [
+    {
+      "id": "P1-banned-words",
+      "requirement": "Never 'activity'/'discuss'/PD-plug; always explain a strategy.",
+      "source": "requirements.md #5 (April non-negotiable, accepted); feedback-7-july §0 banned-word scan.",
+      "surface": "COACHING",
+      "judge_method": "deterministic",
+      "observable": "forbidden_words",
+      "tier": "safety-non-negotiable",
+      "scenarios": [
+        {"tier": "representative", "turns": ["Give me a quick coaching tip for teaching paragraph structure to grade 4."], "expected": "Response contains none of the banned words (discuss, activity as instruction, professional development, 'I'll listen in')."}
+      ]
+    },
+    {
+      "id": "P2-step3-phrases",
+      "requirement": "Step 3 uses the exact Smekens phrases (turn and talk, back to me, help me with the next, this is some of what).",
+      "source": "requirements.md #3 (April non-negotiable, accepted).",
+      "surface": "SCRIPTED_ML",
+      "judge_method": "hybrid",
+      "observable": "validate_step_3_phrases",
+      "tier": "non-negotiable",
+      "rubric": "Step 3 must contain a genuine guided-practice moment using the exact Smekens phrasings, and a real modeled answer must follow.",
+      "scenarios": [
+        {"tier": "representative", "turns": ["Give me a scripted 4-step mini-lesson on transitions for grade 4 informative writing."], "expected": "Step 3 contains the four exact Smekens phrases."}
+      ]
+    },
+    {
+      "id": "P3-launch-first-skill",
+      "requirement": "Launch books first — always, always, always.",
+      "source": "requirements.md #1 (April non-negotiable, accepted).",
+      "surface": "HOW_TO_TEACH",
+      "judge_method": "launch-first",
+      "observable": "launch-first",
+      "tier": "non-negotiable",
+      "scenarios": [
+        {"tier": "representative", "turns": ["How do I teach sensory details to grade 3?"], "expected": "Top-tier source(s) are Launch-book chunks (skill-seeking -> Launch first)."}
+      ]
+    },
+    {
+      "id": "P4-launch-first-planunit-PIE",
+      "requirement": "Launch-first ordering is query-type-conditioned: for unit planning, the PIE/Essential-Skills doc is correctly top, Launch below — this is BY DESIGN, not a violation.",
+      "source": "spec §7 (Wave-2b reranker reconciliation); guards against a false-MISALIGNED.",
+      "surface": "PLAN_UNIT",
+      "judge_method": "launch-first",
+      "observable": "launch-first",
+      "tier": "non-negotiable",
+      "scenarios": [
+        {"tier": "edge", "turns": ["Help me plan an informative writing unit for grade 5."], "expected": "PIE/Essential-Skills doc is top-tier and Launch is below — ALIGNED (must NOT be flagged as a Launch-first violation)."}
+      ]
+    },
+    {
+      "id": "P5-E1-grade-band-close",
+      "requirement": "K-2 mini-lessons end 'Let's go be writers!'; grades 3-12 end 'Now it's your turn!'",
+      "source": "requirements.md #10 / feedback-7-july E1 (image55: grade-7 wrongly ended 'Let's go be writers!').",
+      "surface": "SCRIPTED_ML",
+      "judge_method": "deterministic",
+      "observable": "validate_grade_band_close",
+      "tier": "safety-non-negotiable",
+      "scenarios": [
+        {"tier": "representative", "turns": ["Give me a scripted mini-lesson on strong verbs for grade 7."], "expected": "Step 4 closes with 'Now it's your turn!' (3-12 band)."},
+        {"tier": "edge", "turns": ["Give me a scripted mini-lesson on labeling a picture for kindergarten."], "expected": "Step 4 closes with 'Let's go be writers!' (K-2 band)."}
+      ]
+    },
+    {
+      "id": "P6-depth-2a2b",
+      "requirement": "4-step ML with deep Step 2A/2B think-aloud ('I close my eyes, I wonder...'); 2A/2B far longer than 1/3/4. Young grades (PK-1/K) carry a documented depth carve-out (shorter is correct).",
+      "source": "requirements.md #2 (April non-negotiable) + F57 salvage (Wave 1a; K-1 depth carve-out).",
+      "surface": "SCRIPTED_ML",
+      "judge_method": "hybrid",
+      "observable": "validate_lesson_depth",
+      "tier": "non-negotiable",
+      "rubric": "Step 2A (Tell) + 2B (Show) are substantially longer than steps 1/3/4 with rich first-person modeling. At PK-1/K the carve-out applies: a shorter monologue is CORRECT, do not flag it.",
+      "scenarios": [
+        {"tier": "representative", "turns": ["Give me a scripted mini-lesson on adding specific details for grade 5."], "expected": "Deep 2A/2B monologue, far longer than steps 1/3/4."},
+        {"tier": "edge", "turns": ["Give me a scripted mini-lesson on drawing true-to-life colors for kindergarten."], "expected": "F57 carve-out: a shorter K monologue is correct, NOT a depth violation."}
+      ]
+    },
+    {
+      "id": "P7-dig-into-same-lesson",
+      "requirement": "When a teacher says 'I did that lesson and they still can't', dig into the SAME lesson and slow down — do not propose a new skill.",
+      "source": "feedback-7-july §0 bullet 9 (Brady's 'PERFECT RESPONSE').",
+      "surface": "COACHING",
+      "judge_method": "llm-judge",
+      "observable": "response-content",
+      "tier": "safety-non-negotiable",
+      "rubric": "The reply must stay on the SAME locked skill/lesson (topic sentences, grade 4), slow down / re-teach it, and must NOT switch to or propose a different writing skill.",
+      "scenarios": [
+        {"tier": "multi-turn", "turns": ["Give me a mini-lesson on topic sentences for grade 4.", "I taught that lesson but my students still can't write a topic sentence."], "expected": "Turn 2 digs into the SAME topic-sentences lesson for grade 4, slows down, proposes no new skill."}
+      ]
+    },
+    {
+      "id": "P8-u2-opener-redirect",
+      "requirement": "The 'How can I help?' suggested-button openers must produce a helpful in-scope redirect — the app must never refuse its own suggested prompts as 'outside my scope'.",
+      "source": "requirements.md refinements (U2) + this-session U2 fix (commit c284ec9).",
+      "surface": "META",
+      "judge_method": "llm-judge",
+      "observable": "response-content",
+      "tier": "important",
+      "rubric": "The response must be a warm, in-scope capability redirect that asks for the grade/skill/unit — it must NOT contain 'outside my scope' or otherwise refuse.",
+      "scenarios": [
+        {"tier": "representative", "turns": ["Do you need a scripted mini-lesson for a grade-level writing skill?"], "expected": "Warm capability redirect (asks grade/skill/unit); no 'outside my scope'."},
+        {"tier": "edge", "turns": ["Are your students writing in pictures and letters?"], "expected": "Warm redirect, not a refusal."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1623 @@
+{
+  "_description": "Manually written HyDE summaries that override auto-generated ones for Brady's critical Smekens lessons. Each value is a list of hypothetical user queries that should match the lesson when a teacher asks something similar. See BRADY-ALIGNMENT-PLAN.md Section 11 (Phase 4).",
+  "lib-lww312-s8-ml05-table-top-leg-sentences": [
+    "How do I teach paragraph writing to 4th graders?",
+    "Mini-lesson on topic sentence and supporting details for grade 5",
+    "Give me a lesson on the pizza table strategy",
+    "How do I use tables and legs to teach paragraphing?",
+    "Scripted lesson on adding leg sentences per table-top reason",
+    "Teach 6th graders to support a main idea with multiple details",
+    "How do I help students elaborate with supporting details?"
+  ],
+  "lib-lww312-s8-ml07-snapple-details": [
+    "How do I teach students to add interesting facts to informational writing?",
+    "Mini-lesson on Snapple details for 6th grade",
+    "How do I make student writing more engaging with surprising facts?",
+    "Lesson on adding interest details to informational reports",
+    "Give me a scripted ML on Snapple-style details for middle school",
+    "How do I help my students engage readers with unusual facts?"
+  ],
+  "lib-lww312-s9-ml11-transitions-within-paragraphs": [
+    "How do I teach transitions within paragraphs to 5th graders?",
+    "Lesson on transition words for 4th grade informational writing",
+    "How do I use the road sign strategy to teach transitions?",
+    "Mini-lesson on linking ideas in a paragraph with transitions",
+    "Teach 4th grade to connect sentences with transition words",
+    "How do I use colored yarn to demonstrate transitions?"
+  ],
+  "lib-lww312-s9-ml12-transitions-among-paragraphs": [
+    "How do I teach transitions between paragraphs for grade 7?",
+    "Lesson on connecting paragraphs with transition phrases",
+    "Mini-lesson on transitions among paragraphs for middle school",
+    "How do I help students flow from paragraph to paragraph?",
+    "Teach 8th graders to link paragraphs with transition sentences"
+  ],
+  "lib-lww312-s4-ml1-done-list": [
+    "How do I motivate students who say they're done after one sentence?",
+    "Give me a lesson on the Done List strategy",
+    "How do I use the done list to keep students writing?",
+    "Mini-lesson on establishing a Done List for revision",
+    "How do I set up writer's workshop routines for when students say they're done?",
+    "Teach 4th graders what to do when they think they're finished writing"
+  ],
+  "lib-k2-s4-ml1-done-list": [
+    "How do I motivate reluctant K-2 writers?",
+    "Done list for kindergarten writers workshop",
+    "How do I help first graders keep writing when they say they're done?",
+    "Mini-lesson on the Done List for 2nd grade",
+    "Set up writer's workshop routines for K-2"
+  ],
+  "lib-k2-s4-ml2-grow-done-list": [
+    "How do I expand the Done List as the year progresses?",
+    "Grow the Done List — K-2 revision strategies",
+    "Lesson on adding new revision tasks to the Done List for 1st grade"
+  ],
+  "lib-k2-s1-ml3-topic-test": [
+    "How do I help K-2 students choose good writing topics?",
+    "Mini-lesson on the Topic Test for kindergarten",
+    "Teach 1st graders to test their writing topics",
+    "How do I know which writing topic is a good one?",
+    "Lesson on evaluating writing topics for K-2"
+  ],
+  "lib-k2-s8-ml9-magnify-close-up-details": [
+    "How do I get my kindergarteners to add details to their pictures?",
+    "Mini-lesson on magnify close-up details for K",
+    "Teach 1st graders to observe closely and add details to drawings",
+    "How do I help students see tiny details they can add to pictures?",
+    "Scripted lesson on close-up details for K-2 drawing",
+    "Lesson on drawing detailed pictures in kindergarten"
+  ],
+  "lib-k2-s10-ml14-dissected-web": [
+    "How do I teach paragraph organization with the Dissected Web?",
+    "Lesson on the Dissected Web strategy for K-2",
+    "Mini-lesson on pre-writing with a Dissected Web for 2nd grade",
+    "How do I use the Dissected Web to organize paragraphs?",
+    "Teach students to group details with a Dissected Web"
+  ],
+  "lib-k2-s11-ml10-spider-legs": [
+    "How do I teach K-2 students to fix sentence fragments?",
+    "Lesson on Spider Legs for fixing fragments",
+    "Mini-lesson on fragments for 2nd grade",
+    "Teach 1st graders to complete incomplete sentences"
+  ],
+  "lib-k2-s12-ml5-slinky-test": [
+    "How do I use the slinky test to teach sentence fluency?",
+    "Mini-lesson on sentence length variety for K-2",
+    "Lesson on the slinky test for 2nd graders",
+    "How do I help students vary their sentence lengths?",
+    "Teach K-2 writers about the slinky effect in sentences"
+  ],
+  "lib-k2-s13-ml1-pump-up-middle": [
+    "How do I teach K-2 students to add details to the middle of their writing?",
+    "Mini-lesson on Pump Up the Middle for 1st grade",
+    "Lesson on elaborating the middle of a story",
+    "How do I help 2nd graders expand their paragraphs?",
+    "Teach K-2 to pump up the middle of their writing"
+  ],
+  "lib-k2-s13-ml4-table-top-leg-sentences": [
+    "How do I teach K-2 students about supporting details?",
+    "Lesson on adding legs to table-top sentences for 1st grade",
+    "Mini-lesson on the tables and legs strategy for K-2",
+    "Teach 2nd graders to support main ideas with multiple details",
+    "Pizza table strategy for K-2 writers"
+  ],
+  "lib-k2-s13-ml12-sequential-transitions": [
+    "How do I teach K-2 students to use sequential transitions?",
+    "Lesson on linking ideas with time-order transitions for 1st grade",
+    "Mini-lesson on using 'first, next, then' for K-2 writers",
+    "Teach 2nd graders to connect story events with transitions"
+  ],
+  "lib-lww312-s1-ml1-write-for-different-purposes": [
+    "How do I introduce the three writing modes — persuade, inform, entertain — to my students?",
+    "Give me a mini-lesson on the P.I.E. Foldable",
+    "How do I teach students the difference between persuasive, informational, and narrative writing?",
+    "Lesson on the three major purposes for writing",
+    "How do I launch writer's workshop by teaching students why people write?",
+    "Mini-lesson using real-world examples to show different writing purposes",
+    "How do I use the PIE acronym to teach writing modes?"
+  ],
+  "lib-lww312-s1-ml2-write-about-what-you-know": [
+    "How do I help students find writing topics they actually know about?",
+    "My students say they don't know what to write — give me a lesson",
+    "Mini-lesson on the 'I Know About' handout",
+    "How do I teach writers to pick topics they have personal knowledge of?",
+    "Lesson on generating writing topics from personal expertise",
+    "How do I help students see their own life as a source of writing ideas?",
+    "Lightbulb-topics lesson for writer's notebook"
+  ],
+  "lib-lww312-s1-ml3-memories-picture-collage": [
+    "How do I use a picture collage to help students generate writing topics?",
+    "Lesson on the memories collage for topic generation",
+    "Mini-lesson where students cut out magazine images to find writing topics",
+    "How do I help students brainstorm topics using visuals?",
+    "Give me a topic-generation lesson using a photo collage",
+    "How do I spark personal writing memories with catalog clippings?",
+    "Memories picture collage mini-lesson for writer's workshop"
+  ],
+  "lib-lww312-s1-ml4-abc-chart-topics": [
+    "How do I teach the ABC Chart for generating writing topics?",
+    "Mini-lesson on using the ABC Chart for topic brainstorming",
+    "Lesson on the 26-letter topic list",
+    "How do I help students generate 26 writing topics with the alphabet?",
+    "ABC Chart strategy for writer's notebook topics",
+    "Give me a lesson where students generate one writing topic per letter of the alphabet",
+    "Mini-lesson on alphabet topic chart for writer's workshop"
+  ],
+  "lib-lww312-s1-ml5-springboard-off-texts": [
+    "How do I use a mentor text to help students find writing topics?",
+    "Mini-lesson on springboarding off books for topic ideas",
+    "Lesson using text-to-self connections to generate writing topics",
+    "How do I help students find writing topics through read-alouds?",
+    "Topic-generation lesson using picture books as inspiration",
+    "Give me a lesson on using mentor texts for topic inspiration",
+    "How do I teach students to find writing topics by listening to authors?"
+  ],
+  "lib-lww312-s1-ml6-life-line-of-experiences": [
+    "How do I help students generate narrative writing topics from life experiences?",
+    "Mini-lesson on creating a life line timeline for story ideas",
+    "Lesson on the life line strategy for narrative topics",
+    "How do I help students plot memorable events for narrative writing?",
+    "Topic-generation lesson using a highs-and-lows timeline",
+    "Give me a lesson on the life line handout for finding story topics",
+    "How do I teach students to mine their own life for narrative topics?"
+  ],
+  "lib-lww312-s1-ml7-narratives-response-to-reading": [
+    "How do I teach students to write narratives in response to reading passages?",
+    "Mini-lesson on reading-response narrative writing",
+    "Lesson on the types of text-based narrative writing tasks",
+    "How do I prepare students for narrative-response questions on writing assessments?",
+    "Give me a lesson on rewriting stories from a different character's point of view",
+    "How do I teach students to continue a story or fill in missing scenes?",
+    "Mini-lesson on writing narratives that respond to a reading passage"
+  ],
+  "lib-lww312-s1-ml8-graffiti-wall": [
+    "How do I help students find persuasive or research topics using a graffiti wall?",
+    "Mini-lesson on building a class graffiti wall of writing topics",
+    "Lesson on identifying questions and concerns for argumentative essays",
+    "How do I help students find debate-worthy topics for persuasive writing?",
+    "Give me a topic-generation lesson for research papers using magazines",
+    "Graffiti wall strategy for controversial writing topics",
+    "How do I use a visual wall to surface social-issue writing topics?"
+  ],
+  "lib-lww312-s1-ml9-things-wrong-in-world": [
+    "How do I help students find persuasive writing topics?",
+    "Mini-lesson on generating debatable topics for opinion writing",
+    "Lesson on the 'Things Wrong in the World' handout",
+    "How do I teach students the difference between informational and persuasive topics?",
+    "Give me a lesson on finding topics students have strong opinions about",
+    "How do I help my 4th graders brainstorm argumentative writing ideas?",
+    "Mini-lesson on identifying injustices and problems as persuasive topics",
+    "How do I help students generate opinion writing topics they care about?"
+  ],
+  "lib-lww312-s2-ml1-meet-for-daily-instruction": [
+    "How do I introduce the daily mini-lesson routine to my students?",
+    "Mini-lesson on setting expectations for writer's workshop meetings",
+    "How do I explain the mini-lesson portion of writer's workshop?",
+    "How do I set up the rules for our daily writer's workshop meeting?",
+    "Lesson on Turn and Talk code phrases for workshop",
+    "How do I teach students what to do during mini-lessons?",
+    "Establishing the 15-minute mini-lesson routine for writer's workshop"
+  ],
+  "lib-lww312-s2-ml2-describe-writing-time": [
+    "How do I set expectations for independent writing time?",
+    "Mini-lesson on writer's workshop independent writing rules",
+    "How do I launch the 'Now it's your turn' portion of writer's workshop?",
+    "How do I manage students during independent writing time?",
+    "Lesson on building writing stamina in writer's workshop",
+    "How do I explain what students should do during writing time?",
+    "Writer's workshop procedures for independent work"
+  ],
+  "lib-lww312-s2-ml3-authors-chair": [
+    "How do I run author's chair?",
+    "Mini-lesson on setting up author's chair sharing time",
+    "How do I explain the 'Wrap it up' sharing routine?",
+    "Lesson on Author's Chair procedures for writer's workshop",
+    "How do I structure end-of-workshop celebration sharing?",
+    "Author's chair procedures and expectations",
+    "How do I choose which students share during author's chair each day?"
+  ],
+  "lib-lww312-s2-ml4-review-3-parts": [
+    "How do I review the three parts of writer's workshop?",
+    "Mini-lesson on the three components of writer's workshop",
+    "Lesson to refresh writer's workshop expectations",
+    "How do I recap the structure of writer's workshop for experienced students?",
+    "Review lesson on mini-lesson + writing time + author's chair",
+    "Back-to-school refresher on writer's workshop routines",
+    "How do I re-introduce workshop routines at the start of a new year?"
+  ],
+  "lib-lww312-s2-ml5-help-tent-strip": [
+    "What do I do when students need help and I'm busy conferring?",
+    "Mini-lesson on the Help! Tent for writer's workshop",
+    "How do I use Help! Strips during independent writing time?",
+    "Lesson on what students should do when they're stuck writing",
+    "How do I teach students to stay productive when they need help?",
+    "Classroom strategy for students waiting on teacher help",
+    "How do I manage help requests during writer's workshop?"
+  ],
+  "lib-lww312-s2-ml6-teacher-writer-meetings": [
+    "How do I conference with students during writer's workshop?",
+    "Mini-lesson on group writing conferences with teacher",
+    "How do I hold small-group teacher-writer meetings?",
+    "Lesson on introducing writing conferences to students",
+    "How do I structure 5-minute writing conferences with groups?",
+    "How do I teach conference compliments and feedback in writer's workshop?",
+    "Teacher-writer meeting procedures for group conferencing"
+  ],
+  "lib-lww312-s3-ml1-introduce-writers-notebook": [
+    "How do I introduce the writer's notebook to my students?",
+    "Mini-lesson on unveiling writer's notebooks at start of year",
+    "How do I make writer's notebooks feel special to students?",
+    "Lesson on explaining the purpose of the writer's notebook",
+    "How do I launch writer's notebooks in writer's workshop?",
+    "Mini-lesson for introducing notebooks as writing-experiment spaces",
+    "How do I set up writer's notebooks with my 4th graders?"
+  ],
+  "lib-lww312-s4-ml2-make-space-for-revision": [
+    "How do I teach students to add details without recopying?",
+    "Mini-lesson on revision marks like carets, strikethroughs, and spider legs",
+    "How do I teach students to insert new sentences without rewriting the whole piece?",
+    "Lesson on physical revision strategies — carets, circles, spider legs",
+    "How do I teach revision without a full rewrite?",
+    "Revision strategies that make space for adding information",
+    "How do I teach story surgery and insertion strategies for revision?"
+  ],
+  "lib-lww312-s4-ml3-revision-bingo": [
+    "How do I motivate students to revise using a game?",
+    "Mini-lesson on Revision BINGO",
+    "How do I use BINGO to drive student revision?",
+    "Lesson on gamifying revision in writer's workshop",
+    "Revision BINGO strategy for writer's workshop",
+    "How do I keep revision engaging after the 'Done' list gets stale?",
+    "Give me a lesson on Revision BINGO for my 4th graders"
+  ],
+  "lib-lww312-s4-ml4-peer-conversations": [
+    "How do I teach students to give useful peer feedback on writing?",
+    "Mini-lesson on productive peer conferences",
+    "How do I move beyond 'I like your story' peer comments?",
+    "Lesson on the four peer-feedback questions",
+    "Peer feedback strategy — best part, more of, fuzzy, less of",
+    "How do I structure peer-writing conversations?",
+    "Mini-lesson on specific peer feedback for writer's workshop"
+  ],
+  "lib-lww312-s4-ml5-read-up-write-down": [
+    "How do I teach students to catch their own writing mistakes?",
+    "Mini-lesson on the Read-Up, Write-Down editing strategy",
+    "How do I help students edit their own writing more carefully?",
+    "Lesson on self-editing for conventions",
+    "How do I teach students to read their writing aloud for editing?",
+    "Read up and write down editing strategy",
+    "How do I coach students through catching their own spelling and punctuation errors?"
+  ],
+  "lib-lww312-s4-ml6-focused-edits": [
+    "How do I teach students to edit one convention at a time?",
+    "Mini-lesson on focused editing with colored pens",
+    "How do I teach editing without overwhelming students?",
+    "Lesson on single-skill editing passes",
+    "Focused editing strategy for conventions",
+    "How do I structure editing so students don't miss mistakes?",
+    "How do I use color-coded editing passes to teach conventions?"
+  ],
+  "lib-lww312-s4-ml7-adjust-writing-process": [
+    "How do I teach students to speed up or slow down the writing process?",
+    "Mini-lesson on adjusting the writing process for different tasks",
+    "How do I help students pace themselves on timed writing assessments?",
+    "Lesson on the writing process in compressed vs extended timeframes",
+    "How do I teach students to draft and revise in one sitting?",
+    "How do I prepare students for on-demand writing?",
+    "Mini-lesson on flexible pacing of the writing process"
+  ],
+  "lib-lww312-s5-ml1-independent-spellers": [
+    "How do I teach students spelling strategies besides asking me?",
+    "Mini-lesson on independent spelling strategies for writers",
+    "How do I develop independent first-draft spellers?",
+    "Lesson on what to do when you don't know how to spell a word",
+    "How do I teach students to sound out, look up, or squiggle unknown words?",
+    "Mini-lesson on first-draft spelling independence",
+    "How do I stop students from asking me how to spell every word?"
+  ],
+  "lib-lww312-s5-ml2-squiggle-line-spellings": [
+    "How do I teach students to check squiggle-line spellings later?",
+    "Mini-lesson on looking up unsure words after first-draft writing",
+    "Lesson on the second step after squiggle-line spelling",
+    "How do I make sure students eventually fix their temporary spellings?",
+    "Squiggle line follow-up lesson for spelling",
+    "How do I teach students to use dictionaries and spell-check for questionable words?",
+    "Mini-lesson on verifying flagged spellings after drafting"
+  ],
+  "lib-lww312-s5-ml3-word-charts": [
+    "How do I use topic-driven word charts to help students spell?",
+    "Mini-lesson on picture-based word charts for spelling support",
+    "How do I set up spelling resources around the classroom?",
+    "Lesson on using laminated topic word charts during writing time",
+    "How do I help students find topic-specific vocabulary for spelling?",
+    "Word chart strategy for supporting spelling in writer's workshop",
+    "Mini-lesson on modeling how to use classroom word charts"
+  ],
+  "lib-lww312-s5-ml4-you-do-i-do": [
+    "How do I teach students to attempt spellings before asking?",
+    "Mini-lesson on the 'You do, I do' spelling support strategy",
+    "How do I scaffold spelling risk-taking in writers?",
+    "Lesson on partial teacher support for student spellings",
+    "How do I get students to try spelling a word before I help?",
+    "You do I do spelling strategy mini-lesson",
+    "Mini-lesson on encouraging spelling approximations"
+  ],
+  "lib-lww312-s5-ml5-convention-formality": [
+    "How do I teach students about levels of formality in spelling and conventions?",
+    "Mini-lesson on convention formality across writing genres",
+    "How do I explain that text-message spelling is fine for texts but not essays?",
+    "Lesson on audience- and genre-appropriate conventions",
+    "How do I teach the formality spectrum of writing conventions?",
+    "Mini-lesson on least-formal to most-formal writing contexts",
+    "How do I help students adjust conventions to match the writing purpose?"
+  ],
+  "lib-lww312-s6-ml1-define-trait-visually-verbally": [
+    "How do I introduce the 6 traits of writing to my students?",
+    "Mini-lesson on defining each writing trait visually and verbally",
+    "How do I launch the 6 Traits with my class?",
+    "Lesson on introducing writing traits with visual icons",
+    "How do I teach students the meanings of Ideas, Organization, Voice, Word Choice, Sentence Fluency, and Conventions?",
+    "6-Traits introduction lesson with icons and definitions",
+    "How do I use visual triggers to anchor each writing trait?"
+  ],
+  "lib-lww312-s6-ml2-mentor-text-examples": [
+    "How do I use mentor texts to introduce each writing trait?",
+    "Mini-lesson on revealing traits through mentor-text read-alouds",
+    "How do I show writing traits in action using picture books?",
+    "Lesson on using mentor texts to exemplify each 6-Trait",
+    "How do I read aloud and point out a specific writing trait?",
+    "Mentor-text lesson for introducing the 6 traits",
+    "How do I demonstrate the 6 Traits in real writing samples?"
+  ],
+  "lib-lww312-s6-ml3-sing-trait-songs": [
+    "How do I use songs to teach the 6 writing traits?",
+    "Mini-lesson on trait-based songs for introducing the 6 Traits",
+    "How do I make the 6 Traits memorable through music?",
+    "Lesson on singing trait-related songs with students",
+    "6-Traits songs strategy for elementary classrooms",
+    "How do I introduce writing traits through catchy lyrics?",
+    "Mini-lesson using custom lyrics to teach writing traits"
+  ],
+  "lib-lww312-s6-ml4-one-day-rapid-review": [
+    "How do I do a one-day review of the 6 Traits for returning students?",
+    "Mini-lesson on rapid-review of 6 Traits for secondary students",
+    "How do I refresh 6-Trait knowledge for experienced writers?",
+    "Lesson on reviewing all six traits in a single day",
+    "How do I handle 6-Traits review when students have studied them before?",
+    "One-day 6 Traits review lesson for middle or high school",
+    "How do I re-introduce the traits to students who already know them?"
+  ],
+  "lib-lww312-s7-ml1-define-rubric": [
+    "How do I introduce the concept of a rubric to my students?",
+    "Mini-lesson on defining 'rubric' for students",
+    "How do I teach students what a rubric is using a clean-desk example?",
+    "Lesson on building a Clean Desk or Clean Locker rubric",
+    "How do I help students understand rubrics before applying one to writing?",
+    "Rubric introduction mini-lesson with familiar examples",
+    "How do I explain scoring criteria to my class for the first time?"
+  ],
+  "lib-lww312-s7-ml1-holistic-vs-analytic": [
+    "How do I teach students the difference between holistic and analytic scoring?",
+    "Mini-lesson on holistic vs. analytic rubrics",
+    "How do I explain overall score vs trait-by-trait score?",
+    "Lesson on analytic scoring in writing rubrics",
+    "How do I teach students why we use trait-specific rubrics?",
+    "Holistic versus analytic rubric lesson",
+    "Mini-lesson on single-score vs multi-trait rubric scoring"
+  ],
+  "lib-lww312-s7-ml2-establish-initial-writing-rubric": [
+    "How do I build an initial writing rubric with my students?",
+    "Mini-lesson on creating a class writing rubric from scratch",
+    "How do I co-construct a writing rubric with 4th graders?",
+    "Lesson on building a 6-Traits writing rubric with student input",
+    "How do I establish a kid-friendly writing rubric at the start of the year?",
+    "Initial writing rubric mini-lesson for writer's workshop",
+    "How do I make a rubric students can actually understand and use?"
+  ],
+  "lib-lww312-s7-ml3-update-rubric-frequently": [
+    "How do I update the writing rubric as I teach new skills?",
+    "Mini-lesson on growing the rubric throughout the year",
+    "How do I raise rubric expectations as students learn more?",
+    "Lesson on adding new criteria to our writing rubric",
+    "How do I hold students accountable by updating rubrics?",
+    "Growing-rubric lesson for writer's workshop",
+    "How do I make sure the rubric reflects what I'm teaching?"
+  ],
+  "lib-lww312-s8-ml01-narrow-topics": [
+    "How do I teach students to narrow broad writing topics?",
+    "Mini-lesson on finding the smallest writing topic",
+    "How do I help students avoid 'listy' writing by narrowing topics?",
+    "Lesson on the Find the Smallest Topic graphic organizer",
+    "How do I teach topic narrowing for informational writing?",
+    "Mini-lesson on narrowing down big topics like 'Halloween' or 'school'",
+    "How do I teach students to pick manageable writing topics?"
+  ],
+  "lib-lww312-s8-ml02-thesis-statement": [
+    "How do I teach students to write a thesis statement?",
+    "Mini-lesson on generating a thesis statement",
+    "How do I help students narrow down a thesis?",
+    "Lesson on the Narrow Down the Thesis handout",
+    "How do I teach thesis writing to middle schoolers?",
+    "Mini-lesson on crafting a focused thesis for informational or persuasive writing",
+    "How do I teach students to write a thesis that's not too broad?"
+  ],
+  "lib-lww312-s8-ml03-strongest-position": [
+    "How do I teach students to pick the strongest position for persuasive writing?",
+    "Mini-lesson on the Two-Perspectives T-Chart",
+    "How do I help students align with the strongest side of a debate?",
+    "Lesson on choosing a defensible persuasive position",
+    "How do I teach students to pick their argumentative stance based on evidence?",
+    "Two-perspectives T-chart strategy for persuasive writing",
+    "How do I help students evaluate both sides before picking a position?"
+  ],
+  "lib-lww312-s8-ml04-details-vs-development": [
+    "How do I teach the difference between details and development?",
+    "Mini-lesson on developed vs listy writing",
+    "How do I help students elaborate rather than just add adjectives?",
+    "Lesson distinguishing details from true development",
+    "How do I teach students to follow up ideas with multiple support sentences?",
+    "Mini-lesson on developed elaboration for student writing",
+    "How do I move students from listy writing to developed paragraphs?"
+  ],
+  "lib-lww312-s8-ml06-definition-details": [
+    "How do I teach students to define unfamiliar words within their writing?",
+    "Mini-lesson on adding definition details for reader comprehension",
+    "How do I help students explain key terms in their writing?",
+    "Lesson on the Definition Details handout",
+    "How do I teach students to embed definitions for unfamiliar vocabulary?",
+    "Definition details strategy for informational writing",
+    "How do I teach students to support readers with in-text definitions?"
+  ],
+  "lib-lww312-s8-ml08-name-details": [
+    "How do I teach students to use specific names instead of generic nouns?",
+    "Mini-lesson on name details for specificity",
+    "How do I help students replace vague nouns with brand names or specific examples?",
+    "Lesson on specifics vs generics in student writing",
+    "How do I teach students to paint a clearer picture with specific names?",
+    "Name details strategy for writing elaboration",
+    "How do I teach 4th graders to use precise nouns in their writing?"
+  ],
+  "lib-lww312-s8-ml09-number-details": [
+    "How do I teach students to use numbers for specific details?",
+    "Mini-lesson on number details in informative and persuasive writing",
+    "How do I help students add numerical specifics to their writing?",
+    "Lesson on the Add Value with Number Details handout",
+    "How do I teach students to use statistics and numbers for credibility?",
+    "Number details strategy for elaboration",
+    "How do I teach students to include precise quantities in their writing?"
+  ],
+  "lib-lww312-s8-ml10-comparison-details": [
+    "How do I teach students to use comparison details?",
+    "Mini-lesson on comparisons and similes for reader comprehension",
+    "How do I help students connect unfamiliar topics to familiar ones?",
+    "Lesson on the Convey Meaning Through Comparisons handout",
+    "How do I teach students to use analogies when writing about unfamiliar topics?",
+    "Comparison details strategy for elaboration",
+    "How do I help students explain hard concepts using everyday comparisons?"
+  ],
+  "lib-lww312-s8-ml11-anecdotes": [
+    "How do I teach students to add anecdotes to informative writing?",
+    "Mini-lesson on adding anecdotes to persuasive or informational pieces",
+    "How do I help students humanize their writing with mini-stories?",
+    "Lesson on anecdotes as elaboration",
+    "How do I teach middle schoolers to use anecdotes for persuasive impact?",
+    "Anecdote strategy for balancing facts with storytelling",
+    "How do I teach students to weave a real-world story into informational writing?"
+  ],
+  "lib-lww312-s8-ml12-expert-voices": [
+    "How do I teach students to use expert quotes for credibility?",
+    "Mini-lesson on adding expert voices to writing",
+    "How do I help students integrate direct quotes from authorities?",
+    "Lesson on choosing and using expert quotations",
+    "How do I teach students to use expert quotes sparingly and powerfully?",
+    "Expert voices strategy for persuasive writing",
+    "How do I teach students to cite authorities in their argumentative essays?"
+  ],
+  "lib-lww312-s8-ml13-paraphrase": [
+    "How do I teach students to paraphrase expert ideas?",
+    "Mini-lesson on the 4-step paraphrasing process",
+    "How do I help students restate author ideas in their own words?",
+    "Lesson on paraphrasing nonfiction text",
+    "How do I teach paraphrasing to avoid plagiarism?",
+    "Paraphrase strategy mini-lesson for research writing",
+    "How do I teach students when to paraphrase vs. directly quote?"
+  ],
+  "lib-lww312-s8-ml14-citations": [
+    "How do I teach students to cite sources in their writing?",
+    "Mini-lesson on incorporating citations to avoid plagiarism",
+    "How do I introduce plagiarism and citation to middle schoolers?",
+    "Lesson on the Incorporate Citations handout",
+    "How do I teach students to attribute ideas and quotes properly?",
+    "Citation basics mini-lesson for student research writing",
+    "How do I teach students the difference between quoting, paraphrasing, and citing?"
+  ],
+  "lib-lww312-s8-ml15-stay-on-topic": [
+    "How do I teach students to stay on topic with a temporary title?",
+    "Mini-lesson on the Cheerios vs Fruit Loops strategy",
+    "How do I help students keep their writing focused?",
+    "Lesson on using a working title to keep writing on topic",
+    "How do I teach students to check every sentence against the topic?",
+    "Stay-on-topic strategy with a temporary title",
+    "How do I teach 4th graders to filter off-topic sentences from their writing?"
+  ],
+  "lib-lww312-s9-ml01-list-group-label": [
+    "How do I teach students to group related ideas for better organization?",
+    "Mini-lesson on the list-group-label pre-writing strategy",
+    "How do I help students organize their ideas into categories before writing?",
+    "Lesson on sticky-note clustering for organization",
+    "How do I teach students to pre-write using grocery-store logic?",
+    "List, group, and label pre-writing strategy",
+    "How do I help students cluster ideas into paragraphs?"
+  ],
+  "lib-lww312-s9-ml02-list-group-before-writing": [
+    "How do I teach students a pre-writing list without a graphic organizer?",
+    "Mini-lesson on grocery-list style pre-writing",
+    "How do I teach students to pre-write in simple phrases instead of full graphic organizers?",
+    "Lesson on quick list pre-writing for essays",
+    "How do I help students pre-write efficiently on timed assessments?",
+    "Grocery-list pre-writing mini-lesson",
+    "How do I teach 5th graders to jot a quick pre-write before drafting?"
+  ],
+  "lib-lww312-s9-ml03-organize-sequentially-storyboard": [
+    "How do I teach students to organize a narrative sequentially?",
+    "Mini-lesson on the Storyboard graphic organizer for narrative writing",
+    "How do I help students plan a story using a storyboard?",
+    "Lesson on 3-box, 5-box, or 9-box storyboard organizers",
+    "How do I teach students to slow down the middle of a story?",
+    "Storyboard pre-writing mini-lesson for narrative",
+    "How do I help students plan a narrative in chronological order?"
+  ],
+  "lib-lww312-s9-ml03-alt-abc-chart": [
+    "How do I teach students to sequence information with an ABC Chart?",
+    "Mini-lesson on using the ABC Chart as a pre-writing organizer",
+    "How do I help students organize information alphabetically before sequencing it?",
+    "Lesson on the ABC Chart for sequencing details",
+    "How do I use the ABC Chart to teach information organization?",
+    "ABC Chart pre-writing strategy for informational writing",
+    "How do I teach students to list-first, then sequence?"
+  ],
+  "lib-lww312-s9-ml04-compare-contrast-organization": [
+    "How do I teach students to organize compare-contrast writing?",
+    "Mini-lesson on the Compare-Contrast T-Chart",
+    "How do I help students organize information on two topics?",
+    "Lesson on apples-to-apples organization for compare-contrast essays",
+    "How do I teach students to compare two items by shared categories?",
+    "Compare-contrast pre-writing with T-Chart",
+    "How do I help students write a well-organized compare-contrast piece?"
+  ],
+  "lib-lww312-s9-ml04-compare-contrast-additional": [
+    "How do I teach compare-contrast writing with 3 or more topics?",
+    "Mini-lesson on comparing multiple items in one essay",
+    "How do I help students compare three branches of government or three body systems in writing?",
+    "Lesson on extending the compare-contrast T-Chart for multiple topics",
+    "How do I help students compare a book to a movie and a graphic novel?",
+    "Compare-contrast organization with 3+ items",
+    "Multi-item compare-contrast graphic organizer lesson"
+  ],
+  "lib-lww312-s9-ml05-organize-categorically": [
+    "How do I teach students to organize information categorically?",
+    "Mini-lesson on the Dissected Web for categorical organization",
+    "How do I help students cluster details into categorical paragraphs?",
+    "Lesson on Dissected Web vs. regular Web organizer",
+    "How do I teach categorical pre-writing with the Dissected Web?",
+    "Dissected Web strategy for informational writing organization",
+    "How do I help students move from listy details to meaty categorical paragraphs?"
+  ],
+  "lib-lww312-s9-ml06-yes-maam-constructed-responses": [
+    "How do I teach students to write constructed responses?",
+    "Mini-lesson on the Yes, MA'AM acronym for short constructed responses",
+    "How do I help students answer 'what' and 'why' on text-based writing tasks?",
+    "Lesson on Yes MA'AM constructed response formula",
+    "How do I teach 5th graders to write short constructed responses with evidence?",
+    "Yes MA'AM strategy for brief constructed responses",
+    "How do I teach a formula for reading-response writing?"
+  ],
+  "lib-lww312-s9-ml07-supersize-yes-maam": [
+    "How do I teach students to expand a constructed response into an essay?",
+    "Mini-lesson on Supersize Yes, MA'AM for extended responses",
+    "How do I help students turn a short response into a 5-paragraph essay?",
+    "Lesson on scaling Yes MA'AM to fit longer essays",
+    "How do I teach extended reading-response essays?",
+    "Supersize Yes MA'AM strategy for extended writing",
+    "How do I take a brief constructed response and make it a full essay?"
+  ],
+  "lib-lww312-s9-ml08-reveal-reasons-intentionally": [
+    "How do I teach students to order their persuasive reasons intentionally?",
+    "Mini-lesson on revealing persuasive reasons in a strategic order",
+    "How do I help students strengthen their persuasive writing by ordering reasons?",
+    "Lesson on ranking persuasive reasons by strength",
+    "How do I teach students to sequence reasons from strongest to weakest?",
+    "Persuasive reason-ordering mini-lesson",
+    "How do I teach 5th graders to pick their best argument first?"
+  ],
+  "lib-lww312-s9-ml09-convert-persuasive-to-argument": [
+    "How do I teach the difference between persuasive and argumentative writing?",
+    "Mini-lesson on converting a persuasive to an argument",
+    "How do I help students add the opposition to their persuasive writing?",
+    "Lesson on persuasive vs. argumentative essays",
+    "How do I teach students to elaborate on counterclaims?",
+    "Persuasive-to-argument mini-lesson",
+    "How do I help 8th graders add counterclaims to their essays?"
+  ],
+  "lib-lww312-s9-ml10-present-both-sides": [
+    "How do I teach students to present both sides of an argument?",
+    "Mini-lesson on the 'They say... I say...' format for argumentative writing",
+    "How do I help students juggle claim and counterclaim in one piece?",
+    "Lesson on the Elaborate & Transition Chart for back-and-forth argument",
+    "How do I teach students to write a pro-con argumentative essay?",
+    "Both-sides argument mini-lesson for middle and high school",
+    "How do I teach interior debate in argumentative essays?"
+  ],
+  "lib-lww312-s9-ml13-persuasive-argumentative-introductions": [
+    "How do I teach students to write persuasive or argumentative introductions?",
+    "Mini-lesson on crafting persuasive/argumentative intro paragraphs",
+    "How do I help students introduce an argument with hook, background, and claim?",
+    "Lesson on opening paragraphs for persuasive writing",
+    "How do I teach 5th graders to write persuasive introductions?",
+    "Persuasive introduction mini-lesson",
+    "How do I teach students to craft a strong argument opening?"
+  ],
+  "lib-lww312-s9-ml14-persuasive-argumentative-conclusions": [
+    "How do I teach students to write persuasive or argumentative conclusions?",
+    "Mini-lesson on crafting persuasive/argumentative conclusions",
+    "How do I help students close a persuasive essay with a strong call to action?",
+    "Lesson on closing paragraphs for argumentative writing",
+    "How do I teach students to restate their thesis creatively in a conclusion?",
+    "Persuasive conclusion mini-lesson",
+    "How do I help students end their argumentative essays powerfully?"
+  ],
+  "lib-lww312-s9-ml15-informative-introductions": [
+    "How do I teach students to write informative introductions?",
+    "Mini-lesson on crafting informative intro paragraphs",
+    "How do I help students open an informational piece with background and thesis?",
+    "Lesson on opening paragraphs for informational writing",
+    "How do I teach 5th graders to write informational introductions?",
+    "Informative introduction mini-lesson",
+    "How do I teach students to hook readers into an informational piece?"
+  ],
+  "lib-lww312-s9-ml16-informative-conclusions": [
+    "How do I teach students to write informative conclusions?",
+    "Mini-lesson on crafting informative conclusions",
+    "How do I help students close an informational essay effectively?",
+    "Lesson on closing paragraphs for informational writing",
+    "How do I teach students to restate the main idea in an informational conclusion?",
+    "Informative conclusion mini-lesson",
+    "How do I help students end an informational essay without just repeating?"
+  ],
+  "lib-lww312-s9-ml17-narrative-introductions": [
+    "How do I teach students to write narrative introductions?",
+    "Mini-lesson on crafting narrative openings with conflict",
+    "How do I help students open a story with a problem or wish?",
+    "Lesson on narrative intro paragraphs — set-up and conflict",
+    "How do I teach students to start a story with dialogue or action?",
+    "Narrative introduction mini-lesson",
+    "How do I teach 9th graders to craft a narrative opening?"
+  ],
+  "lib-lww312-s9-ml18-narrative-conclusions": [
+    "How do I teach students to write narrative conclusions?",
+    "Mini-lesson on crafting narrative endings with fix-up",
+    "How do I help students resolve the conflict in a story?",
+    "Lesson on set-up / mix-up / fix-up narrative structure",
+    "How do I teach students to end a story with a meaningful resolution?",
+    "Narrative conclusion mini-lesson",
+    "How do I teach students to write satisfying story endings?"
+  ],
+  "lib-lww312-s9-ml19-generate-titles": [
+    "How do I teach students to write titles that grab readers?",
+    "Mini-lesson on generating compelling titles for writing",
+    "How do I help students move beyond generic titles like 'Summer Vacation'?",
+    "Lesson on crafting title hooks for essays",
+    "How do I teach students to title their writing creatively?",
+    "Title-generation mini-lesson",
+    "How do I help students come up with specific, original titles?"
+  ],
+  "lib-lww312-s10-ml1-detect-name-voice": [
+    "How do I teach students to identify voice in writing?",
+    "Mini-lesson on detecting and naming voice",
+    "How do I help students see voice in mentor texts?",
+    "Lesson on identifying the writer's attitude or tone",
+    "How do I teach students what voice in writing actually is?",
+    "Detect-and-name-voice mini-lesson",
+    "How do I introduce voice as a writing trait?"
+  ],
+  "lib-lww312-s10-ml2-show-dont-tell": [
+    "How do I teach students to show, not tell, feelings?",
+    "Mini-lesson on showing actions instead of telling feelings",
+    "How do I help students describe emotions without naming them?",
+    "Lesson on show-don't-tell for voice and narrative",
+    "How do I teach students to use close-up details to show feelings?",
+    "Show don't tell mini-lesson for narrative writing",
+    "How do I help 6th graders show a character's emotion instead of just saying 'he was sad'?"
+  ],
+  "lib-lww312-s10-ml3-infuse-voice-3-ways": [
+    "How do I teach students to infuse voice in informative or persuasive writing?",
+    "Mini-lesson on the three ways to add voice — content, word choice, punctuation",
+    "How do I help students add voice to non-narrative writing?",
+    "Lesson on voice in informative and argumentative essays",
+    "How do I teach students to reveal voice through content and word choice?",
+    "Three-ways-to-infuse-voice mini-lesson",
+    "How do I teach students that voice isn't just for narrative?"
+  ],
+  "lib-lww312-s10-ml4-choose-voice-pat": [
+    "How do I teach students to match voice to Purpose, Audience, and Topic?",
+    "Mini-lesson on the PAT strategy for choosing voice",
+    "How do I help students adjust voice based on audience?",
+    "Lesson on P.A.T. (Purpose, Audience, Topic) for voice",
+    "How do I teach students to choose an appropriate voice for the writing task?",
+    "PAT voice-selection mini-lesson",
+    "How do I teach students to pick the right voice for a given purpose and audience?"
+  ],
+  "lib-lww312-s10-ml5-test-lady": [
+    "How do I motivate students to care about the audience on state writing tests?",
+    "Mini-lesson on the Test Lady for state writing assessments",
+    "How do I humanize the state test scorer for my students?",
+    "Lesson on the Test Lady strategy",
+    "Test Lady mini-lesson for improving on-demand writing motivation",
+    "How do I help students write with voice on standardized tests?",
+    "How do I introduce the audience for state writing assessments?"
+  ],
+  "lib-lww312-s10-ml6-respectful-tone-arguments": [
+    "How do I teach students to keep a respectful tone in argumentative writing?",
+    "Mini-lesson on formal, objective voice in argumentative essays",
+    "How do I help students argue without sounding disrespectful?",
+    "Lesson on maintaining appropriate tone in argument",
+    "How do I teach students the voice difference between persuasive and argumentative?",
+    "Respectful-argument-tone mini-lesson",
+    "How do I teach high schoolers to handle opposition respectfully in writing?"
+  ],
+  "lib-lww312-s10-ml7-perspective-pov": [
+    "How do I teach students about point of view and perspective?",
+    "Mini-lesson on combining POV and voice",
+    "How do I help students choose between first-person and third-person?",
+    "Lesson on perspective and POV for narrative writing",
+    "How do I teach students to take on a persona for writing?",
+    "Perspective and POV mini-lesson",
+    "How do I teach 8th graders the difference between voice and point of view?"
+  ],
+  "lib-lww312-s11-ml1-right-word-right-spot": [
+    "How do I teach students to pick the precise word?",
+    "Mini-lesson on choosing the right word for the right spot",
+    "How do I help students pick exact synonyms instead of 'good-enough' words?",
+    "Lesson on shades-of-meaning in word choice",
+    "How do I teach students to select precise vocabulary?",
+    "Right-word-right-spot mini-lesson",
+    "How do I teach students that synonyms have different shades of meaning?"
+  ],
+  "lib-lww312-s11-ml2-strong-action-verbs": [
+    "How do I teach students to use strong action verbs?",
+    "Mini-lesson on energizing writing with powerful verbs",
+    "How do I help students replace weak verbs with vivid action verbs?",
+    "Lesson on verb strength in student writing",
+    "How do I teach students to upgrade their verbs?",
+    "Strong action verbs mini-lesson",
+    "How do I help students eliminate dollar-store verbs from their writing?"
+  ],
+  "lib-lww312-s11-ml3-dead-retired-verbs": [
+    "How do I teach students to eliminate dead verbs?",
+    "Mini-lesson on retired or overused verbs",
+    "How do I help students stop using got, put, make, do in their writing?",
+    "Lesson on identifying and replacing dead verbs",
+    "How do I teach students to kill vague verbs like 'get' or 'put'?",
+    "Dead verbs mini-lesson",
+    "How do I teach 8th graders to replace tired verbs with precise action verbs?"
+  ],
+  "lib-lww312-s11-ml4-minimize-helping-linking-verbs": [
+    "How do I teach students to minimize helping and linking verbs?",
+    "Mini-lesson on reducing 'to be' and 'to have' verbs",
+    "How do I help students eliminate is, are, was, has from sentences?",
+    "Lesson on strong action verbs over linking verbs",
+    "How do I teach students to revise to active verbs?",
+    "Minimize-helping-verbs mini-lesson",
+    "How do I teach students to replace forms of 'to be' with active verbs?"
+  ],
+  "lib-lww312-s11-ml5-close-up-details": [
+    "How do I teach students to add close-up details?",
+    "Mini-lesson on close-up details for vivid word choice",
+    "How do I help students use precise visual details in their writing?",
+    "Lesson on close-up descriptions for word choice",
+    "How do I teach students to paint a picture with specific details?",
+    "Close-up details mini-lesson for Word Choice trait",
+    "How do I help students add zoomed-in details that create reader visualization?"
+  ],
+  "lib-lww312-s12-ml1-assess-sentence-length": [
+    "How do I teach students to assess sentence-length variety?",
+    "Mini-lesson on short-medium-long sentence analysis",
+    "How do I help students see whether their sentences are varied?",
+    "Lesson on using a slinky to stretch through sentence lengths",
+    "How do I teach students to check their sentence fluency?",
+    "Sentence-length assessment mini-lesson",
+    "How do I help students hear the sameness in their sentence lengths?"
+  ],
+  "lib-lww312-s12-ml2-fluency-narrative": [
+    "How do I teach sentence fluency for narrative writing?",
+    "Mini-lesson on short vs. long sentences in stories",
+    "How do I help students use short sentences for intensity in narratives?",
+    "Lesson on matching sentence length to narrative impact",
+    "How do I teach students when to chop sentences for dramatic effect in stories?",
+    "Narrative sentence fluency mini-lesson",
+    "How do I help students vary sentence length in fiction?"
+  ],
+  "lib-lww312-s12-ml3-vary-by-information": [
+    "How do I teach students to vary sentences based on information?",
+    "Mini-lesson on matching sentence length to the type of information",
+    "How do I help students use long sentences for explanation and short sentences for impact?",
+    "Lesson on intentional sentence-length variation in informative writing",
+    "How do I teach students when to write long vs short sentences?",
+    "Information-driven sentence variety mini-lesson",
+    "How do I help students decide sentence length based on content?"
+  ],
+  "lib-lww312-s12-ml4-sophistication-persuasive": [
+    "How do I teach students to add sentence sophistication to persuasive writing?",
+    "Mini-lesson on sophisticated persuasive sentences",
+    "How do I help students use imperative and declarative sentences in arguments?",
+    "Lesson on advanced sentence moves for persuasive essays",
+    "How do I teach high schoolers to add sentence-craft to their arguments?",
+    "Sophisticated-persuasive-sentences mini-lesson",
+    "How do I help students use mature sentence structures in argumentative writing?"
+  ],
+  "lib-lww312-s12-ml5-long-efficient-sentences": [
+    "How do I teach students to write long but efficient sentences?",
+    "Mini-lesson on long, efficient sentences",
+    "How do I help students add information without adding fluff?",
+    "Lesson on long and efficient vs long and inefficient sentences",
+    "How do I teach students to lengthen sentences with real content?",
+    "Long-efficient-sentences mini-lesson",
+    "How do I teach students that long sentences need more information, not filler?"
+  ],
+  "lib-lww312-s12-ml6-parallel-structure": [
+    "How do I teach students to use parallel structure in sentences?",
+    "Mini-lesson on rhythm and parallelism",
+    "How do I help students write items in a series with parallel patterns?",
+    "Lesson on parallel structure for sentence fluency",
+    "How do I teach students sentence rhythm and cadence?",
+    "Parallel-structure mini-lesson",
+    "How do I teach students to use matching patterns in a series?"
+  ],
+  "lib-lww312-s13-ml1-reread-hear-punctuation": [
+    "How do I teach students to reread to hear punctuation?",
+    "Mini-lesson on using your ear to punctuate correctly",
+    "How do I help students apply punctuation through whisper-reading?",
+    "Lesson on hearing punctuation for self-editing",
+    "How do I teach students to listen for punctuation as they self-edit?",
+    "Reread-to-hear-punctuation mini-lesson",
+    "How do I help students catch missing punctuation when they reread aloud?"
+  ],
+  "lib-lww312-s13-ml2-speaking-punctuation": [
+    "How do I teach students to think about punctuation while composing?",
+    "Mini-lesson on the Speaking Punctuation classroom procedure",
+    "How do I help students insert punctuation during conversations?",
+    "Lesson on voicing punctuation while talking",
+    "How do I get students to treat punctuation as a composing decision, not just editing?",
+    "Speaking-punctuation mini-lesson",
+    "How do I teach students to audibly punctuate their speech?"
+  ],
+  "lib-lww312-s13-ml3-indent-new-information": [
+    "How do I teach students when to indent a new paragraph?",
+    "Mini-lesson on the 3 reasons to indent",
+    "How do I help students know when to start a new paragraph?",
+    "Lesson on indenting for subtopic shifts",
+    "How do I teach students paragraph breaks beyond just sentence count?",
+    "Indent-for-new-information mini-lesson",
+    "How do I teach 4th graders when to break into a new paragraph?"
+  ],
+  "lib-lww312-s13-ml4-quotation-marks": [
+    "How do I teach students to use quotation marks for dialogue?",
+    "Mini-lesson on applying quotation marks around speech",
+    "How do I help students punctuate dialogue correctly?",
+    "Lesson on quotation mark rules for dialogue and quotes",
+    "How do I teach students to mark speakers in their writing?",
+    "Quotation-marks-for-dialogue mini-lesson",
+    "How do I teach students to punctuate character conversations?"
+  ],
+  "lib-k2-s1-ml1-share-stories-information": [
+    "How do I introduce writing to kindergarteners using stories and pictures?",
+    "Mini-lesson on the three ways writers share — words, pictures, writing",
+    "How do I launch writer's workshop with my K-2 class?",
+    "Lesson on oral storytelling, drawing, and writing as ways to share",
+    "How do I teach kindergarteners that drawing counts as writing?",
+    "Share-stories-and-information launch lesson",
+    "How do I help early writers see themselves as storytellers?"
+  ],
+  "lib-k2-s1-ml2-write-about-what-you-know": [
+    "How do I help K-2 students find writing topics they know about?",
+    "Mini-lesson on the 'lightbulb' topic concept for young writers",
+    "How do I teach kindergarteners to write about what they know?",
+    "Lesson on topic selection for K-2 writers",
+    "How do I help 1st graders think of topics to write about?",
+    "Lightbulb-topics mini-lesson for primary writers",
+    "How do I teach 2nd graders to pick topics from their personal experience?"
+  ],
+  "lib-k2-s1-ml4-abc-chart-topics": [
+    "How do I teach the ABC Chart topic brainstorm for K-2?",
+    "Mini-lesson on using the ABC Chart with 1st graders",
+    "How do I help 2nd graders generate 26 topics using the alphabet?",
+    "Lesson on the ABC Chart for K-2 topic generation",
+    "How do I use the alphabet chart with young writers to brainstorm?",
+    "ABC chart pre-writing for primary",
+    "How do I help kindergarteners find writing topics with an alphabet chart?"
+  ],
+  "lib-k2-s1-ml5-visual-writing-topics": [
+    "How do I use clip art to help K-2 writers remember topics?",
+    "Mini-lesson on visual topic lists for early writers",
+    "How do I help non-readers use visual reminders of writing topics?",
+    "Lesson on clip-art topic charts for kindergarten",
+    "How do I build a visual topic list with my K-2 class?",
+    "Visual writing topics mini-lesson for primary",
+    "How do I help emergent writers remember their brainstormed topics with pictures?"
+  ],
+  "lib-k2-s1-ml6-memories-picture-collage": [
+    "How do I help K-2 students create a memories picture collage?",
+    "Mini-lesson on using stickers and cut-outs for topic ideas",
+    "How do I use a collage to help early writers remember topics?",
+    "Lesson on the memories picture collage for K-2",
+    "How do I teach kindergarteners to find topics through pictures and stickers?",
+    "Picture-collage topic brainstorming for K-2",
+    "How do I help my 1st graders brainstorm writing topics with a visual collage?"
+  ],
+  "lib-k2-s1-ml7-springboard-off-texts": [
+    "How do I use picture books to help K-2 writers find topics?",
+    "Mini-lesson on springboarding topics from read-alouds",
+    "How do I help K-2 writers connect books to their own writing ideas?",
+    "Lesson on text-to-self connections for early writers",
+    "How do I use mentor texts to spark topics in 1st grade?",
+    "Springboard-off-texts mini-lesson for primary",
+    "How do I launch writing topics through picture book read-alouds?"
+  ],
+  "lib-k2-s1-ml8-writing-topics-chart-home": [
+    "How do I send a writing topics chart home with K-2 writers?",
+    "Mini-lesson on building an at-home writing topics chart",
+    "How do I get families involved in K-2 topic brainstorming?",
+    "Lesson on the Writing Topics Chart for home",
+    "Writing-topics-chart home lesson for K-2",
+    "How do I structure the Writing Topics Chart for kindergarteners?",
+    "How do I help K-2 writers gather topics with their family at home?"
+  ],
+  "lib-k2-s1-ml9-write-for-different-purposes": [
+    "How do I introduce the three writing purposes to K-2?",
+    "Mini-lesson on the P.I.E. Foldable for early writers",
+    "How do I teach kindergarteners about persuade, inform, entertain?",
+    "Lesson on the three reasons authors write for K-2",
+    "How do I launch PIE with my primary students?",
+    "Write-for-different-purposes mini-lesson for K-2",
+    "How do I introduce writing modes to my 1st graders?"
+  ],
+  "lib-k2-s1-ml9-pie-whole-class-writing": [
+    "How do I do a whole-class writing activity for persuade, inform, entertain?",
+    "Mini-lesson on whole-class PIE writing for K-2",
+    "How do I co-create persuade/inform/entertain examples with K-2?",
+    "Lesson on whole-class modeling of the three writing purposes",
+    "Whole-class PIE writing mini-lesson for primary",
+    "How do I demonstrate the three writing modes using a shared K-2 topic?",
+    "How do I teach K-2 students PIE through whole-class writing?"
+  ],
+  "lib-k2-s1-ml10-write-to-audience": [
+    "How do I teach K-2 writers about audience?",
+    "Mini-lesson on writing to an audience for early writers",
+    "How do I help kindergarteners think about who they're writing to?",
+    "Lesson on audience awareness for K-2",
+    "How do I motivate K-2 writers by giving them real audiences?",
+    "Write-to-an-audience mini-lesson for primary",
+    "How do I teach K-2 students to consider who will read their writing?"
+  ],
+  "lib-k2-s2-ml1-define-a-writer": [
+    "How do I teach kindergarteners what a writer is?",
+    "Mini-lesson on defining 'writer' for K-2",
+    "How do I introduce the concept of being a writer to K-2?",
+    "Lesson on who writes and what writers do for K-2",
+    "How do I launch identity as a writer for kindergarten?",
+    "Define-a-writer mini-lesson for K-2",
+    "How do I help my 1st graders see themselves as writers?"
+  ],
+  "lib-k2-s2-ml2-meet-for-daily-instruction": [
+    "How do I introduce the daily mini-lesson to kindergarteners?",
+    "Mini-lesson on launching writer's workshop for K-2",
+    "How do I set expectations for the mini-lesson in K-2?",
+    "Lesson on the K-2 writer's workshop meeting routine",
+    "How do I teach 1st graders what to do during mini-lessons?",
+    "Meet-for-daily-instruction mini-lesson for K-2",
+    "Introducing the writer's workshop mini-lesson format to K-2"
+  ],
+  "lib-k2-s2-ml3-define-purpose-of-workshop": [
+    "How do I introduce writing workshop time to kindergarteners?",
+    "Mini-lesson on defining 'workshop' for K-2 writers",
+    "How do I transition K-2 students to independent writing time?",
+    "Lesson on the 'Let's go be writers' code phrase",
+    "How do I explain the purpose of writing time to K-2?",
+    "Define-purpose-of-workshop mini-lesson for primary",
+    "How do I teach 1st graders what to do during independent writing time?"
+  ],
+  "lib-k2-s2-ml4-authors-chair": [
+    "How do I run author's chair for K-2?",
+    "Mini-lesson on K-2 author's chair procedures",
+    "How do I introduce sharing time to kindergarteners?",
+    "Lesson on 'Wrap it up' and Author's Chair for primary",
+    "Author's chair mini-lesson for K-2",
+    "How do I structure end-of-workshop sharing for young writers?",
+    "How do I explain author's chair to my 1st graders?"
+  ],
+  "lib-k2-s2-ml5-three-parts-of-workshop": [
+    "How do I review the three parts of writer's workshop with K-2?",
+    "Mini-lesson recap of mini-lesson + writing time + author's chair for K-2",
+    "How do I refresh writer's workshop routines for young writers?",
+    "Lesson on the K-2 writer's workshop cycle",
+    "Review of writer's workshop structure for 2nd grade",
+    "How do I re-teach writing routines in K-2 when they need it?",
+    "Cumulative review of writer's workshop for primary writers"
+  ],
+  "lib-k2-s2-ml6-help-tent": [
+    "What do K-2 students do when they're stuck and need help?",
+    "Mini-lesson on the Help! Tent for K-2 writers",
+    "How do I set up a help system for kindergarten writers?",
+    "Lesson on the Help Tent procedure for primary",
+    "How do I manage help requests during K-2 writing time?",
+    "Help Tent mini-lesson for K-2",
+    "How do I teach 1st graders what to do when they need help but I'm busy?"
+  ],
+  "lib-k2-s2-ml7-teacher-writer-conferences": [
+    "How do I conference with K-2 writers during writing time?",
+    "Mini-lesson on K-2 teacher-writer meetings",
+    "How do I hold group writing conferences with kindergarteners?",
+    "Lesson on introducing conferences to K-2 writers",
+    "How do I structure writing conferences for my K-2 class?",
+    "Teacher-writer meetings mini-lesson for primary",
+    "How do I conference with small groups of young writers?"
+  ],
+  "lib-k2-s3-ml1-introduce-writers-notebook": [
+    "How do I introduce writer's notebooks to K-2 students?",
+    "Mini-lesson on launching writer's notebooks for kindergarteners",
+    "How do I make writer's notebooks feel special to K-2 writers?",
+    "Lesson on introducing notebooks to K-2 writers",
+    "How do I set up K-2 writer's notebooks?",
+    "Introduce-writers-notebook mini-lesson for primary",
+    "How do I unveil writer's notebooks to my 1st graders?"
+  ],
+  "lib-k2-s4-ml3-make-space-for-revision": [
+    "How do I teach K-2 students to make space for revision?",
+    "Mini-lesson on carets, strikethroughs, and spider legs for K-2",
+    "How do I help primary writers add details without recopying?",
+    "Lesson on revision marks for K-2",
+    "How do I teach 1st graders to insert new words and sentences?",
+    "Make-space-for-revision mini-lesson for K-2",
+    "How do I teach young writers to revise without erasing?"
+  ],
+  "lib-k2-s4-ml4-tic-tac-toe-and-ml5-buddy-conferences": [
+    "How do I gamify revision for K-2 with Tic-Tac-Toe?",
+    "Mini-lesson on Revision Tic-Tac-Toe for K-2",
+    "How do I use Tic-Tac-Toe to motivate K-2 revision?",
+    "Lesson on K-2 buddy conferences for writing feedback",
+    "How do I structure peer conferences for primary writers?",
+    "Revision Tic-Tac-Toe mini-lesson for K-2",
+    "How do I help K-2 writers revise with a game and then buddy-share?"
+  ],
+  "lib-k2-s5-ml1-environmental-print": [
+    "How do I use environmental print to teach K-2 spelling?",
+    "Mini-lesson on using the classroom to spell words",
+    "How do I teach kindergarteners to find words around the room?",
+    "Lesson on environmental print as a spelling tool",
+    "How do I teach K-2 students to look at posters and walls for spellings?",
+    "Environmental-print mini-lesson for primary spellers",
+    "How do I support K-2 spelling with classroom words and labels?"
+  ],
+  "lib-k2-s5-ml2-word-charts": [
+    "How do I introduce word charts for K-2 spelling support?",
+    "Mini-lesson on topic-based word charts for kindergarteners",
+    "How do I use a Birthday or Family word chart with K-2 writers?",
+    "Lesson on word charts for early spellers",
+    "How do I help K-2 students use picture-based word charts?",
+    "Word-charts spelling mini-lesson for K-2",
+    "How do I set up topic word charts for my 1st graders?"
+  ],
+  "lib-k2-s5-ml3-personal-spelling-dictionary": [
+    "How do I set up a personal spelling dictionary for K-2?",
+    "Mini-lesson on the Personal Spelling Dictionary for early writers",
+    "How do I individualize spelling support for K-2 with an ABC Chart?",
+    "Lesson on building a per-student personal dictionary",
+    "How do I help K-2 writers keep their tricky words on an ABC Chart?",
+    "Personal spelling dictionary for K-2",
+    "How do I support K-2 writers who repeatedly misspell the same words?"
+  ],
+  "lib-k2-s5-ml4-stretch-words-three-steps": [
+    "How do I teach kindergarteners to stretch out words for spelling?",
+    "Mini-lesson on the three-step word stretching strategy",
+    "How do I teach K-2 writers to say-write-keep writing?",
+    "Lesson on stretching unknown words in K-2",
+    "How do I help K-2 writers sound out unknown words?",
+    "Stretch-words-in-three-steps mini-lesson for primary",
+    "How do I teach K-2 students to phonetically spell unknown words?"
+  ],
+  "lib-k2-s5-ml5-spelling-problem-solver": [
+    "How do I teach K-2 students to become spelling problem-solvers?",
+    "Mini-lesson on combining all K-2 spelling strategies",
+    "How do I help K-2 writers try multiple strategies when they don't know a spelling?",
+    "Lesson on being a spelling problem-solver for K-2",
+    "How do I teach 1st graders to try multiple spelling strategies?",
+    "Spelling problem-solver mini-lesson for K-2",
+    "How do I help my K-2 writers tackle unknown words independently?"
+  ],
+  "lib-k2-s5-ml6-squiggle-lines": [
+    "How do I teach K-2 students to mark unsure spellings?",
+    "Mini-lesson on squiggle lines for K-2 writers",
+    "How do I help kindergarteners flag words they guessed at?",
+    "Lesson on squiggle-line spelling marks for early writers",
+    "How do I teach K-2 writers to indicate spelling uncertainty?",
+    "Squiggle-lines mini-lesson for K-2",
+    "How do I show primary writers how to mark tricky words?"
+  ],
+  "lib-k2-s5-ml7-check-squiggle-spellings": [
+    "How do I teach K-2 writers to fix squiggle-line spellings later?",
+    "Mini-lesson on checking approximated spellings in K-2",
+    "How do I help K-2 writers verify their guesses with a dictionary?",
+    "Lesson on the second step after marking squiggles",
+    "How do I teach K-2 students to look up flagged spellings?",
+    "Check-squiggle-spellings mini-lesson for K-2",
+    "How do I follow up squiggle-line guesses with K-2 writers?"
+  ],
+  "lib-k2-s5-ml8-take-spelling-risks": [
+    "How do I celebrate K-2 students who take spelling risks?",
+    "Mini-lesson on encouraging big-word spelling attempts",
+    "How do I motivate K-2 writers to try tricky words?",
+    "Lesson on spelling risk-taking for K-2",
+    "How do I praise K-2 writers for attempting hard words?",
+    "Spelling risk-taking mini-lesson for primary",
+    "How do I build courage in K-2 writers to spell big words?"
+  ],
+  "lib-k2-s6-ml1-define-traits-visually-verbally": [
+    "How do I introduce the 6 Traits to K-2?",
+    "Mini-lesson on defining each writing trait for K-2",
+    "How do I launch the 6 Traits in kindergarten?",
+    "Lesson on introducing Ideas, Organization, Voice for K-2",
+    "How do I use visual icons to teach the 6 Traits in K-2?",
+    "6 Traits definition mini-lesson for primary",
+    "How do I introduce the writing traits to 1st graders?"
+  ],
+  "lib-k2-s6-ml2-mentor-text-examples": [
+    "How do I use mentor texts to introduce the 6 Traits to K-2?",
+    "Mini-lesson on revealing each trait through K-2 mentor texts",
+    "How do I use picture books to teach writing traits in K-2?",
+    "Lesson on mentor-text examples for K-2 traits",
+    "How do I show writing traits in action for K-2?",
+    "Mentor-text 6 Traits mini-lesson for primary",
+    "How do I use read-alouds to teach K-2 students about writing traits?"
+  ],
+  "lib-k2-s6-ml3-trait-songs": [
+    "How do I use songs to teach the 6 Traits to K-2?",
+    "Mini-lesson on trait-based songs for kindergarten",
+    "How do I teach writing traits with music in K-2?",
+    "Lesson on K-2 trait songs for remembering traits",
+    "How do I use nursery-rhyme tunes to teach the 6 Traits?",
+    "Trait-songs mini-lesson for K-2",
+    "How do I make the 6 Traits memorable for my 1st graders through music?"
+  ],
+  "lib-k2-s6-ml4-trait-characters": [
+    "How do I use trait characters to teach the 6 Traits to K-2?",
+    "Mini-lesson on Ike Ideas, Oliver Organization for K-2",
+    "How do I bring the writing traits to life with characters?",
+    "Lesson on trait characters for primary students",
+    "How do I personify the 6 Traits for K-2 writers?",
+    "Trait-characters mini-lesson for K-2",
+    "How do I teach abstract writing traits with fictional characters?"
+  ],
+  "lib-k2-s7-ml1-part1-build-rubric-concept": [
+    "How do I introduce the concept of a rubric to K-2?",
+    "Mini-lesson on building a simple rubric for K-2",
+    "How do I teach kindergarteners what a rubric is?",
+    "Lesson on the Clean Desk rubric for K-2",
+    "How do I use a familiar example to introduce rubrics?",
+    "Build-a-simple-rubric mini-lesson for K-2",
+    "How do I explain scoring criteria to kindergarteners?"
+  ],
+  "lib-k2-s7-ml1-part2-build-writing-rubric": [
+    "How do I co-build a writing rubric with K-2 students?",
+    "Mini-lesson on K-2 writing rubric creation using anchor samples",
+    "How do I help 1st graders make a class writing rubric?",
+    "Lesson on building a K-2 writing rubric from sample writings",
+    "How do I introduce level-based writing expectations for K-2?",
+    "Build-a-writing-rubric mini-lesson for K-2",
+    "How do I teach K-2 students to score writing using a class-built rubric?"
+  ],
+  "lib-k2-s7-rubric-insights-holistic-to-analytic": [
+    "How do I grow a K-2 writing rubric as the year progresses?",
+    "Mini-lesson on shifting from holistic to analytic rubrics in K-2",
+    "How do I upgrade the K-2 writing rubric without scrapping it?",
+    "Lesson on keeping one rubric all year in K-2 but adding levels",
+    "How do I teach K-2 writers that their rubric grows with their skill?",
+    "Rubric-insights for K-2 holistic-to-analytic",
+    "How do I expand the K-2 writing rubric across the year?"
+  ],
+  "lib-k2-s7-ml2-update-rubric-frequently": [
+    "How do I update the K-2 writing rubric as I teach new skills?",
+    "Mini-lesson on raising K-2 rubric expectations",
+    "How do I hold K-2 writers accountable via the growing rubric?",
+    "Lesson on adding new criteria to the K-2 writing rubric",
+    "How do I refresh the K-2 rubric each month?",
+    "Growing-rubric mini-lesson for K-2",
+    "How do I keep the K-2 writing rubric aligned with what I've taught?"
+  ],
+  "lib-k2-s8-ml1-apply-color-details": [
+    "How do I teach K-2 writers to add color details to their drawings?",
+    "Mini-lesson on color details for K-2 pictorial writing",
+    "How do I help kindergarteners use colors to tell their story?",
+    "Lesson on adding color details to K-2 writing pictures",
+    "How do I teach 1st graders to communicate with color in drawings?",
+    "Apply-color-details mini-lesson for K-2",
+    "How do I help K-2 writers use color to give readers more info?"
+  ],
+  "lib-k2-s8-ml2-true-to-life-color-details": [
+    "How do I teach K-2 writers to use accurate (true-to-life) colors?",
+    "Mini-lesson on realistic color details for K-2",
+    "How do I help kindergarteners color objects like they look in real life?",
+    "Lesson on true-to-life color choice for K-2",
+    "How do I teach K-2 students to use realistic colors to avoid reader confusion?",
+    "True-to-life color details mini-lesson for K-2",
+    "How do I help 1st graders use accurate colors in their pictures?"
+  ],
+  "lib-k2-s8-ml3-create-self-portraits": [
+    "How do I teach K-2 writers to draw self-portraits with detail?",
+    "Mini-lesson on drawing detailed people in K-2",
+    "How do I teach kindergarteners to move beyond stick figures?",
+    "Lesson on creating detailed self-portraits in K-2",
+    "How do I help K-2 writers draw themselves with features and color?",
+    "Self-portrait mini-lesson for K-2 drawing",
+    "How do I teach 1st graders to draw people with real detail?"
+  ],
+  "lib-k2-s8-ml4-draw-people-in-action": [
+    "How do I teach K-2 writers to draw people in action?",
+    "Mini-lesson on drawing characters in motion in K-2",
+    "How do I help kindergarteners draw running, jumping, playing figures?",
+    "Lesson on action drawings for K-2",
+    "How do I teach K-2 students to position arms and legs for action?",
+    "Draw-people-in-action mini-lesson for K-2",
+    "How do I help K-2 writers show motion in their pictures?"
+  ],
+  "lib-k2-s8-ml5-see-shapes-in-hard-to-draw-objects": [
+    "How do I teach K-2 writers to draw hard objects using shapes?",
+    "Mini-lesson on shape-based drawing for K-2",
+    "How do I help kindergarteners draw tricky objects?",
+    "Lesson on breaking objects into shapes for K-2 drawing",
+    "How do I teach K-2 writers to see rectangles, circles, and lines in objects?",
+    "See-shapes-in-hard-objects mini-lesson for K-2",
+    "How do I teach 1st graders to draw anything using basic shapes?"
+  ],
+  "lib-k2-s8-ml6-add-setting-details": [
+    "How do I teach K-2 writers to add setting details to drawings?",
+    "Mini-lesson on 'where' details in K-2 pictorial writing",
+    "How do I help kindergarteners add backgrounds to their pictures?",
+    "Lesson on adding setting details for K-2",
+    "How do I teach K-2 students to show where their story is happening?",
+    "Setting details mini-lesson for K-2",
+    "How do I help 1st graders draw a complete scene with setting?"
+  ],
+  "lib-k2-s8-ml7-adjust-size-proportion-details": [
+    "How do I teach K-2 writers to use accurate proportions in drawings?",
+    "Mini-lesson on size and proportion for K-2",
+    "How do I help kindergarteners draw people and objects the right size?",
+    "Lesson on proportion details for K-2 pictures",
+    "How do I teach K-2 students why a person shouldn't be taller than a house?",
+    "Size/proportion mini-lesson for K-2 drawing",
+    "How do I help K-2 writers fix proportion errors in their drawings?"
+  ],
+  "lib-k2-s8-ml8-draw-feelings-on-faces": [
+    "How do I teach K-2 writers to draw feelings on faces?",
+    "Mini-lesson on facial expressions for K-2 pictorial writing",
+    "How do I help kindergarteners show emotion in their drawings?",
+    "Lesson on drawing happy, sad, angry faces for K-2",
+    "How do I teach K-2 writers to use facial expressions to show how a character feels?",
+    "Draw-feelings-on-faces mini-lesson for K-2",
+    "How do I help 1st graders communicate feelings through drawn faces?"
+  ],
+  "lib-k2-s8-ml10-incorporate-number-details": [
+    "How do I teach K-2 writers to add number details to drawings?",
+    "Mini-lesson on number details in K-2 pictures",
+    "How do I help kindergarteners add bus numbers, addresses, ages to pictures?",
+    "Lesson on incorporating numbers for K-2 pictorial writing",
+    "How do I teach K-2 students to use numbers for detail?",
+    "Number-details mini-lesson for K-2 drawing",
+    "How do I help 1st graders add quantitative detail to their pictures?"
+  ],
+  "lib-k2-s8-ml11-insert-name-proper-noun-details": [
+    "How do I teach K-2 writers to add name and proper noun details?",
+    "Mini-lesson on name details for K-2 pictorial writing",
+    "How do I help kindergarteners add brand names, store names, signs?",
+    "Lesson on proper noun details for K-2 drawings",
+    "How do I teach K-2 students to label objects with specific names?",
+    "Name-details mini-lesson for K-2",
+    "How do I help 1st graders add specific names like 'Nike' or 'Walmart' to pictures?"
+  ],
+  "lib-k2-s8-ml12-revise-to-add-more-details": [
+    "How do I teach K-2 writers to revise their drawings by adding more details?",
+    "Mini-lesson on K-2 picture revision",
+    "How do I help kindergarteners add details after their first draft?",
+    "Lesson on drawing revision for K-2",
+    "How do I teach K-2 students to return to a picture and add more?",
+    "Revise-to-add-details mini-lesson for K-2",
+    "How do I get K-2 writers to expand a quick drawing into a detailed picture?"
+  ],
+  "lib-k2-s8-ml13-tell-stories-in-three-parts": [
+    "How do I teach K-2 writers to tell stories in three parts?",
+    "Mini-lesson on beginning-middle-end stories for K-2",
+    "How do I help kindergarteners turn a single drawing into a three-part story?",
+    "Lesson on three-part stories for K-2 (beginning, middle, end)",
+    "How do I teach K-2 students to extend a picture into a full story?",
+    "Tell-stories-in-three-parts mini-lesson for K-2",
+    "How do I help 1st graders draw before and after pictures to build a story?"
+  ],
+  "lib-k2-s11-ml1-directionality": [
+    "How do I teach K-2 writers directionality?",
+    "Mini-lesson on left-to-right, top-to-bottom writing for K-2",
+    "How do I help kindergarteners learn print direction?",
+    "Lesson on return-sweep and directionality for K-2",
+    "How do I teach K-2 students the mechanics of moving across and down the page?",
+    "Apply-directionality mini-lesson for primary",
+    "How do I introduce print directionality to emergent writers?"
+  ],
+  "lib-k2-s11-ml2-letters-words-sentences": [
+    "How do I teach K-2 writers the difference between letters, words, and sentences?",
+    "Mini-lesson on letters vs words vs sentences for K-2",
+    "How do I help kindergarteners understand what makes a word and what makes a sentence?",
+    "Lesson on letter/word/sentence distinction for K-2",
+    "How do I use magnetic letters to teach sentence building?",
+    "Letters-words-sentences mini-lesson for K-2",
+    "How do I teach 1st graders the building blocks of writing?"
+  ],
+  "lib-k2-s11-intro-monthly-scaffold-part2": [
+    "How do I introduce a new sentence skill each month for K-2?",
+    "Mini-lesson on monthly sentence skill scaffolding for K-2",
+    "How do I pace K-2 sentence instruction across the year?",
+    "Lesson on the conventions toolbox/toolbelt for K-2",
+    "How do I introduce word-spacing, capitals, and end marks gradually in K-2?",
+    "Monthly sentence skill scaffold for K-2",
+    "How do I structure a year of K-2 sentence writing lessons?"
+  ],
+  "lib-k2-s11-ml3-separate-words-spaces": [
+    "How do I teach K-2 writers to put spaces between words?",
+    "Mini-lesson on word spacing for K-2",
+    "How do I help kindergarteners leave spaces between their words?",
+    "Lesson on separating words with spaces for K-2",
+    "How do I teach K-2 students to finger-space their words?",
+    "Word-spaces mini-lesson for K-2",
+    "How do I help 1st graders use proper word spacing?"
+  ],
+  "lib-k2-s11-ml4-readability-spaces": [
+    "How do I teach K-2 writers why spacing matters to the reader?",
+    "Mini-lesson on readability through word spacing",
+    "How do I help kindergarteners understand why they need to space their writing?",
+    "Lesson on word-spacing readability for K-2 (domino demo)",
+    "How do I teach K-2 students to space so their writing can be read back?",
+    "Readability-spaces mini-lesson for K-2",
+    "How do I use dominoes to teach word-spacing to K-2?"
+  ],
+  "lib-k2-s11-ml5-stretch-words-sentences": [
+    "How do I teach K-2 writers to stretch a label into a sentence?",
+    "Mini-lesson on expanding a word into a complete sentence",
+    "How do I help K-2 students move from single-word labels to sentences?",
+    "Lesson on stretching words into sentences for K-2",
+    "How do I teach K-2 students to turn a word label into a full thought?",
+    "Stretch-words-into-sentences mini-lesson for K-2",
+    "How do I help 1st graders write complete sentences from labels?"
+  ],
+  "lib-k2-s11-ml6-capital-letters": [
+    "How do I teach K-2 writers to begin sentences with a capital letter?",
+    "Mini-lesson on sentence-beginning capitals for K-2",
+    "How do I help kindergarteners capitalize the first word in a sentence?",
+    "Lesson on sentence capitals for K-2",
+    "How do I teach K-2 students when to use a capital letter?",
+    "Capital-at-beginning-of-sentence mini-lesson for K-2",
+    "How do I help 1st graders start sentences with capitals?"
+  ],
+  "lib-k2-s11-ml7-reread-hear-punctuation": [
+    "How do I teach K-2 writers to hear punctuation when they reread?",
+    "Mini-lesson on end-mark voice impact for K-2",
+    "How do I help K-2 writers understand period vs. exclamation vs. question mark?",
+    "Lesson on hearing punctuation for early writers",
+    "How do I teach K-2 students to reread for end marks?",
+    "Reread-to-hear-punctuation mini-lesson for K-2",
+    "How do I help 1st graders catch missing end marks?"
+  ],
+  "lib-k2-s11-ml8-find-writer-mistakes": [
+    "How do I teach K-2 writers to self-edit?",
+    "Mini-lesson on finding your own writing mistakes for K-2",
+    "How do I help kindergarteners use whisper phones to reread?",
+    "Lesson on self-editing for K-2",
+    "How do I teach K-2 students to slowly reread their work and catch errors?",
+    "Find-writer-mistakes mini-lesson for K-2",
+    "How do I help 1st graders edit their own writing?"
+  ],
+  "lib-k2-s11-ml9-focused-edits": [
+    "How do I teach K-2 writers to edit one skill at a time?",
+    "Mini-lesson on X-Ray Editing with color-coded glasses for K-2",
+    "How do I help K-2 students focus on one convention at a time when editing?",
+    "Lesson on focused editing for K-2",
+    "How do I use colored glasses to focus K-2 editing?",
+    "Focused-edits mini-lesson for K-2",
+    "How do I teach 1st graders to edit for spaces, capitals, punctuation separately?"
+  ],
+  "lib-k2-s11-ml11-conventions-characters": [
+    "How do I review conventions with K-2 using superhero characters?",
+    "Mini-lesson on conventions characters for K-2",
+    "How do I help K-2 students remember convention rules?",
+    "Lesson on convention characters/superheroes for K-2 review",
+    "How do I review capital-space-punctuation with K-2?",
+    "Conventions-characters mini-lesson for K-2",
+    "How do I refresh conventions for 1st graders with characters?"
+  ],
+  "lib-k2-s11-ml12-conventions-court": [
+    "How do I reinvigorate conventions in K-2 with a Conventions Court?",
+    "Mini-lesson on the Conventions Court for K-2",
+    "How do I motivate K-2 writers to use conventions during drafting?",
+    "Lesson on crowning students for convention use in K-2",
+    "How do I create a reward system for K-2 conventions?",
+    "Conventions-court mini-lesson for K-2",
+    "How do I re-energize K-2 convention use mid-year?"
+  ],
+  "lib-k2-s12-ml1-vary-sentence-beginnings": [
+    "How do I teach K-2 writers to vary sentence beginnings?",
+    "Mini-lesson on mixing up sentence starters for K-2",
+    "How do I help K-2 students stop starting every sentence with 'I'?",
+    "Lesson on varied sentence beginnings for K-2",
+    "How do I teach 1st graders to avoid repetitive sentence structures?",
+    "Vary-sentence-beginnings mini-lesson for K-2",
+    "How do I help K-2 writers break out of I-I-I sentence patterns?"
+  ],
+  "lib-k2-s12-ml2-tower-test-run-ons": [
+    "How do I teach K-2 writers to avoid run-on sentences?",
+    "Mini-lesson on the Tower Test for K-2",
+    "How do I help K-2 students see when their sentence is too long?",
+    "Lesson on the tower test to catch run-ons",
+    "How do I teach K-2 students to stop stacking 'and' after 'and'?",
+    "Tower-test mini-lesson for K-2 run-ons",
+    "How do I help 1st graders break up run-on sentences?"
+  ],
+  "lib-k2-s12-ml3-supersize-sentence-lengths": [
+    "How do I teach K-2 writers to expand short sentences?",
+    "Mini-lesson on supersizing sentences for K-2",
+    "How do I help kindergarteners add more detail to their sentences?",
+    "Lesson on lengthening sentences for K-2",
+    "How do I teach K-2 students to vary sentence length with more detail?",
+    "Supersize-sentence-lengths mini-lesson for K-2",
+    "How do I help K-2 writers turn short choppy sentences into longer detailed ones?"
+  ],
+  "lib-k2-s12-ml4-dice-game": [
+    "How do I teach K-2 writers to revise sentences with the Dice Game?",
+    "Mini-lesson on the Dice Game for K-2 sentence expansion",
+    "How do I gamify sentence revision in K-2?",
+    "Lesson on dice-game sentence expansion for K-2",
+    "How do I use a die to motivate K-2 writers to add words?",
+    "Dice-Game sentence mini-lesson for K-2",
+    "How do I help K-2 students elongate sentences by rolling dice?"
+  ],
+  "lib-k2-s12-ml6-vary-sentence-types": [
+    "How do I teach K-2 writers to vary sentence types (statement, question, exclamation)?",
+    "Mini-lesson on varying sentence types for K-2",
+    "How do I help K-2 students use exclamation points and question marks in writing?",
+    "Lesson on varied sentence types for K-2",
+    "How do I teach K-2 writers to include excitement and questions in their writing?",
+    "Vary-sentence-types mini-lesson for K-2",
+    "How do I help 1st graders use different sentence types for different effects?"
+  ],
+  "lib-k2-s13-ml2-colorful-sentences": [
+    "How do I motivate K-2 writers to write more sentences?",
+    "Mini-lesson on colorful-pen sentence writing for K-2",
+    "How do I help K-2 students write more sentences with colorful pens?",
+    "Lesson on using a different pen color per sentence in K-2",
+    "How do I make sentence writing more motivating for K-2?",
+    "Colorful-sentences mini-lesson for K-2",
+    "How do I help 1st graders draft multiple sentences with color-pen switching?"
+  ],
+  "lib-k2-s13-ml3-sticky-dot-details": [
+    "How do I teach K-2 writers to develop one idea deeply?",
+    "Mini-lesson on sticky-dot details for K-2 elaboration",
+    "How do I help K-2 students add multiple sentences about one idea?",
+    "Lesson on sticky dots to organize K-2 elaboration",
+    "How do I teach K-2 students to elaborate per idea, not just add ideas?",
+    "Sticky-dot-details mini-lesson for K-2",
+    "How do I help K-2 writers add more details per topic instead of jumping topics?"
+  ],
+  "lib-k2-s13-ml5-name-proper-noun-details": [
+    "How do I teach K-2 writers to add proper noun details?",
+    "Mini-lesson on name details for K-2 drafting",
+    "How do I help K-2 students use specific names in their sentences?",
+    "Lesson on adding name/proper noun details for K-2",
+    "How do I teach K-2 writers to use brand names and place names?",
+    "Name-details mini-lesson for K-2 sentence writing",
+    "How do I help K-2 writers add realistic specifics like names to stories?"
+  ],
+  "lib-k2-s13-ml6-number-details": [
+    "How do I teach K-2 writers to add number details in sentences?",
+    "Mini-lesson on number details for K-2 elaboration",
+    "How do I help K-2 students include ages, scores, or times in their sentences?",
+    "Lesson on adding number details to K-2 writing",
+    "How do I teach K-2 writers to include numbers for specificity?",
+    "Number-details sentence mini-lesson for K-2",
+    "How do I help K-2 students make their writing more factual with numbers?"
+  ],
+  "lib-k2-s13-ml7-specific-color-details": [
+    "How do I teach K-2 writers to use specific color words?",
+    "Mini-lesson on exact color words for K-2",
+    "How do I help K-2 students move beyond 'blue' to 'turquoise' or 'navy'?",
+    "Lesson on specific color vocabulary for K-2",
+    "How do I teach K-2 writers to paint pictures with precise color words?",
+    "Specific-color-details mini-lesson for K-2",
+    "How do I help 1st graders use 64-crayon color words?"
+  ],
+  "lib-k2-s13-ml8-sensory-comparisons": [
+    "How do I teach K-2 writers to add sensory comparisons?",
+    "Mini-lesson on sensory details and similes for K-2",
+    "How do I help K-2 students compare unfamiliar things to familiar things?",
+    "Lesson on sensory comparisons for K-2 (sight, sound, taste, touch, smell)",
+    "How do I teach K-2 writers to use 'like' comparisons in their writing?",
+    "Sensory-comparisons mini-lesson for K-2",
+    "How do I help K-2 students paint pictures with sensory language?"
+  ],
+  "lib-k2-s13-ml9-feeling-words-actions": [
+    "How do I teach K-2 writers to add feeling details with actions?",
+    "Mini-lesson on feeling words and actions for K-2",
+    "How do I help K-2 students move beyond 'happy' and 'sad'?",
+    "Lesson on feeling words plus actions for K-2",
+    "How do I teach K-2 writers to show feelings through actions?",
+    "Feeling-words-actions mini-lesson for K-2",
+    "How do I help K-2 writers expand their feeling vocabulary and dramatize emotions?"
+  ],
+  "lib-k2-s13-ml10-omit-really-very": [
+    "How do I teach K-2 writers to drop 'really' and 'very'?",
+    "Mini-lesson on eliminating really/very from K-2 writing",
+    "How do I help K-2 students use stronger words instead of intensifiers?",
+    "Lesson on dropping 'really really really' in K-2",
+    "How do I teach K-2 writers to pick precise feeling words?",
+    "Omit-really-very mini-lesson for K-2",
+    "How do I help K-2 students replace 'very hungry' with 'starving'?"
+  ],
+  "lib-k2-s13-ml11-round-up-similar-ideas": [
+    "How do I teach K-2 writers to group similar ideas together?",
+    "Mini-lesson on rounding up similar ideas in K-2 writing",
+    "How do I help K-2 students organize scattered sentences?",
+    "Lesson on gathering like-ideas before drafting (K-2)",
+    "How do I teach K-2 writers to put related sentences near each other?",
+    "Round-up-similar-ideas mini-lesson for K-2",
+    "How do I help K-2 students organize their thoughts by topic?"
+  ],
+  "lib-k2-s13-ml13-narrative-when-where-beginnings": [
+    "How do I teach K-2 writers to start narratives with when & where?",
+    "Mini-lesson on narrative openings for K-2",
+    "How do I help K-2 students go beyond 'I' at the start of a story?",
+    "Lesson on when-and-where beginnings for K-2 narratives",
+    "How do I teach K-2 writers to set the scene in their narrative openings?",
+    "Narrative when-where beginnings mini-lesson for K-2",
+    "How do I help K-2 students open stories with setting details?"
+  ],
+  "lib-k2-s13-ml14-end-narratives-feelings": [
+    "How do I teach K-2 writers to end narratives with feelings?",
+    "Mini-lesson on feeling-based narrative conclusions for K-2",
+    "How do I help K-2 students give closure to their stories?",
+    "Lesson on closing narratives with emotions for K-2",
+    "How do I teach K-2 writers to end with how the character felt?",
+    "End-narrative-with-feelings mini-lesson for K-2",
+    "How do I help K-2 students wrap up their stories meaningfully?"
+  ],
+  "lib-k2-s13-ml15-how-to-procedures": [
+    "How do I teach K-2 writers to write how-to directions?",
+    "Mini-lesson on procedural/how-to writing for K-2",
+    "How do I help K-2 students write step-by-step instructions?",
+    "Lesson on how-to procedural writing for K-2",
+    "How do I teach K-2 writers to teach their readers a skill?",
+    "How-to-procedures mini-lesson for K-2",
+    "How do I help K-2 students write a simple recipe or instruction list?"
+  ],
+  "lib-k2-s13-ml16-opinion-what-why": [
+    "How do I teach K-2 writers to write opinion pieces?",
+    "Mini-lesson on opinion writing with what-and-why for K-2",
+    "How do I help K-2 students write about their opinions?",
+    "Lesson on the what/why structure for K-2 opinion writing",
+    "How do I teach K-2 writers to say what they think and why?",
+    "Opinion writing mini-lesson for K-2",
+    "How do I help K-2 students write persuasive pieces with reasons?"
+  ],
+  "lib-k2-s13-ml17-compare-contrast": [
+    "How do I teach K-2 writers to write compare-contrast pieces?",
+    "Mini-lesson on compare-contrast organization for K-2",
+    "How do I help K-2 students compare two things in writing?",
+    "Lesson on K-2 compare-contrast writing with T-Chart",
+    "How do I teach K-2 writers to find similarities and differences?",
+    "Compare-contrast mini-lesson for K-2",
+    "How do I help K-2 students organize a compare-contrast piece?"
+  ]
+}

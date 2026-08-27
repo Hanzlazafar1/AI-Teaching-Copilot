@@ -1,0 +1,7 @@
+# Test dependencies.
+#   pip3 install -r requirements.txt -r requirements-dev.txt
+#
+# pytest-asyncio is REQUIRED, not optional: pytest.ini sets
+# `asyncio_mode = auto`, and the suite will not collect without it.
+pytest>=8.0.0
+pytest-asyncio>=0.24.0

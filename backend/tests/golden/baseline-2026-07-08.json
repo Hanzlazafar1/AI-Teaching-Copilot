@@ -1,0 +1,1533 @@
+[
+  {
+    "id": "ml_topic_sentences_g4",
+    "message": "Give me a 4th grade scripted mini-lesson on topic sentences",
+    "prior_messages": [],
+    "response": {
+      "response": {
+        "skill_focus": "topic sentences",
+        "grade_level": "4",
+        "writing_mode": "Inform",
+        "step_1_introduce": "Writers, we've been working on crafting strong paragraphs. Today, we're focusing on topic sentences. A topic sentence helps readers understand the main idea of a paragraph. This strengthens our Organization trait by giving our writing a clear focus.",
+        "step_2a_tell": "A topic sentence is the first sentence in a paragraph that tells the reader what the paragraph will be about. It's like a mini-introduction to the paragraph, setting the stage for the details that follow. Writers use topic sentences to ensure that all the sentences in the paragraph are related to a single idea. This keeps the writing organized and helps the reader follow along. To craft a strong topic sentence, think about the main point you want to convey in your paragraph. Ask yourself: What is the most important thing I want my reader to know? Once you have that main idea, you can write a sentence that clearly states it. Remember, a good topic sentence is specific enough to give a clear direction but broad enough to allow for supporting details.",
+        "step_2b_show": "Let's think about writing a paragraph about why recess is important. I close my eyes and think, 'What is the main point I want to make about recess?' I wonder, 'Is it about exercise, social skills, or taking a break?' I decide that the most important idea is that recess helps students recharge. So, I might start with a topic sentence like, 'Recess is essential because it gives students a chance to recharge their energy.' Hmm, let me try another one: 'Taking a break during the school day helps students focus better in class.' Actually, that doesn't work because it focuses more on class time than recess itself. I think to myself, 'Let's stick with the idea of recharging energy.' So, I'll go with, 'Recess is essential because it gives students a chance to recharge their energy.' This topic sentence sets up the paragraph to include details about how recess helps with energy levels, concentration, and mood.",
+        "step_3_interact": "Now, let's try crafting a topic sentence together. Help me with the next one. Imagine we're writing about the benefits of reading. What could be a strong topic sentence? Turn and talk to your partner about what the main idea of our paragraph should be. Back to me. This is some of what I heard from you: 'Reading expands our imagination' and 'Books can take us to new worlds.' Both are great ideas! Let's use 'Reading expands our imagination' as our topic sentence. Now, we can think about details that support this idea, like how reading introduces us to new characters and places.",
+        "step_4_close": "Today, we learned about crafting topic sentences. During your independent writing time, focus on creating strong topic sentences that clearly state the main idea of your paragraphs. Remember, a good topic sentence helps organize your writing and guides your reader. Let's go be writers!"
+      },
+      "intent": "mini_lesson",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "lww312-s8-ml15-stay-on-topic",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml15-informative-introductions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml13-persuasive-argumentative-introductions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml16-informative-conclusions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s12-ml3-vary-by-information",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s12-ml4-sophistication-persuasive",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml14-persuasive-argumentative-conclusions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml01-narrow-topics",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": 10.0,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "scripted_ml",
+        "grade_level": "4",
+        "writing_trait": null,
+        "writing_mode": null,
+        "strategy_name": "topic sentences",
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "SCRIPTED_ML",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": "4",
+        "mode": null,
+        "trait": null,
+        "skill": "topic sentences",
+        "skill_canonical": "topic sentences",
+        "last_response_type": "SCRIPTED_ML",
+        "last_request_type": "SCRIPTED_ML",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "edc99386-2c1a-4a65-905a-b38085c95b17"
+    }
+  },
+  {
+    "id": "ml_narrative_leads_g2",
+    "message": "Scripted mini-lesson on narrative leads for 2nd grade",
+    "prior_messages": [],
+    "response": {
+      "response": {
+        "skill_focus": "narrative leads",
+        "grade_level": "2",
+        "writing_mode": "Entertain",
+        "step_1_introduce": "Writers, we've been working on starting our stories in exciting ways. Today, we're focusing on narrative leads. This helps writers grab the reader's attention right from the start. This strengthens our Organization trait.",
+        "step_2a_tell": "Narrative leads are the beginnings of our stories. They set the stage for the reader by introducing when and where the story takes place, or by jumping right into the action. A strong lead can make your reader want to keep reading to find out what happens next. There are different types of leads you can use. For example, a 'when and where' lead gives the reader a clear picture of the setting, like 'On a sunny morning at the park...' Another type is an action lead, which starts with something happening, like 'The ball flew through the air as I raced to catch it.' By choosing the right lead, you can make your story more engaging and set the tone for the rest of your writing.",
+        "step_2b_show": "Let me show you how I think about writing a narrative lead. I close my eyes and imagine the scene I want to start with. Hmm, I wonder if I should start with a 'when and where' lead. I think to myself, 'It was a chilly evening in October, and the leaves crunched under my feet as I walked home.' That sets the scene nicely. But let me try an action lead instead. I wonder, 'What if I start with something happening?' I think to myself, 'The wind howled as I pulled my jacket tighter around me.' Hmm, actually, that doesn't work because it doesn't give enough context. Let me reconsider. I think I'll stick with the 'when and where' lead because it paints a clearer picture for the reader. Yes, 'It was a chilly evening in October, and the leaves crunched under my feet as I walked home.' That feels right.",
+        "step_3_interact": "Now, help me with the next one. Let's think about a story where a character is at the beach. How could we start it? Turn and talk to your partner about a 'when and where' lead for this story. Back to me. This is some of what I heard from you: 'On a hot summer day at the beach, the waves crashed against the shore.' That's a great start! Let's try using that lead to begin our story.",
+        "step_4_close": "Today we learned about narrative leads and how they can make our stories more engaging. During your independent writing time, try starting your story with a strong lead, like a 'when and where' or an action lead. Remember, a good lead sets the stage for your reader. Let's go be writers!"
+      },
+      "intent": "mini_lesson",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "k2-s1-ml1-share-stories-information",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s8-ml13-tell-stories-in-three-parts",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s13-ml13-narrative-when-where-beginnings",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s2-ml2-meet-for-daily-instruction",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s2-ml5-three-parts-of-workshop",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s9-ml2-match-words-to-pictures",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s13-ml5-name-proper-noun-details",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s8-ml3-create-self-portraits",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": 10.0,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "scripted_ml",
+        "grade_level": "2",
+        "writing_trait": null,
+        "writing_mode": "Entertain",
+        "strategy_name": "narrative leads",
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "SCRIPTED_ML",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": "2",
+        "mode": "Entertain",
+        "trait": null,
+        "skill": "narrative leads",
+        "skill_canonical": "narrative leads",
+        "last_response_type": "SCRIPTED_ML",
+        "last_request_type": "SCRIPTED_ML",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "c071c8c1-26c9-4190-86de-be91ac2b55cf"
+    }
+  },
+  {
+    "id": "ml_persuasive_g8",
+    "message": "8th grade scripted mini-lesson on persuasive writing",
+    "prior_messages": [],
+    "response": {
+      "response": {
+        "skill_focus": "persuasive writing",
+        "grade_level": "8",
+        "writing_mode": "Persuade",
+        "step_1_introduce": "Writers, we've been working on crafting strong arguments in our writing. Today, we're focusing on persuasive writing. This helps writers effectively convince their audience by presenting a clear and compelling argument. This strengthens our Organization trait.",
+        "step_2a_tell": "Persuasive writing is all about convincing your reader to agree with your point of view or take a specific action. To do this, you need a clear thesis statement that outlines your main argument, supported by strong reasons and evidence. A persuasive piece often starts with an introduction that grabs the reader's attention, provides background information, and states your thesis. It's important to acknowledge opposing viewpoints to show that you've considered other perspectives, which makes your argument stronger. In the body of your essay, you'll present your reasons in a logical order, often saving your strongest point for last to leave a lasting impression. Finally, your conclusion should restate your thesis, remind the reader of what's at stake, and possibly include a call to action, urging the reader to do something based on your argument.",
+        "step_2b_show": "Let's think about how to start a persuasive essay. I close my eyes and think about a topic I'm passionate about—let's say, the importance of school uniforms. I wonder how I can grab my reader's attention right away. Hmm, let me try starting with a hard-hitting fact: 'Did you know that schools with uniforms report a 30% decrease in bullying incidents?' That could work because it immediately presents a benefit of uniforms. Now, I need to provide some background information. I think to myself, 'What do my readers need to know about school uniforms?' Perhaps I could explain that many schools are considering uniforms to improve student safety and focus. Next, I need to state my thesis. Let me reconsider: 'Implementing school uniforms can reduce peer pressure, enhance student focus, and improve overall school safety.' This thesis clearly outlines my main points. Finally, I acknowledge the opposition: 'While some argue that uniforms limit self-expression, the benefits far outweigh the drawbacks.' By addressing the counterargument, I strengthen my position.",
+        "step_3_interact": "Now, help me with the next part. Let's think about how we can organize the body paragraphs. I’ll start with the second strongest reason: reducing peer pressure. Turn and talk to your partner about how you might introduce this reason in a paragraph. Back to me. This is some of what I heard from you: 'Uniforms create a level playing field, reducing the pressure to wear the latest trends.' That's a great start. Let's use that idea to build our paragraph, providing evidence and examples to support it.",
+        "step_4_close": "Today, we focused on persuasive writing. During your independent writing time, work on crafting a strong introduction and organizing your reasons effectively. Remember, acknowledging the opposition can make your argument more convincing. Let's go be writers!"
+      },
+      "intent": "mini_lesson",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "lww312-s9-ml13-persuasive-argumentative-introductions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml09-convert-persuasive-to-argument",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml03-strongest-position",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml08-reveal-reasons-intentionally",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml14-persuasive-argumentative-conclusions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s12-ml4-sophistication-persuasive",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s1-ml1-write-for-different-purposes",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml02-thesis-statement",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": 10.0,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "scripted_ml",
+        "grade_level": "8",
+        "writing_trait": null,
+        "writing_mode": "Persuade",
+        "strategy_name": "persuasive writing",
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "SCRIPTED_ML",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": "8",
+        "mode": "Persuade",
+        "trait": null,
+        "skill": "persuasive writing",
+        "skill_canonical": "persuasive writing",
+        "last_response_type": "SCRIPTED_ML",
+        "last_request_type": "SCRIPTED_ML",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "b3d8269c-09f6-4d78-9e29-430439892fa4"
+    }
+  },
+  {
+    "id": "how_to_teach_paragraphing_g3",
+    "message": "How do I teach paragraphing to 3rd graders?",
+    "prior_messages": [],
+    "response": {
+      "response": "Teaching paragraphing to 3rd graders can be effectively introduced using the \"table-top and leg\" strategy, which helps students understand how to structure their writing with main ideas and supporting details.\n\n1. **Introduce the Concept of Paragraphs**: Explain that a paragraph is a group of sentences about a single topic or idea. Use the \"table-top and leg\" analogy, where the main idea is the table-top, and the supporting sentences are the legs that hold it up (Launching the Writers Workshop 3-12, page 64).\n\n2. **Teach Indentation for New Information**: Explain that an indent signals a shift in information or a new idea. Teach students the three common reasons to indent: subtopic shift, setting shift, and speaker shift (Launching the Writers Workshop 3-12, page 124).\n\n3. **Develop Supporting Sentences**: Encourage students to add at least three supporting \"leg\" sentences to each main idea or \"table-top\" sentence. This helps in developing their ideas fully and avoiding \"listy\" writing (Launching the Writers Workshop 3-12, page 64).\n\n4. **Create Transitions Between Paragraphs**: Teach students how to craft transition sentences that smoothly connect one paragraph to the next, using the analogy of blended colors in yarn to illustrate how ideas should merge (Launching the Writers Workshop 3-12, page 89).\n\n5. **Practice with Graphic Organizers**: Use graphic organizers like the Table-Top Sentences & Supporting-Leg Details organizer to help students plan and structure their paragraphs before writing. Are you ready for a scripted mini-lesson on this skill?",
+      "intent": "how_to_teach",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "k2-s13-ml4-table-top-leg-sentences",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml05-table-top-leg-sentences",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s13-ml3-indent-new-information",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml12-transitions-among-paragraphs",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml04-details-vs-development",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml12-expert-voices",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml09-number-details",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s12-ml3-vary-by-information",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": null,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "how_to_teach",
+        "grade_level": "3",
+        "writing_trait": null,
+        "writing_mode": null,
+        "strategy_name": "paragraphing",
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "HOW_TO_TEACH",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": "3",
+        "mode": null,
+        "trait": null,
+        "skill": "paragraphing",
+        "skill_canonical": "paragraph writing",
+        "last_response_type": "HOW_TO_TEACH",
+        "last_request_type": "HOW_TO_TEACH",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "82d40d24-bf10-4ee4-bda9-b788642fbe55"
+    }
+  },
+  {
+    "id": "plan_unit_5th_persuasive",
+    "message": "Help me plan a 5th grade persuasive writing unit",
+    "prior_messages": [],
+    "response": {
+      "response": "For 5th grade persuasive writing, here are the priority skills in order:\n\n1. Recognize opinionated/debatable topics.\n\n2. Determine the strongest side.\n\n3. State an opinion/position to an identified audience (beginning).\n\n4. Generate reasons to support an opinion/position about a topic.\n\n5. Support reasons with quantitative (quotations & statistics) and qualitative (anecdotes & examples) details from various sources.\n\n6. Connect reasons to the opinion with transition words, phrases, & clauses.\n\n7. Provide a concluding paragraph (including a restatement of the opinion). These are taught in mini-units of 1-2 weeks each, focusing on 1-2 skills per unit, layered and spiraled across the year. Do you want a lesson to teach one of these skills?",
+      "intent": "plan_unit",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "pie-persuasive-k5",
+          "source_document": "00. Essential Skills K-12 PIE bw.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s1-ml9-things-wrong-in-world",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml13-persuasive-argumentative-introductions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml02-thesis-statement",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml03-strongest-position",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s1-ml1-write-for-different-purposes",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml14-persuasive-argumentative-conclusions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml09-convert-persuasive-to-argument",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml07-snapple-details",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-overview",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": null,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "plan_unit",
+        "grade_level": "5",
+        "writing_trait": null,
+        "writing_mode": "Persuade",
+        "strategy_name": null,
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "PLAN_UNIT",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": "5",
+        "mode": "Persuade",
+        "trait": null,
+        "skill": null,
+        "skill_canonical": null,
+        "last_response_type": "PLAN_UNIT",
+        "last_request_type": "PLAN_UNIT",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "64a613ee-8c78-4263-91d4-fcdeb1af4caf"
+    }
+  },
+  {
+    "id": "coaching_wont_start",
+    "message": "My students freeze and won't start writing. What do I do?",
+    "prior_messages": [],
+    "response": {
+      "response": "When students freeze and struggle to start writing, it's important to have strategies in place to help them overcome this initial hurdle. One effective approach is to implement the \"Help! Tent\" or \"Help! Strip\" system. This tool provides students with a visual and practical way to seek assistance without interrupting the flow of the classroom. Each student receives a Help! Tent or Strip, which they can display on their desks when they need help. The key to this system is the list of strategies on the backside of the tent or strip, which encourages students to keep writing even when they're stuck. For instance, the strategies might include options like quietly asking a peer for help, skipping a few lines to continue writing, rereading their work and adding details, replacing weak words with stronger ones, working on a previous piece, or starting a new piece altogether. By having these strategies readily available, students have a clear set of actions to take, which can reduce anxiety and help them move past the initial block. Additionally, consider establishing a \"Done\" list, which helps students understand that writing is an ongoing process. The \"Done\" list can include tasks like rereading their work, adding more details, checking for spelling and grammar errors, or even starting a new draft. This list encourages students to view writing as iterative and ongoing, rather than a task with a definitive endpoint. Finally, ensure that your classroom environment supports a variety of writing times, such as quiet or silent writing times, where students know the expectations and can focus on their work. By setting clear routines and providing structured support, you can help students feel more confident and willing to start writing. Does this make sense? Is this helpful?",
+      "intent": "management",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "lww312-s2-ml5-help-tent-strip",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s2-ml6-help-tent",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s2-ml2-meet-for-daily-instruction",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s3-binder-notebook-format",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s2-ml3-define-purpose-of-workshop",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s2-ml2-describe-writing-time",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s4-ml7-adjust-writing-process",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s4-overview-motivating-writers",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": null,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "management",
+        "grade_level": null,
+        "writing_trait": null,
+        "writing_mode": null,
+        "strategy_name": null,
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "MANAGEMENT",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": null,
+        "mode": null,
+        "trait": null,
+        "skill": null,
+        "skill_canonical": null,
+        "last_response_type": "MANAGEMENT",
+        "last_request_type": "MANAGEMENT",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "f3dbf3ae-f59b-4ecf-a6c6-fcd0df0bd53e"
+    }
+  },
+  {
+    "id": "management_routines",
+    "message": "How do I set up writing workshop routines?",
+    "prior_messages": [],
+    "response": {
+      "response": "Setting up writing workshop routines is essential for creating a productive and organized environment where students can thrive as writers. Here are some concrete steps to establish these routines effectively:\n\n1. **Daily Instruction and Mini-Lessons**: Begin each writing workshop with a mini-lesson. Announce \"It's time for writer's workshop\" to signal the start. The mini-lesson should be concise, lasting about 10-15 minutes, and focused on teaching a specific writing skill or concept. During this time, students should be attentive, sitting in a designated area such as the carpet or their desks, with necessary materials like notebooks and pencils ready. Use engaging methods, such as fun delivery or visual aids, to maintain student interest.\n\n2. **Independent Writing Time**: After the mini-lesson, transition to independent writing time with a clear code phrase like \"Now it's your turn.\" This signals students to begin working on their writing tasks independently. Set expectations for the atmosphere during this time—students should work quietly at their desks, focusing on the task at hand. As the teacher, circulate the room to confer with students, offer help, and provide feedback. Introduce tools like the \"Help! Tent\" for students to signal when they need assistance without disrupting the class.\n\n3. **Sharing and Author's Chair**: Conclude the workshop with a sharing session. Use a phrase like \"Wrap it up\" to indicate it's time to finish writing and prepare for sharing. Designate a space for the Author's Chair, where students can volunteer to share their work with the class. This not only builds confidence but also fosters a sense of community and collaboration among students.\n\n4. **Establishing Expectations**: At the start of the year, dedicate time to teach and reinforce these routines. Remember that students may come with different habits from previous years, so it's crucial to clearly outline your specific expectations. Use procedural mini-lessons to introduce each part of the workshop and practice them regularly until they become second nature to the students. By consistently implementing these routines, you create a structured environment that allows students to focus on their writing and develop their skills over time. Does this make sense? Is this helpful?",
+      "intent": "management",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "lww312-s2-overview-setting-expectations",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s2-intro-setting-expectations",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s2-ml2-describe-writing-time",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s2-ml3-define-purpose-of-workshop",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s2-ml4-review-3-parts",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s2-ml2-meet-for-daily-instruction",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s2-ml1-meet-for-daily-instruction",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s2-ml5-three-parts-of-workshop",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": null,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "management",
+        "grade_level": null,
+        "writing_trait": null,
+        "writing_mode": null,
+        "strategy_name": null,
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "MANAGEMENT",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": null,
+        "mode": null,
+        "trait": null,
+        "skill": null,
+        "skill_canonical": null,
+        "last_response_type": "MANAGEMENT",
+        "last_request_type": "MANAGEMENT",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "cbe56042-f80c-4341-8bfc-98fbf1a64c15"
+    }
+  },
+  {
+    "id": "launch_first_narrative_g9",
+    "message": "Teach narrative introductions for grade 9",
+    "prior_messages": [],
+    "response": {
+      "response": {
+        "skill_focus": "narrative introductions",
+        "grade_level": "9",
+        "writing_mode": "Entertain",
+        "step_1_introduce": "Writers, we've been working on crafting engaging stories. Today, we're focusing on narrative introductions. This helps writers hook their readers right from the start by establishing the situation, introducing characters, and setting the scene. This strengthens our Organization trait.",
+        "step_2a_tell": "A narrative introduction is the opening of your story where you set the stage for your readers. It typically includes three key elements: the situation, the characters, and the setting. The situation introduces the main problem or conflict that will drive the story. The characters are the people involved in the story, and it's important to give your readers enough detail to care about them. The setting describes where and when the story takes place, providing context and atmosphere. By combining these elements effectively, you create an engaging start that draws readers in and makes them want to continue reading. Remember, there is no single formula for a narrative introduction, but rather a variety of ways to arrange these elements to best fit your story's needs.",
+        "step_2b_show": "Let's model how to craft a narrative introduction. I close my eyes and think about the story I want to tell. I wonder, what is the main conflict my character faces? Hmm, let me try starting with an intense action scene to grab attention. 'The storm raged outside as Emily clutched the letter, her heart pounding.' I think to myself, this introduces the situation and hints at a problem. Now, I need to introduce Emily, my main character. I wonder, how can I make her relatable? 'Emily, a determined young woman with a fierce gaze, had never felt so torn.' This gives readers a glimpse of who she is. Next, I need to set the scene. I consider, where is she? 'She stood alone in the dimly lit attic, surrounded by dusty relics of the past.' This provides a sense of place and mood. Actually, that doesn't work because it feels too disconnected. Let me reconsider and weave these elements more seamlessly. 'As the storm raged outside, Emily clutched the letter in the dimly lit attic, her heart pounding with a mix of fear and determination.' This introduction combines the situation, character, and setting into a cohesive opening.",
+        "step_3_interact": "Now, help me with the next one. Let's say our story involves a character named Jake who discovers a mysterious map. How might we start this introduction? Turn and talk with a partner about how you might introduce Jake and the setting. Back to me. This is some of what I heard from you: 'Jake, a curious teenager with an adventurous spirit, stumbled upon the map in his grandfather's cluttered study.' Great! You've introduced the character and hinted at the setting. Let's apply this by thinking about what situation could immediately engage the reader.",
+        "step_4_close": "Today, we focused on crafting narrative introductions. During your independent writing time, try arranging the elements of situation, character, and setting to create a compelling start to your story. Remember, a strong introduction hooks your reader and sets the stage for the rest of your narrative. Let's go be writers!"
+      },
+      "intent": "mini_lesson",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "lww312-s9-ml17-narrative-introductions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml18-narrative-conclusions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml03-organize-sequentially-storyboard",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s1-ml7-narratives-response-to-reading",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s1-ml6-life-line-of-experiences",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml02-thesis-statement",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml07-supersize-yes-maam",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml09-number-details",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": 10.0,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "scripted_ml",
+        "grade_level": "9",
+        "writing_trait": null,
+        "writing_mode": "Entertain",
+        "strategy_name": "narrative introductions",
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "SCRIPTED_ML",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": "9",
+        "mode": "Entertain",
+        "trait": null,
+        "skill": "narrative introductions",
+        "skill_canonical": "narrative introductions",
+        "last_response_type": "SCRIPTED_ML",
+        "last_request_type": "SCRIPTED_ML",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "aabe8286-c222-4b7b-8fd3-068b85fc2400"
+    }
+  },
+  {
+    "id": "pizza_table_named",
+    "message": "Is there a pizza-table lesson?",
+    "prior_messages": [],
+    "response": {
+      "response": "Yes, the \"pizza-table\" lesson is a strategy used to help students develop their writing by ensuring that each main idea or reason is well-supported with additional details. The concept is based on the small plastic \"table\" found in pizza boxes, which prevents the lid from squishing the pizza. In writing, the \"table-top\" represents the main idea or reason, while the \"legs\" are the supporting sentences that hold up the idea, making it sturdy and complete. In this lesson, students start by identifying a main idea or reason, which is the \"table-top\" sentence. They then add three or more \"leg\" sentences to support and develop this idea, ensuring that it doesn't remain undeveloped or \"listy.\" This approach helps students understand that just like a table needs multiple legs to stand, their writing needs multiple supporting details to be strong and convincing. The lesson involves using a graphic organizer called the Table-Top Sentences & Supporting-Leg Details organizer, where students can jot down their main idea on the table top and then add supporting details on the legs. This visual and structured approach helps students see the importance of supporting their ideas with sufficient detail. For more detailed guidance and the graphic organizer, check the Launching the Writers Workshop books and their accompanying digital resources. They provide a comprehensive framework for implementing this strategy in the classroom. Does this make sense? Is this helpful?",
+      "intent": "coaching",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "k2-s13-ml4-table-top-leg-sentences",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml05-table-top-leg-sentences",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s2-ml3-define-purpose-of-workshop",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s1-ml9-pie-whole-class-writing",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s8-ml1-apply-color-details",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s13-ml5-name-proper-noun-details",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s13-ml6-number-details",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s7-ml3-update-rubric-frequently",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": null,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "coaching",
+        "grade_level": null,
+        "writing_trait": null,
+        "writing_mode": null,
+        "strategy_name": "pizza-table",
+        "smekens_terms": [
+          "pizza-table"
+        ],
+        "follow_up_type": "none",
+        "query_type": "COACHING",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": null,
+        "mode": null,
+        "trait": null,
+        "skill": "pizza-table",
+        "skill_canonical": "pizza-table",
+        "last_response_type": "COACHING",
+        "last_request_type": "COACHING",
+        "required_triggers": [
+          "pizza-table"
+        ],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "f8de3323-880d-4732-a044-20c5e09b00ab"
+    }
+  },
+  {
+    "id": "no_activity_word_g1",
+    "message": "Give me a 1st grade lesson on labeling pictures",
+    "prior_messages": [],
+    "response": {
+      "response": {
+        "skill_focus": "labeling pictures",
+        "grade_level": "1",
+        "writing_mode": "Inform",
+        "step_1_introduce": "Writers, we've been working on adding words to our pictures. Today, we're focusing on labeling pictures. This helps writers make their drawings clearer by adding words that tell more about what we see. This strengthens our Word Choice trait.",
+        "step_2a_tell": "Labeling pictures means adding words to our drawings to tell more about what is in the picture. When we label, we choose important parts of our drawing and write words next to them. This helps anyone looking at our picture understand exactly what each part is. For example, if you draw a picture of a cat, you might label the ears, tail, and whiskers. Labeling is like giving each part of your picture a name, so it's easier for others to know what you drew. We can use labels to show what something is, like 'door' or 'desk,' or to describe it, like 'red apple' or 'big tree.'",
+        "step_2b_show": "Let me show you how I label a picture. I have a drawing of a playground. I close my eyes and think about what parts of the playground I want to label. Hmm, I see a slide, swings, and a sandbox. I wonder which one to start with. I think to myself, 'The slide is big and easy to see, so I'll start there.' I draw a line from the slide to some white space and write 'slide.' Now, I look at the swings. I think, 'Actually, that doesn't work because I need more space.' Let me reconsider. I'll write 'swings' in the space above them. Finally, I see the sandbox. I draw a line and write 'sandbox.' I think to myself, 'These labels help show what each part of my picture is.'",
+        "step_3_interact": "Now, help me with the next one. I have a picture of a classroom. Let's think about what we can label. Turn and talk to your partner about one thing you see in the classroom picture that we could label. Back to me. This is some of what I heard from you: 'desk,' 'teacher,' and 'books.' Great ideas! Let's label the desk first. I'll draw a line from the desk and write 'desk' next to it. Now, you can try labeling the other parts on your own picture.",
+        "step_4_close": "Today, we learned about labeling pictures. During your independent writing time, I want you to choose a drawing you've made and add labels to it. Remember, labeling helps make your pictures clearer by adding words that tell more about what we see. Let's go be writers!"
+      },
+      "intent": "mini_lesson",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "k2-s9-ml5-label-the-classroom",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s9-ml8-label-photos",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s9-ml1-identify-objects-with-labels",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s9-ml7-label-multiple-details",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s9-ml2-match-words-to-pictures",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s9-ml10-label-key-vocabulary-big-books",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s9-ml9-two-word-labels-adjective-noun",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s9-ml3-label-initial-sounds",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": 10.0,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "scripted_ml",
+        "grade_level": "1",
+        "writing_trait": null,
+        "writing_mode": null,
+        "strategy_name": "labeling pictures",
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "SCRIPTED_ML",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": "1",
+        "mode": null,
+        "trait": null,
+        "skill": "labeling pictures",
+        "skill_canonical": "labeling pictures",
+        "last_response_type": "SCRIPTED_ML",
+        "last_request_type": "SCRIPTED_ML",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "197b1720-6f7f-4902-8e59-119927657196"
+    }
+  },
+  {
+    "id": "dissected_web_g6",
+    "message": "6th grade mini-lesson using the Dissected Web",
+    "prior_messages": [],
+    "response": {
+      "response": {
+        "skill_focus": "Dissected Web",
+        "grade_level": "6",
+        "writing_mode": "Inform",
+        "step_1_introduce": "Writers, we've been working on organizing our ideas clearly. Today, we're going to use the Dissected Web. This helps writers break down their main ideas into detailed subtopics, making their writing more structured and informative. This strengthens our Organization trait.",
+        "step_2a_tell": "The Dissected Web is a graphic organizer that helps writers organize their information into clear, detailed categories. Unlike a traditional web, where each oval might only contain a single detail, the Dissected Web encourages you to fill each oval with multiple related details. This ensures that each subtopic is fully developed, which leads to more comprehensive paragraphs in your writing. To create a Dissected Web, start by placing your main idea in the center. Then, identify subtopics or categories related to your main idea and write these in the surrounding ovals. Within each subtopic oval, jot down all the relevant details, facts, and vocabulary that support that subtopic. If you find that you have more details than space, you can add more lines to your oval to accommodate them. This method ensures that when you draft your piece, each paragraph is well-supported and informative.",
+        "step_2b_show": "Let's model how to use the Dissected Web. Suppose our main topic is 'How Animals Communicate.' I place this in the center oval. I close my eyes and think about different ways animals might communicate. I wonder, 'What are some subtopics?' I decide on 'Sound,' 'Body Language,' and 'Chemical Signals.' I write these as labels above each oval. Now, I think to myself, 'What details do I know about animal sounds?' I jot down 'bird songs,' 'whale calls,' and 'elephant rumbles' in the 'Sound' oval. Hmm, let me try adding more to 'Body Language.' I think of 'tail wagging in dogs' and 'peacock feather displays.' I realize I need more details, so I add lines to the oval and include 'bee dances' and 'gorilla chest beating.' I reconsider the 'Chemical Signals' oval and add 'pheromones in ants' and 'scent marking in wolves.' By filling each oval with multiple details, I ensure that each subtopic is rich with information, ready to be expanded into a full paragraph.",
+        "step_3_interact": "Now, help me with the next one. Let's say our topic is 'The Water Cycle.' I've already placed 'Evaporation' in one oval. What details can we add here? Turn and talk with a partner about what you know about evaporation. Back to me. This is some of what I heard from you: 'water turning into vapor,' 'heat from the sun,' and 'occurs in oceans and lakes.' Great! Let's add those details to our 'Evaporation' oval. This way, when we write our paragraph, we have plenty of information to include.",
+        "step_4_close": "Today, we learned how to use the Dissected Web to organize our ideas into detailed subtopics. During your independent writing time, use this strategy to plan out your next piece. Remember, the more details you include in each oval, the more developed your paragraphs will be. Let's go be writers!"
+      },
+      "intent": "mini_lesson",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "lww312-s9-ml05-organize-categorically",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml15-informative-introductions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml01-list-group-label",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml02-list-group-before-writing",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml17-narrative-introductions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml13-persuasive-argumentative-introductions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s11-ml5-close-up-details",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml18-narrative-conclusions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": 10.0,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "scripted_ml",
+        "grade_level": "6",
+        "writing_trait": null,
+        "writing_mode": null,
+        "strategy_name": "Dissected Web",
+        "smekens_terms": [
+          "dissected-web"
+        ],
+        "follow_up_type": "none",
+        "query_type": "SCRIPTED_ML",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": "6",
+        "mode": null,
+        "trait": null,
+        "skill": "Dissected Web",
+        "skill_canonical": "dissected-web",
+        "last_response_type": "SCRIPTED_ML",
+        "last_request_type": "SCRIPTED_ML",
+        "required_triggers": [
+          "dissected-web"
+        ],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "5867a2cf-8392-4e49-8640-bb51d0599cf9"
+    }
+  },
+  {
+    "id": "k2_ending_kinder",
+    "message": "Kindergarten scripted mini-lesson on adding details to drawings",
+    "prior_messages": [],
+    "response": {
+      "response": {
+        "skill_focus": "adding details to drawings",
+        "grade_level": "K",
+        "writing_mode": "Entertain",
+        "step_1_introduce": "Writers, we've been working on making our drawings more interesting. Today, we're going to focus on adding details to drawings. This helps writers make their pictures tell a clearer story. This strengthens our Ideas trait.",
+        "step_2a_tell": "Adding details to drawings means looking closely at what you want to show and thinking about what else you can include to make your picture more complete. Details can be colors, shapes, or even little things like the texture of a tree or the expression on a face. When we add details, we help the person looking at our picture understand more about what is happening. For example, if you're drawing a picture of a sunny day at the park, you might add details like the bright yellow sun, green grass, and maybe even a red kite flying in the sky. These details make your drawing more vivid and engaging for the viewer.",
+        "step_2b_show": "Let's think about a simple drawing of a playground. I close my eyes and think about what I see at the playground. Hmm, I see swings, a slide, and maybe a sandbox. But right now, my drawing only has a swing set. I wonder what details I can add to make it more interesting. I think to myself, 'What color are the swings?' Let me try adding some color. I decide to color the swings blue. Actually, that doesn't work because the sky is blue, and it blends in too much. Let me reconsider and choose a bright red for the swings so they stand out. Now, I think about the ground. Hmm, maybe I can add some green for the grass and some brown for the dirt under the swings. I also notice that my playground looks empty. I think to myself, 'What else can I add?' Maybe a little boy playing with a ball or a girl on the slide. These details help tell the story of a fun day at the playground.",
+        "step_3_interact": "Now, let's try adding some details together. Help me with the next one. I have a drawing of a tree, but it looks a bit plain. What could we add to make it more interesting? Turn and talk to your partner about what details we could add to the tree. Back to me. This is some of what I heard from you: adding apples to the tree, maybe a bird sitting on a branch, or even some flowers around the base. Let's add those apples to the tree to make it look like a fruit tree. These details make our drawing more lively and tell a better story.",
+        "step_4_close": "Today, we learned about adding details to drawings. Now, during your independent writing time, choose a drawing you've already made and think about what details you can add to make it more interesting. Remember, adding details like colors, objects, and expressions can make your picture tell a clearer story. Let's go be writers!"
+      },
+      "intent": "mini_lesson",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "k2-s8-ml12-revise-to-add-more-details",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s8-ml11-insert-name-proper-noun-details",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s8-ml9-magnify-close-up-details",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s8-ml1-apply-color-details",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s8-ml10-incorporate-number-details",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s8-ml3-create-self-portraits",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s8-ml6-add-setting-details",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s8-ml8-draw-feelings-on-faces",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": 10.0,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "scripted_ml",
+        "grade_level": "K",
+        "writing_trait": null,
+        "writing_mode": null,
+        "strategy_name": "adding details to drawings",
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "SCRIPTED_ML",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": "K",
+        "mode": null,
+        "trait": null,
+        "skill": "adding details to drawings",
+        "skill_canonical": "adding details to drawings",
+        "last_response_type": "SCRIPTED_ML",
+        "last_request_type": "SCRIPTED_ML",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "0929298d-5a3b-4fa2-bd8f-3c3c6d4d1b5c"
+    }
+  },
+  {
+    "id": "session_lock_grade",
+    "message": "Now give me one on narrative leads",
+    "prior_messages": [
+      "Give me a 4th grade scripted mini-lesson on topic sentences"
+    ],
+    "response": {
+      "response": {
+        "skill_focus": "narrative leads",
+        "grade_level": "4",
+        "writing_mode": "Entertain",
+        "step_1_introduce": "Writers, we've been working on crafting engaging stories. Today, we're focusing on narrative leads. This helps writers grab the reader's attention right from the start. This strengthens our Organization trait.",
+        "step_2a_tell": "A narrative lead is the opening of your story. It's like the first impression you make when meeting someone new. A strong lead hooks the reader and makes them want to keep reading. There are different types of narrative leads you can use, such as starting with action, dialogue, or a vivid description. For example, an action lead might begin with a character running through the forest, while a dialogue lead might start with a character shouting, 'Watch out!' A descriptive lead could paint a picture of a stormy night with howling winds. The key is to choose a lead that fits the tone and mood of your story and gives the reader a glimpse of what's to come.",
+        "step_2b_show": "Let's try crafting a narrative lead together. I close my eyes and think about a story where a character is lost in a mysterious forest. I wonder, how can I start this story to make it intriguing? Hmm, let me try an action lead: 'Branches snapped underfoot as Mia sprinted through the shadowy forest, her heart pounding in her chest.' I think to myself, does this grab the reader's attention? Yes, it does, because it immediately puts the reader in the middle of the action. But let me reconsider and try a dialogue lead: '\"I can't see a thing!\" Mia shouted into the darkness, hoping for a response.' This also works because it creates a sense of urgency and mystery. Actually, that doesn't work because it doesn't set the scene as vividly. Let me try a descriptive lead: 'The forest loomed around Mia, its ancient trees whispering secrets in the wind.' I think this works well because it sets a mysterious tone and draws the reader in with sensory details.",
+        "step_3_interact": "Now, help me with the next one. Let's say we're writing a story about a day at the beach. Help me with the next lead. Turn and talk to your partner about how you might start this story. Back to me. This is some of what I heard from you: 'The sun blazed overhead as the waves crashed onto the shore, and Sam felt the sand squish between his toes.' That's a great descriptive lead because it paints a vivid picture and sets the scene for the reader.",
+        "step_4_close": "Today, we learned about crafting narrative leads. During your independent writing time, focus on creating leads that hook your reader right from the start. Remember, whether you choose action, dialogue, or description, your lead should set the tone for your story. Let's go be writers!"
+      },
+      "intent": "mini_lesson",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "lww312-s1-ml7-narratives-response-to-reading",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml03-organize-sequentially-storyboard",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml17-narrative-introductions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s1-ml6-life-line-of-experiences",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s12-ml2-fluency-narrative",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml19-generate-titles",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml11-anecdotes",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml13-paraphrase",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": 10.0,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "scripted_ml",
+        "grade_level": "4",
+        "writing_trait": null,
+        "writing_mode": "Entertain",
+        "strategy_name": "narrative leads",
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "SCRIPTED_ML",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": "4",
+        "mode": "Entertain",
+        "trait": null,
+        "skill": "narrative leads",
+        "skill_canonical": "narrative leads",
+        "last_response_type": "SCRIPTED_ML",
+        "last_request_type": "SCRIPTED_ML",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 4
+      },
+      "request_id": "22d000f4-cb3c-48ca-9e71-7dac36401ce0"
+    }
+  },
+  {
+    "id": "how_to_teach_sentence_variety_g7",
+    "message": "What's the best way to teach sentence variety in 7th grade?",
+    "prior_messages": [],
+    "response": {
+      "response": "Teaching sentence variety, also known as sentence fluency, can be enhanced using strategies like the \"Slinky Test,\" which visually represents sentence length by stretching or compressing a Slinky to match the sentence's word count.\n\n1. **Introduce Sentence Lengths**: Define short, medium, and long sentences, and explain how varying these can improve writing fluency. Use the Slinky Test to help students visualize and assess sentence length variety (Launching the Writers Workshop 3-12, page 112).\n\n2. **Vary by Information**: Teach students to choose sentence lengths based on the information's impact. Longer sentences can introduce topics or explain data, while shorter ones can emphasize key points or add dramatic effect (Launching the Writers Workshop 3-12, page 114).\n\n3. **Apply to Different Writing Modes**: Show how sentence variety can enhance different types of writing, such as narratives or persuasive pieces, by creating mood and pacing through intentional sentence length choices (Launching the Writers Workshop 3-12, page 113).\n\n4. **Use Parallel Structure**: Introduce parallelism to add rhythm and fluency to sentences. Demonstrate how maintaining a consistent pattern in a series of words or phrases can enhance readability and impact (Launching the Writers Workshop 3-12, page 117). Are you ready for a scripted mini-lesson on this skill?",
+      "intent": "how_to_teach",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "lww312-s12-ml1-assess-sentence-length",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "k2-s12-ml5-slinky-test",
+          "source_document": "Launching the Writers Workshop K-2.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s12-ml3-vary-by-information",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s12-ml2-fluency-narrative",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s12-ml4-sophistication-persuasive",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s12-ml5-long-efficient-sentences",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml16-informative-conclusions",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s12-ml6-parallel-structure",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": null,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "how_to_teach",
+        "grade_level": "7",
+        "writing_trait": null,
+        "writing_mode": null,
+        "strategy_name": "sentence variety",
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "HOW_TO_TEACH",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": "7",
+        "mode": null,
+        "trait": null,
+        "skill": "sentence variety",
+        "skill_canonical": "sentence fluency",
+        "last_response_type": "HOW_TO_TEACH",
+        "last_request_type": "HOW_TO_TEACH",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "b4c3dad5-4939-429f-988a-166eeaa411ba"
+    }
+  },
+  {
+    "id": "think_aloud_topic_sentences",
+    "message": "Show me a think-aloud for teaching topic sentences",
+    "prior_messages": [],
+    "response": {
+      "response": "Okay, I'm working on crafting a strong topic sentence for a paragraph about the importance of exercise. I want to make sure my topic sentence clearly states the main idea and sets the stage for the details that will follow. I could start with something simple like, \"Exercise is important.\" But that feels too vague and doesn't really capture the reader's attention or hint at what's to come. What if I try to be more specific and engaging? I could say, \"Regular exercise is crucial for maintaining both physical and mental health.\" This version is better because it not only states that exercise is important, but it also gives a preview of the two main benefits I'll be discussing: physical and mental health. It sets up the reader to expect details about how exercise affects these two areas. But maybe I can make it even more engaging. How about, \"Imagine feeling energized and stress-free every day—regular exercise can make this a reality by boosting both your physical and mental well-being.\" Now, this sentence not only introduces the topic but also paints a picture of the benefits, making it more compelling. It invites the reader to think about the positive outcomes of exercising, which can make them more interested in reading further. So, I've decided to go with this last version. It effectively combines clarity with engagement, providing a strong foundation for the rest of the paragraph. Want me to wrap this in a scripted mini-lesson?",
+      "intent": "think_aloud",
+      "quality": "validated",
+      "quality_warning": null,
+      "sources": [
+        {
+          "chunk_id": "persuasive-K-ml1-recognize-opinion-topics",
+          "source_document": "K MLs. Persuasive.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "persuasive-1-ml1-recognize-opinion-topics",
+          "source_document": "Gr 1 MLs. Persuasive.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "persuasive-2-ml1-recognize-opinion-topics",
+          "source_document": "Gr 2 MLs. Persuasive.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "persuasive-5-ml1-recognize-opinion-topics",
+          "source_document": "Gr 5 MLs. Persuasive.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "persuasive-4-ml1-recognize-opinion-topics",
+          "source_document": "Gr 4 MLs. Persuasive.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "persuasive-3-ml1-recognize-opinion-topics",
+          "source_document": "Gr 3 MLs. Persuasive.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "drawing-labeling-pk1-ml7-develop-ideas-with-sticky-dot-details",
+          "source_document": "Drawing, Labeling, Early Sentences mini-lessons.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s8-ml15-stay-on-topic",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "drawing-labeling-pk1-ml4-magnify-close-up-picture-details",
+          "source_document": "Drawing, Labeling, Early Sentences mini-lessons.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        },
+        {
+          "chunk_id": "lww312-s9-ml11-transitions-within-paragraphs",
+          "source_document": "Launching the Writers Workshop 3-12.pdf",
+          "content_type": "",
+          "relevance_score": 0.0
+        }
+      ],
+      "judge_score": null,
+      "ungrounded_terms": [],
+      "follow_up_question": null,
+      "parsed_query": {
+        "intent": "think_aloud",
+        "grade_level": null,
+        "writing_trait": null,
+        "writing_mode": null,
+        "strategy_name": "topic sentences",
+        "smekens_terms": [],
+        "follow_up_type": "none",
+        "query_type": "THINK_ALOUD",
+        "query_specificity": "broad",
+        "topic_shift_confidence": 0.0,
+        "is_correction": false
+      },
+      "session_state": {
+        "grade": null,
+        "mode": null,
+        "trait": null,
+        "skill": "topic sentences",
+        "skill_canonical": "topic sentences",
+        "last_response_type": "THINK_ALOUD",
+        "last_request_type": "THINK_ALOUD",
+        "required_triggers": [],
+        "refers_to_prior": false,
+        "needs_confirmation": false,
+        "missing_required": [],
+        "pending_ml_confirmation": null,
+        "pending_library_offer": null,
+        "clarification_pending": null,
+        "turn_count": 2
+      },
+      "request_id": "877248f8-93d1-4db1-99cb-4152e1d3c48b"
+    }
+  }
+]

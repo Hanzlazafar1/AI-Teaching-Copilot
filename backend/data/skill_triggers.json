@@ -1,0 +1,635 @@
+{
+  "description": "Smekens Education teaching triggers / strategies with synonyms and related skill queries. Used for query expansion at retrieval time (Phase 3 of BRADY-ALIGNMENT-PLAN.md). Each entry maps a canonical trigger name to the user-facing terms that should surface it. The `related_skills` field lists user-query keywords that should boost this trigger during retrieval.",
+  "triggers": {
+    "pizza-table": {
+      "synonyms": [
+        "pizza table",
+        "pizza-table",
+        "tables and legs",
+        "table-top and legs",
+        "table top and legs",
+        "leg sentences",
+        "leg-sentences",
+        "table-top reason",
+        "table top reason",
+        "table-top sentences",
+        "table-top"
+      ],
+      "related_skills": [
+        "paragraph writing",
+        "paragraphing",
+        "supporting details",
+        "topic sentence and supporting details",
+        "topic sentences with details",
+        "elaboration",
+        "develop a paragraph",
+        "supporting reasons"
+      ],
+      "source_section": "Section 8 Teaching Ideas — ML #5: Add leg sentences per table-top reason"
+    },
+    "road-sign": {
+      "synonyms": [
+        "road sign",
+        "road-sign",
+        "colored yarn",
+        "colored-yarn",
+        "yarn transitions"
+      ],
+      "related_skills": [
+        "transitions",
+        "transition words",
+        "connect paragraphs",
+        "connect ideas",
+        "linking ideas",
+        "linking words",
+        "flow between paragraphs"
+      ],
+      "source_section": "Section 9 Teaching Organization — ML #11 Create transitions within paragraphs, ML #12 Create transitions among paragraphs"
+    },
+    "slinky-test": {
+      "synonyms": [
+        "slinky test",
+        "slinky-test",
+        "slinky",
+        "slinky effect"
+      ],
+      "related_skills": [
+        "sentence fluency",
+        "vary sentence length",
+        "sentence variety",
+        "choppy sentences",
+        "sentence rhythm",
+        "long and short sentences"
+      ],
+      "source_section": "Section 12 Teaching Sentence Fluency (K-2 ML #5, 3-12 ML #1 Assess sentence-length variety)"
+    },
+    "tower-test": {
+      "synonyms": [
+        "tower test",
+        "tower-test"
+      ],
+      "related_skills": [
+        "run-on sentences",
+        "run-ons",
+        "fix run-ons",
+        "sentence boundaries"
+      ],
+      "source_section": "K-2 Section 12 — ML #2: Tower test for run-ons"
+    },
+    "spider-legs": {
+      "synonyms": [
+        "spider legs",
+        "spider-legs"
+      ],
+      "related_skills": [
+        "sentence fragments",
+        "fix fragments",
+        "incomplete sentences"
+      ],
+      "source_section": "K-2 Section 11 — ML #10: Fix fragments with Spider Legs"
+    },
+    "dissected-web": {
+      "synonyms": [
+        "dissected web",
+        "dissected-web",
+        "dissect web"
+      ],
+      "related_skills": [
+        "paragraph structure",
+        "organize paragraphs",
+        "organize categorically",
+        "paragraph organization",
+        "group related details",
+        "categorize information"
+      ],
+      "source_section": "K-2 Section 10 — ML #14: Pre-write with a Dissected Web"
+    },
+    "magnify-close-up": {
+      "synonyms": [
+        "magnify close-up",
+        "magnify close up",
+        "magnify-close-up",
+        "close-up details",
+        "close up details"
+      ],
+      "related_skills": [
+        "add details to pictures",
+        "detail observation",
+        "drawing details",
+        "add close-up details",
+        "observe closely"
+      ],
+      "source_section": "K-2 Section 8 — ML #9: Magnify close-up details"
+    },
+    "done-list": {
+      "synonyms": [
+        "done list",
+        "done-list",
+        "\"done\" list",
+        "'done' list"
+      ],
+      "related_skills": [
+        "motivating writers",
+        "motivate reluctant writers",
+        "students who say they're done",
+        "keep writing",
+        "what to do when done",
+        "writers workshop routines",
+        "done ideas"
+      ],
+      "source_section": "Section 4 Motivating Writers — ML #1: Establish a Done List"
+    },
+    "topic-test": {
+      "synonyms": [
+        "topic test",
+        "topic-test",
+        "the Topic Test"
+      ],
+      "related_skills": [
+        "choose writing topic",
+        "evaluate topic",
+        "select a good topic",
+        "which topic to write about",
+        "topic selection"
+      ],
+      "source_section": "K-2 Section 1 — ML #3: Apply the Topic Test"
+    },
+    "snapple-details": {
+      "synonyms": [
+        "snapple",
+        "snapple details",
+        "snapple® details"
+      ],
+      "related_skills": [
+        "add interesting facts",
+        "add engaging details",
+        "make writing interesting",
+        "surprising facts",
+        "interest details",
+        "engage the reader"
+      ],
+      "source_section": "3-12 Section 8 — ML #7: Add interest with Snapple details"
+    },
+    "pump-up-the-middle": {
+      "synonyms": [
+        "pump up the middle",
+        "pump-up the middle",
+        "pump up middle"
+      ],
+      "related_skills": [
+        "elaboration",
+        "develop the middle",
+        "add details to middle",
+        "expand paragraph",
+        "elaborate ideas"
+      ],
+      "source_section": "K-2 Section 13 — ML #1: Pump up the middle"
+    },
+    "two-three-one": {
+      "synonyms": [
+        "2-3-1",
+        "two-three-one",
+        "2 3 1 organization"
+      ],
+      "related_skills": [
+        "persuasive organization",
+        "rank reasons",
+        "organize persuasive reasons",
+        "save the best for last",
+        "order of persuasive reasons"
+      ],
+      "source_section": "3-12 Section 9 — ML #8: Reveal persuasive reasons intentionally"
+    },
+    "scr": {
+      "synonyms": [
+        "SCR",
+        "S-C-R",
+        "statement citation response",
+        "statement-citation-response"
+      ],
+      "related_skills": [
+        "text evidence",
+        "cite textual evidence",
+        "constructed response",
+        "answer with evidence",
+        "quote from source"
+      ],
+      "source_section": "3-12 Section 9 — ML #6: Answer what & why in constructed responses (SCR)"
+    },
+    "pat": {
+      "synonyms": [
+        "P.A.T.",
+        "P-A-T",
+        "Purpose Audience Task",
+        "Purpose-Audience-Task",
+        "P.A.T"
+      ],
+      "related_skills": [
+        "determine voice",
+        "choose voice",
+        "audience awareness",
+        "purpose of writing",
+        "writing for an audience"
+      ],
+      "source_section": "3-12 Section 10 — ML #4: Choose voice based on the P.A.T."
+    },
+    "yes-maam": {
+      "synonyms": [
+        "Yes MA'AM",
+        "Yes, MA'AM",
+        "Yes, MAAM",
+        "yes maam",
+        "MA'AM acronym",
+        "MAAM acronym",
+        "MA'AM formula",
+        "MAAM formula"
+      ],
+      "related_skills": [
+        "thesis statement",
+        "constructed response",
+        "extended response",
+        "long essay structure",
+        "adapt yes maam"
+      ],
+      "source_section": "3-12 Section 9 — ML #6/7: Yes, MA'AM strategy and adaptation"
+    },
+    "test-lady": {
+      "synonyms": [
+        "test lady",
+        "the Test Lady"
+      ],
+      "related_skills": [
+        "voice",
+        "author's voice",
+        "voice examples",
+        "introduce voice",
+        "demonstrate voice"
+      ],
+      "source_section": "3-12 Section 10 — ML #5: Introduce the Test Lady"
+    },
+    "four-essentials": {
+      "synonyms": [
+        "four essential skills",
+        "4 essential skills",
+        "four essentials",
+        "essential skills"
+      ],
+      "related_skills": [
+        "writing framework",
+        "writing skills sequence",
+        "essential skills informative",
+        "essential skills persuasive",
+        "essential skills narrative",
+        "PIE essentials"
+      ],
+      "source_section": "Essential Skills K-12 PIE document; Episode 3 (Informative), Episode 5 (Persuasive), Episode 8 (Narrative)"
+    },
+    "turn-and-talk": {
+      "synonyms": [
+        "turn and talk",
+        "turn-and-talk",
+        "T&T"
+      ],
+      "related_skills": [
+        "student interaction",
+        "student discussion",
+        "engagement",
+        "think pair share",
+        "mini-lesson step 3"
+      ],
+      "source_section": "4-step mini-lesson framework — Step 3 Interact"
+    },
+    "growing-rubric": {
+      "synonyms": [
+        "growing rubric",
+        "growing-rubric"
+      ],
+      "related_skills": [
+        "building a rubric",
+        "writing rubric",
+        "assessment rubric",
+        "rubric development",
+        "rubric construction"
+      ],
+      "source_section": "Section 7 Building Rubrics"
+    },
+    "help-tent": {
+      "synonyms": [
+        "help tent",
+        "help-tent",
+        "help strip",
+        "help-strip",
+        "Help! Tent",
+        "Help! Strip",
+        "help tent strip"
+      ],
+      "related_skills": [
+        "support writers who need help",
+        "students raising hands during writing",
+        "independent writing routine",
+        "request help silently",
+        "writer's workshop management",
+        "avoid interrupting writing time",
+        "help signal"
+      ],
+      "source_section": "K-2 Section 2 — ML #6; 3-12 Section 2 — ML #5: Support writers when they need help"
+    },
+    "pie-foldable": {
+      "synonyms": [
+        "PIE foldable",
+        "pie foldable",
+        "pie-foldable",
+        "P.I.E. foldable",
+        "P.I.E foldable"
+      ],
+      "related_skills": [
+        "PIE purposes",
+        "writing purposes",
+        "persuade inform entertain",
+        "Persuade Inform Entertain",
+        "three purposes of writing",
+        "introduce PIE",
+        "write for different purposes"
+      ],
+      "source_section": "3-12 Section 1 — ML #1: Write for different purposes (P.I.E.)"
+    },
+    "story-surgery": {
+      "synonyms": [
+        "story surgery",
+        "story-surgery",
+        "revision surgery",
+        "cut-and-tape revision"
+      ],
+      "related_skills": [
+        "restructure paragraphs",
+        "scissors revision",
+        "rearrange writing",
+        "cut apart and reorder",
+        "major revision",
+        "reorganize a draft"
+      ],
+      "source_section": "3-12 Section 4 — ML #2: Make space for revision"
+    },
+    "two-perspectives-t-chart": {
+      "synonyms": [
+        "two perspectives T-chart",
+        "two-perspectives t-chart",
+        "two perspectives T chart",
+        "perspectives T-chart",
+        "Two-Perspectives T-Chart"
+      ],
+      "related_skills": [
+        "defend strongest position",
+        "persuasive reasoning",
+        "argumentative planning",
+        "defense attorney analogy",
+        "see both sides",
+        "identify strongest argument"
+      ],
+      "source_section": "3-12 Section 8 — ML #3: Identify the strongest position"
+    },
+    "they-say-i-say": {
+      "synonyms": [
+        "they say I say",
+        "they-say-i-say",
+        "They Say I Say",
+        "they say... I say..."
+      ],
+      "related_skills": [
+        "argumentative writing",
+        "counterclaim",
+        "present both sides",
+        "refute counterclaim",
+        "rebuttal",
+        "concede and counter",
+        "argument structure"
+      ],
+      "source_section": "3-12 Section 9 — ML #10: Present both sides with They Say... I Say..."
+    },
+    "you-do-i-do": {
+      "synonyms": [
+        "you do I do",
+        "you-do-i-do",
+        "You do, I do",
+        "you-try-first"
+      ],
+      "related_skills": [
+        "spelling responsibility",
+        "student independence",
+        "teacher assistance routine",
+        "kid tries first",
+        "reduce teacher spelling"
+      ],
+      "source_section": "3-12 Section 5 — ML #4: Require a You do, I do attitude"
+    },
+    "squiggle-line": {
+      "synonyms": [
+        "squiggle line",
+        "squiggle-line",
+        "squiggle lines",
+        "wavy line",
+        "squiggle mark"
+      ],
+      "related_skills": [
+        "mark unknown spellings",
+        "flag tricky words",
+        "spelling risk-taking",
+        "mark misspelled words",
+        "indicate spelling doubt"
+      ],
+      "source_section": "3-12 Section 5 — ML #2 Check squiggle-line spellings; K-2 Section 5 — ML #6 Mark tricky words with squiggle lines"
+    },
+    "read-up-write-down": {
+      "synonyms": [
+        "read up write down",
+        "read-up-write-down",
+        "Read Up, Write Down"
+      ],
+      "related_skills": [
+        "editing procedure",
+        "whisper reading while editing",
+        "proofreading routine",
+        "finger-tracking editing",
+        "read aloud to edit"
+      ],
+      "source_section": "3-12 Section 4 — ML #5: Read up and write down"
+    },
+    "whisper-read": {
+      "synonyms": [
+        "whisper read",
+        "whisper-read",
+        "whisper reading",
+        "whisper phone reading"
+      ],
+      "related_skills": [
+        "hear your writing",
+        "read aloud softly",
+        "catch mistakes by ear",
+        "hearing punctuation",
+        "reread your draft"
+      ],
+      "source_section": "3-12 Section 4 — ML #5; Section 13 — ML #1 Reread to hear punctuation; K-2 Section 11 — ML #7"
+    },
+    "temporary-title": {
+      "synonyms": [
+        "temporary title",
+        "cereal box title",
+        "cereal-box-title",
+        "Cheerios title",
+        "working title"
+      ],
+      "related_skills": [
+        "stay on topic",
+        "narrow topic focus",
+        "topic discipline",
+        "keep writing on topic",
+        "focus a draft"
+      ],
+      "source_section": "3-12 Section 8 — ML #15: Stay on topic with a temporary title"
+    },
+    "read-find-say-jot": {
+      "synonyms": [
+        "read find say jot",
+        "read-find-say-jot",
+        "Read Find Say Jot",
+        "4-step research process",
+        "four-step research process",
+        "read find say jot process"
+      ],
+      "related_skills": [
+        "research notes",
+        "collect facts from text",
+        "research before writing",
+        "report writing research",
+        "note-taking from sources",
+        "fact collecting",
+        "informative writing research"
+      ],
+      "source_section": "SKILL 1 Day 1/Day 2/Day 3 — 4-step process: Read a text, Find a fact, Say the fact in 1-4 words, Jot down the fact phrase"
+    },
+    "jot-fact-phrases": {
+      "synonyms": [
+        "jot fact phrases",
+        "jot-fact-phrases",
+        "fact phrases",
+        "jotting fact phrases",
+        "jot notes efficiently",
+        "write fact phrases"
+      ],
+      "related_skills": [
+        "research notes",
+        "efficient note-taking",
+        "shorten notes to key words",
+        "note-taking shortcuts",
+        "abbreviate facts",
+        "1-4 word facts",
+        "jot not write",
+        "research for report writing"
+      ],
+      "source_section": "SKILL 1 Day 2 — Jotting research facts in 1-4 words using abbreviations, symbols, and shortcuts"
+    },
+    "organize-into-provided-categories": {
+      "synonyms": [
+        "organize into provided categories",
+        "organize-into-provided-categories",
+        "sort into given categories",
+        "teacher-provided categories",
+        "sort facts into categories",
+        "provided category sort"
+      ],
+      "related_skills": [
+        "organize research notes",
+        "sort facts before writing",
+        "group related facts",
+        "prewriting organization",
+        "categorize research",
+        "report writing organization"
+      ],
+      "source_section": "SKILL 2 K-5 (Grades K-2) — Sorting cut-apart research facts into teacher-provided category labels before drafting a report"
+    },
+    "organize-create-own-categories": {
+      "synonyms": [
+        "organize create own categories",
+        "organize-create-own-categories",
+        "create your own categories",
+        "student-created categories",
+        "color-code categories",
+        "find your own categories"
+      ],
+      "related_skills": [
+        "organize research notes",
+        "group related facts",
+        "color-code research",
+        "prewriting organization",
+        "categorize independently",
+        "report writing organization"
+      ],
+      "source_section": "SKILL 2 K-5 (Grades 3-5) — Color-coding related research facts and naming categories independently before drafting a report"
+    },
+    "blue-hat-red-hat": {
+      "synonyms": ["blue hat red hat", "blue-hat red-hat", "two hats strategy"],
+      "related_skills": ["determine the strongest side", "pick the strongest reason", "which side is stronger", "choose a side to argue", "weigh both sides of an argument", "strongest persuasive reason"],
+      "source_section": "Phase-14 persuasive MLs (K-Gr5) — Determine the strongest side"
+    },
+    "opinion-words-anchor-chart": {
+      "synonyms": ["opinion words anchor chart", "opinion word bank", "opinion word wall"],
+      "related_skills": ["opinion words anchor chart", "words to state an opinion", "write an opinion", "opinion word bank", "persuasive word bank"],
+      "source_section": "Phase-14 persuasive MLs (K-Gr5) — Write an opinion"
+    },
+    "zip-it": {
+      "synonyms": ["zip it", "zip-it strategy"],
+      "related_skills": ["zip it", "stick to one strong reason", "stay focused persuasive", "hold back weaker reasons"],
+      "source_section": "Phase-14 persuasive MLs (Gr3-5) — Determine the strongest side"
+    },
+    "train-engine-caboose": {
+      "synonyms": ["train engine caboose", "engine and caboose", "opinion sandwich"],
+      "related_skills": ["train engine and caboose", "opinion paragraph structure", "opinion intro and conclusion", "frame an opinion paragraph"],
+      "source_section": "Phase-14 persuasive MLs (K-Gr2) — Write an opinion"
+    },
+    "hand-over-mouth": {
+      "synonyms": ["hand over mouth", "hand-over-mouth"],
+      "related_skills": ["hand over mouth", "hold back the weaker reason", "keep the weaker side quiet"],
+      "source_section": "Phase-14 persuasive MLs (K-Gr2) — Determine the strongest side"
+    },
+    "bigger-topic": {
+      "synonyms": ["bigger topic", "broaden the topic"],
+      "related_skills": ["bigger topic", "broaden the opinion topic", "narrow the opinion topic", "find a topic to have an opinion about"],
+      "source_section": "Phase-14 persuasive MLs (Gr3-5) — Write an opinion"
+    },
+    "shape-book": {
+      "synonyms": ["shape book", "mini shape book", "shape-book"],
+      "related_skills": ["shape book", "draw with accurate shapes", "accurate shapes and sizes", "draw a topic accurately", "build a drawing from shapes"],
+      "source_section": "Phase-14 drawing/labeling PK-1 — Accurate shapes and sizes"
+    },
+    "biography": {
+      "synonyms": ["biography", "draw a real person"],
+      "related_skills": ["draw a biography", "biography of a real person", "teach about a real person", "draw real people"],
+      "source_section": "Phase-14 drawing/labeling PK-1 — Real people with accurate details"
+    },
+    "basic-people-shapes": {
+      "synonyms": ["basic people shapes", "draw a person with shapes"],
+      "related_skills": ["basic people shapes", "how to draw people", "draw a person with shapes"],
+      "source_section": "Phase-14 drawing/labeling PK-1 — Real people with accurate details"
+    },
+    "true-to-life-colors": {
+      "synonyms": ["true to life colors", "true-to-life color", "realistic colors"],
+      "related_skills": ["true-to-life colors", "realistic colors", "color accurately", "color as information"],
+      "source_section": "Phase-14 drawing/labeling PK-1 — True-to-life colors"
+    },
+    "setting": {
+      "synonyms": ["setting", "environment", "add the setting"],
+      "related_skills": ["add setting and environment", "draw the setting", "teach where a topic belongs", "add a background to a drawing"],
+      "source_section": "Phase-14 drawing/labeling PK-1 — Setting and environment"
+    },
+    "adjectives-anchor-chart": {
+      "synonyms": ["adjectives anchor chart", "sensory adjectives", "describing words chart"],
+      "related_skills": ["choose the best adjective", "adjectives anchor chart", "sensory adjectives", "describing words", "pick the strongest adjective"],
+      "source_section": "Phase-14 drawing/labeling K — Choose the BEST adjective"
+    },
+    "sticky-dots": {
+      "synonyms": ["sticky dots", "sticky-dot details", "sticky dot"],
+      "related_skills": ["sticky-dot details", "develop ideas with sticky dots", "elaborate one idea at a time", "add details to an idea"],
+      "source_section": "Phase-14 drawing/labeling PK-1 — Sticky-dot details"
+    }
+  }
+}

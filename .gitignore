@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------------------
+# SECRETS — never commit these.
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+**/.streamlit/secrets.toml
+
+# ---------------------------------------------------------------------------
+# GENERATED ARTIFACTS — rebuilt locally, never committed.
+# See docs/SETUP.md.
+# ---------------------------------------------------------------------------
+
+# The search index. Rebuilt by `python3 ingest.py` (~25 MB).
+backend/qdrant_data/
+
+# The lesson-question index. Rebuilt by a build script (~93 MB — far over
+# GitHub's file-size limit, so it can never be committed).
+backend/data/ml_library_embeddings.json
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# ---------------------------------------------------------------------------
+# Editors / OS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+*.swp
