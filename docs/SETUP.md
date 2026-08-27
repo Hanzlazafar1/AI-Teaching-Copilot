@@ -14,9 +14,14 @@ setup: well under a dollar.**
 
 | | |
 |---|---|
-| **Python 3.10+** | On many machines the command is `python3`, not `python`. Every command below uses `python3` |
-| **An OpenAI API key** | Your own. **The project ships no key and never will** |
+| **Python 3.10+** | On macOS/Linux the command is usually `python3`; **on Windows it is normally `python`**. Commands below are written for a Unix shell — Windows equivalents are given where they differ |
+| **An OpenAI API key** | **Your own.** The project ships no key and never will. Don't reuse a shared or production key: it puts your usage on someone else's bill and inside their rate limit |
 | **~150 MB free disk** | For the two indexes you're about to build |
+| **~250 MB download** | One dependency (`onnxruntime`, via `fastembed`) is large. On a slow or filtered network it is the step most likely to fail — see §9 |
+
+> **On Windows**, PowerShell is assumed. Everything works, but three things differ: file copying,
+> clearing an environment variable, and the fact that `python3` is usually just `python`. Both
+> variants are shown at each step.
 
 ---
 
@@ -37,13 +42,22 @@ pip3 install -r frontend/requirements.txt
 
 ## 2 · Configure
 
+**macOS / Linux:**
+
 ```bash
 cp backend/.env.example backend/.env
-# edit backend/.env — paste your OpenAI key into OPENAI_API_KEY
-
 cp frontend/.streamlit/secrets.toml.example frontend/.streamlit/secrets.toml
-# edit it — choose any local password you like
 ```
+
+**Windows (PowerShell):**
+
+```powershell
+Copy-Item backend\.env.example backend\.env
+Copy-Item frontend\.streamlit\secrets.toml.example frontend\.streamlit\secrets.toml
+```
+
+Then edit both: paste **your own** OpenAI key into `OPENAI_API_KEY`, and choose any local password
+you like for the frontend.
 
 Both files are gitignored. **Read the comments in `.env.example`** — two of them will save you a
 confusing hour.
@@ -118,16 +132,32 @@ why verification comes *after* setup, not before.
 Terminal 1 — the backend:
 
 ```bash
+# macOS / Linux
 cd backend
 env -u OPENAI_API_KEY -u OPENAI_BASE_URL \
   python3 -m uvicorn main:app --host 127.0.0.1 --port 8765
 ```
 
+```powershell
+# Windows (PowerShell) — there is no `env -u`; clear the variables first
+cd backend
+Remove-Item Env:OPENAI_API_KEY  -ErrorAction SilentlyContinue
+Remove-Item Env:OPENAI_BASE_URL -ErrorAction SilentlyContinue
+python -m uvicorn main:app --host 127.0.0.1 --port 8765
+```
+
 Terminal 2 — the frontend:
 
 ```bash
+# macOS / Linux
 cd frontend
 python3 -m streamlit run app.py --server.port 8501
+```
+
+```powershell
+# Windows
+cd frontend
+python -m streamlit run app.py --server.port 8501
 ```
 
 Open **http://localhost:8501**, enter your password, and ask it something:
@@ -227,7 +257,47 @@ Don't run this casually. It exists for milestone verification, not routine devel
 
 ---
 
-## 9 · What to read next
+## 9 · Install problems
+
+### "THESE PACKAGES DO NOT MATCH THE HASHES FROM THE REQUIREMENTS FILE"
+
+**Almost certainly a truncated download, not tampering.** Look at the hash pip says it *got*:
+
+```
+Got  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+```
+
+**That value is the SHA-256 of an empty file.** pip received **zero bytes** and correctly refused
+to install them. The message is generic and alarming; this cause is mundane.
+
+It is usually `onnxruntime` (~200 MB, pulled in by `fastembed`), because it's the largest download
+and therefore the one a flaky connection truncates.
+
+```bash
+pip cache remove onnxruntime
+pip install --no-cache-dir onnxruntime
+pip install -r backend/requirements.txt -r backend/requirements-dev.txt
+```
+
+If it fails again at the same package, the problem is the **network path** — a corporate proxy,
+VPN, or antivirus scanner is truncating the transfer. Try a different network before anything
+else.
+
+> **Note:** none of this project's requirements files pin hashes. Any hash pip mentions comes from
+> the package index itself. So *"update the hashes"* — pip's own suggestion — is **not** the fix
+> here, and there is nothing in this repository to update.
+
+Do **not** work around it by dropping `fastembed`. It provides the keyword half of the search, and
+without it retrieval silently degrades to meaning-matching only.
+
+### Anything else during install
+
+Re-run with `--no-cache-dir` first. A corrupted cache entry explains most one-off install failures,
+and it costs a minute to rule out.
+
+---
+
+## 10 · What to read next
 
 - **[`../README.md`](../README.md)** — the map of what's where, and the known issues worth knowing
   on day one.
