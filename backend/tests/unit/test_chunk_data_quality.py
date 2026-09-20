@@ -7,12 +7,12 @@ from pathlib import Path
 from ingest import VALID_GRADE_LEVELS
 
 _ROOT = Path(__file__).resolve().parent.parent.parent  # copilot-v4/
-_CANONICAL_TRIGGERS = set(json.loads((_ROOT / "data" / "skill_triggers.json").read_text())["triggers"])
+_CANONICAL_TRIGGERS = set(json.loads((_ROOT / "data" / "skill_triggers.json").read_text(encoding="utf-8"))["triggers"])
 
 
 def _all_chunks():
     for f in sorted(glob.glob(str(_ROOT / "chunks" / "*.json"))):
-        data = json.loads(Path(f).read_text())
+        data = json.loads(Path(f).read_text(encoding="utf-8"))
         chunks = data if isinstance(data, list) else data.get("chunks", [data])
         for c in chunks:
             if isinstance(c, dict) and c.get("chunk_id"):

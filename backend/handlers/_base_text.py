@@ -31,7 +31,7 @@ from openai import AsyncOpenAI
 
 from handlers.formatting import format_lesson_header
 from handlers.picklist import extract_offered_skills
-from llm_params import temperature_kwargs
+from llm_params import call_params, temperature_kwargs
 from schemas import (
     ChunkRef,
     Conversation,
@@ -675,7 +675,7 @@ async def _single_text_attempt(
     completion = await client.chat.completions.create(
         model=model,
         messages=messages,
-        **temperature_kwargs(model, temperature),
+        **call_params(model, temperature, max_tokens=4096),
     )
     response_text = (completion.choices[0].message.content or "").strip()
 

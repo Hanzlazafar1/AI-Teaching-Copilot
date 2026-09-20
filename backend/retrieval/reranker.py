@@ -138,7 +138,7 @@ _TIER_OTHER_LAUNCH = 1    # "any other Launch content"
 
 _LIBRARY_SOURCE_CHUNK_IDS: frozenset[str] = frozenset()
 try:
-    _lib = json.loads(_LIBRARY_PATH.read_text())
+    _lib = json.loads(_LIBRARY_PATH.read_text(encoding="utf-8"))
     _LIBRARY_SOURCE_CHUNK_IDS = frozenset(
         e["source_chunk_id"] for e in _lib.get("entries", []) if e.get("source_chunk_id")
     )

@@ -94,6 +94,12 @@ if "pending_example_query" not in st.session_state:
     st.session_state.pending_example_query = None
 if "model_label" not in st.session_state:
     st.session_state.model_label = DEFAULT_MODEL_LABEL
+if "access_token" not in st.session_state:
+    st.session_state.access_token = None
+if "teacher_profile" not in st.session_state:
+    st.session_state.teacher_profile = None
+if "conversations_list" not in st.session_state:
+    st.session_state.conversations_list = []
 
 
 # ---------------------------------------------------------------------------
@@ -242,6 +248,171 @@ def _lesson_as_text(lesson: dict) -> str:
         lines.append(followup)
         lines.append("")
     return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
+# Auth & Conversation API Helpers
+# ---------------------------------------------------------------------------
+
+
+def _auth_headers() -> dict[str, str]:
+    headers = {}
+    if st.session_state.get("access_token"):
+        headers["Authorization"] = f"Bearer {st.session_state.access_token}"
+    return headers
+
+
+def _fetch_conversations() -> list[dict[str, Any]]:
+    if not st.session_state.get("access_token"):
+        return []
+    try:
+        resp = requests.get(
+            f"{API_BASE}/api/conversations",
+            headers=_auth_headers(),
+            timeout=10,
+        )
+        if resp.status_code == 200:
+            return resp.json()
+    except Exception:
+        pass
+    return []
+
+
+def _load_conversation(session_id: str) -> bool:
+    try:
+        resp = requests.get(
+            f"{API_BASE}/api/conversations/{session_id}",
+            headers=_auth_headers(),
+            timeout=15,
+        )
+        if resp.status_code == 200:
+            data = resp.json()
+            loaded_messages = []
+            for t in data.get("turns", []):
+                if t.get("role") == "user":
+                    loaded_messages.append({
+                        "role": "user",
+                        "content": t.get("text", ""),
+                    })
+                elif t.get("role") == "assistant":
+                    structured = t.get("structured")
+                    if isinstance(structured, dict):
+                        content = lesson_display_title(structured)
+                        raw_response = structured
+                    else:
+                        content = t.get("text", "")
+                        raw_response = None
+                    loaded_messages.append({
+                        "role": "assistant",
+                        "content": content,
+                        "raw_response": raw_response,
+                        "metadata": {
+                            "quality": t.get("quality"),
+                            "model_profile": MODEL_PROFILES[st.session_state.model_label],
+                        },
+                    })
+            st.session_state.session_id = session_id
+            st.session_state.messages = loaded_messages
+            st.session_state.last_metadata = None
+            return True
+    except Exception as e:
+        st.sidebar.error(f"Failed to load chat: {e}")
+    return False
+
+
+def _delete_conversation(session_id: str) -> None:
+    try:
+        resp = requests.delete(
+            f"{API_BASE}/api/conversations/{session_id}",
+            headers=_auth_headers(),
+            timeout=10,
+        )
+        if resp.status_code == 200:
+            if st.session_state.session_id == session_id:
+                st.session_state.session_id = str(uuid.uuid4())
+                st.session_state.messages = []
+                st.session_state.last_metadata = None
+            st.session_state.conversations_list = [
+                c for c in st.session_state.conversations_list if c["id"] != session_id
+            ]
+            st.rerun()
+    except Exception as e:
+        st.sidebar.error(f"Failed to delete: {e}")
+
+
+def _login_teacher(email: str, password: str) -> bool:
+    try:
+        resp = requests.post(
+            f"{API_BASE}/api/auth/login",
+            json={"email": email, "password": password},
+            timeout=10,
+        )
+        if resp.status_code == 200:
+            data = resp.json()
+            st.session_state.access_token = data["access_token"]
+            st.session_state.teacher_profile = data["user"]
+            st.session_state.conversations_list = _fetch_conversations()
+            st.session_state.messages = []
+            st.session_state.session_id = str(uuid.uuid4())
+            st.rerun()
+            return True
+        else:
+            err = resp.json().get("detail", "Login failed")
+            st.sidebar.error(err)
+    except Exception as e:
+        st.sidebar.error(f"Connection error: {e}")
+    return False
+
+
+def _register_teacher(email: str, password: str, full_name: str, default_grade: str) -> bool:
+    try:
+        resp = requests.post(
+            f"{API_BASE}/api/auth/register",
+            json={
+                "email": email,
+                "password": password,
+                "full_name": full_name,
+                "default_grade": default_grade,
+            },
+            timeout=10,
+        )
+        if resp.status_code == 201:
+            data = resp.json()
+            st.session_state.access_token = data["access_token"]
+            st.session_state.teacher_profile = data["user"]
+            st.session_state.conversations_list = []
+            st.session_state.messages = []
+            st.session_state.session_id = str(uuid.uuid4())
+            st.rerun()
+            return True
+        else:
+            err = resp.json().get("detail", "Registration failed")
+            st.sidebar.error(err)
+    except Exception as e:
+        st.sidebar.error(f"Connection error: {e}")
+    return False
+
+
+def _update_preferences(grade: str, mode: str, instructions: str) -> bool:
+    try:
+        resp = requests.patch(
+            f"{API_BASE}/api/auth/preferences",
+            headers=_auth_headers(),
+            json={
+                "default_grade": grade if grade != "—" else None,
+                "default_mode": mode if mode != "—" else None,
+                "custom_instructions": instructions,
+            },
+            timeout=10,
+        )
+        if resp.status_code == 200:
+            st.session_state.teacher_profile = resp.json()
+            st.sidebar.success("Preferences updated!")
+            st.rerun()
+            return True
+    except Exception as e:
+        st.sidebar.error(f"Update error: {e}")
+    return False
 
 
 # ---------------------------------------------------------------------------
@@ -422,22 +593,130 @@ def _render_retrieved_context(meta: dict) -> None:
 
 
 def render_sidebar() -> None:
-    """Render the sidebar with metadata from the last API response."""
+    """Render sidebar with user account, conversation threads, and diagnostics."""
+    # 1. New Chat button at top of sidebar
+    if st.sidebar.button("➕ New Chat", use_container_width=True, type="primary"):
+        st.session_state.session_id = str(uuid.uuid4())
+        st.session_state.messages = []
+        st.session_state.last_metadata = None
+        st.rerun()
+
+    # 2. Teacher Profile / Auth Section
+    if st.session_state.get("access_token") and st.session_state.get("teacher_profile"):
+        prof = st.session_state.teacher_profile
+        name = prof.get("full_name") or prof.get("email", "Teacher")
+        st.sidebar.markdown(f"**Teacher:** {name}")
+        grade_badge = f"Grade **{prof.get('default_grade')}**" if prof.get("default_grade") else "No default grade"
+        mode_badge = f" · {prof.get('default_mode')}" if prof.get("default_mode") else ""
+        st.sidebar.caption(f"Default: {grade_badge}{mode_badge}")
+
+        with st.sidebar.expander("⚙️ Classroom Preferences", expanded=False):
+            grades = ["—", "K", "1", "2", "3", "4", "5", "6", "7", "8", "K-2", "3-5", "6-8"]
+            current_g = str(prof.get("default_grade") or "—")
+            g_idx = grades.index(current_g) if current_g in grades else 0
+            new_g = st.radio("Default Grade", grades, index=g_idx, horizontal=True, key="pref_grade_radio")
+
+            modes = ["—", "Inform", "Persuade", "Entertain"]
+            current_m = prof.get("default_mode") or "—"
+            m_idx = modes.index(current_m) if current_m in modes else 0
+            new_m = st.radio("Default Mode", modes, index=m_idx, horizontal=True, key="pref_mode_radio")
+
+            new_inst = st.text_area(
+                "Classroom Notes (e.g. EL scaffolds)",
+                value=prof.get("custom_instructions") or "",
+                key="pref_inst_text",
+            )
+            col_save, col_logout = st.columns(2)
+            with col_save:
+                if st.button("Save", key="save_pref_btn", use_container_width=True):
+                    _update_preferences(new_g, new_m, new_inst)
+            with col_logout:
+                if st.button("Sign Out", key="logout_btn", use_container_width=True):
+                    st.session_state.access_token = None
+                    st.session_state.teacher_profile = None
+                    st.session_state.conversations_list = []
+                    st.session_state.session_id = str(uuid.uuid4())
+                    st.session_state.messages = []
+                    st.session_state.last_metadata = None
+                    st.rerun()
+    else:
+        with st.sidebar.expander("🔐 Teacher Sign In / Register", expanded=False):
+            tab_login, tab_reg = st.tabs(["Log In", "Register"])
+            with tab_login:
+                log_email = st.text_input("Email", key="login_email_input")
+                log_pw = st.text_input("Password", type="password", key="login_pw_input")
+                if st.button("Log In", key="login_submit_btn", use_container_width=True):
+                    if log_email and log_pw:
+                        _login_teacher(log_email, log_pw)
+                    else:
+                        st.warning("Please enter both email and password.")
+            with tab_reg:
+                reg_email = st.text_input("Email", key="reg_email_input")
+                reg_pw = st.text_input("Password (min 6 chars)", type="password", key="reg_pw_input")
+                reg_name = st.text_input("Full Name", key="reg_name_input")
+                reg_grade = st.radio(
+                    "Teaching Grade",
+                    ["4", "K", "1", "2", "3", "5", "6", "7", "8", "K-2", "3-5", "6-8"],
+                    horizontal=True,
+                    key="reg_grade_radio",
+                )
+                if st.button("Create Account", key="reg_submit_btn", use_container_width=True):
+                    if reg_email and reg_pw:
+                        _register_teacher(reg_email, reg_pw, reg_name, reg_grade)
+                    else:
+                        st.warning("Please enter email and password.")
+
+    st.sidebar.divider()
+
+    # 3. Conversation History (Threads)
+    if st.session_state.get("access_token"):
+        st.sidebar.subheader("Past Conversations")
+        if st.sidebar.button("🔄 Refresh List", key="refresh_convs_btn", use_container_width=True):
+            st.session_state.conversations_list = _fetch_conversations()
+            st.rerun()
+
+        convs = st.session_state.conversations_list
+        if not convs:
+            st.sidebar.caption("No saved conversations yet.")
+        else:
+            for c in convs:
+                cid = c["id"]
+                ctitle = c.get("title") or "Untitled"
+                if c.get("is_pinned"):
+                    ctitle = f"📌 {ctitle}"
+                col_thread, col_del = st.sidebar.columns([4, 1])
+                is_active = (cid == st.session_state.session_id)
+                btn_label = f"▶ {ctitle}" if is_active else ctitle
+                with col_thread:
+                    if st.button(
+                        btn_label,
+                        key=f"thread_{cid}",
+                        use_container_width=True,
+                        type="secondary" if not is_active else "primary",
+                    ):
+                        if not is_active:
+                            _load_conversation(cid)
+                            st.rerun()
+                with col_del:
+                    if st.button("🗑️", key=f"del_{cid}", help="Delete conversation"):
+                        _delete_conversation(cid)
+
+        st.sidebar.divider()
+
+    # 4. Pipeline Diagnostics (Folded cleanly)
     meta = st.session_state.last_metadata or {}
-
-    _render_session_memory(meta.get("session_state"))
-    st.sidebar.divider()
-
-    _render_parsed_query(meta.get("parsed_query"))
-    st.sidebar.divider()
-
-    if meta:
-        _render_quality(meta)
-        _render_ungrounded(meta)
-        st.sidebar.divider()
-        _render_sources(meta)
-        st.sidebar.divider()
-        _render_retrieved_context(meta)
+    with st.sidebar.expander("🔍 Pipeline Diagnostics", expanded=False):
+        _render_session_memory(meta.get("session_state"))
+        st.divider()
+        _render_parsed_query(meta.get("parsed_query"))
+        st.divider()
+        if meta:
+            _render_quality(meta)
+            _render_ungrounded(meta)
+            st.divider()
+            _render_sources(meta)
+            st.divider()
+            _render_retrieved_context(meta)
 
 
 render_sidebar()
@@ -449,10 +728,16 @@ render_sidebar()
 
 
 st.title("Brady AI Writing Co-Pilot")
-st.caption(
+sub_caption = (
     f"Testing interface · Session `{_short_session_id(st.session_state.session_id)}` · "
     f"{len(st.session_state.messages)//2} turns"
 )
+if st.session_state.get("teacher_profile"):
+    prof = st.session_state.teacher_profile
+    teacher_name = prof.get("full_name") or prof.get("email")
+    grade_note = f" (Grade {prof.get('default_grade')})" if prof.get("default_grade") else ""
+    sub_caption += f" · Teacher: **{teacher_name}**{grade_note}"
+st.caption(sub_caption)
 
 # Model is fixed to GPT-5.4 (Brady removed the 4.0 choice, req #15 / U1).
 st.session_state.model_label = DEFAULT_MODEL_LABEL
@@ -533,22 +818,31 @@ if example_prompt:
 def _call_api(message: str) -> dict[str, Any] | None:
     """POST to /api/chat. Returns the parsed JSON, or None on error
     (caller shows the error and stops the turn)."""
+    headers = _auth_headers()
+    user_id = "streamlit-tester"
+    if st.session_state.get("teacher_profile"):
+        user_id = st.session_state.teacher_profile.get("id", "streamlit-tester")
+
     try:
         resp = requests.post(
             f"{API_BASE}/api/chat",
             json={
                 "message": message,
                 "session_id": st.session_state.session_id,
-                "user_id": "streamlit-tester",
+                "user_id": user_id,
                 # Current model-profile selection. Backend validates
                 # against its whitelist; unknown values silently fall
                 # back to the configured default.
                 "model": MODEL_PROFILES[st.session_state.model_label],
             },
+            headers=headers,
             timeout=REQUEST_TIMEOUT_SECONDS,
         )
         resp.raise_for_status()
-        return resp.json()
+        data = resp.json()
+        if st.session_state.get("access_token"):
+            st.session_state.conversations_list = _fetch_conversations()
+        return data
     except requests.exceptions.ConnectionError:
         st.error(
             f"Cannot connect to backend at {API_BASE}. "
@@ -565,9 +859,8 @@ def _call_api(message: str) -> dict[str, Any] | None:
         # Surface structured error envelope if backend returned one.
         try:
             body = e.response.json()
-            code = body.get("code") or e.response.status_code
             message = body.get("message") or str(e)
-            st.error(f"Backend error [{code}]: {message}")
+            st.error(message)
         except ValueError:
             st.error(f"Backend error: {e}")
         return None

@@ -7,6 +7,7 @@ pedagogical rationale behind each field.
 
 from schemas.handshakes import (
     PendingClarification,
+    PendingLessonSequence,
     PendingLibraryOffer,
     PendingMLConfirmation,
     SessionHandshakes,
@@ -49,6 +50,7 @@ __all__ = [
     "Turn",
     # handshakes
     "PendingClarification",
+    "PendingLessonSequence",
     "PendingLibraryOffer",
     "PendingMLConfirmation",
     "SessionHandshakes",

@@ -26,8 +26,11 @@ from api.request_context import (
     RequestIdMiddleware,
     req_id_from_request,
 )
+from api.routes_auth import router as auth_router
+from api.routes_conversations import router as conversations_router
 from api.routes_v4 import router
 from config import settings
+from db.session import init_db
 from generation.prompts import init_prompts
 
 # ---------------------------------------------------------------------------
@@ -61,13 +64,17 @@ logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Initialize prompts and framework rules at startup."""
+    """Initialize prompts, framework rules, and database tables at startup."""
     # Re-run logging config here so we reclaim uvicorn's loggers AFTER
     # uvicorn's own bootstrap dictConfig has run (which happens between
     # our import-time call and the lifespan start). dictConfig is
     # idempotent, so the double-call is safe.
     configure_logging(settings)
     init_prompts()
+    try:
+        await init_db()
+    except Exception as e:
+        logger.warning("Database table initialization deferred or failed: %s", e)
     logger.info("Brady AI Writing Co-Pilot v4 started")
     yield
     logger.info("Brady AI Writing Co-Pilot v4 shutting down")
@@ -97,6 +104,8 @@ app.add_middleware(
 app.add_middleware(RequestIdMiddleware)
 
 app.include_router(router)
+app.include_router(auth_router)
+app.include_router(conversations_router)
 
 
 # ---------------------------------------------------------------------------
@@ -131,7 +140,14 @@ async def _app_error_handler(request: Request, exc: AppError) -> JSONResponse:
 async def _validation_handler(
     request: Request, exc: RequestValidationError
 ) -> JSONResponse:
-    err = AppError.validation_error("Request validation failed", errors=exc.errors())
+    msg = "Request validation failed"
+    for e in exc.errors():
+        loc = e.get("loc", ())
+        err_type = str(e.get("type", ""))
+        if "message" in loc and ("max_length" in err_type or "too_long" in err_type or "string_above_max_length" in err_type):
+            msg = f"The input text is too long. Maximum allowed length is {settings.max_query_length:,} characters."
+            break
+    err = AppError.validation_error(msg, errors=exc.errors())
     logger.warning("Validation failure on %s: %s", request.url.path, exc.errors())
     return _error_json(err, request)
 

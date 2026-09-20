@@ -29,7 +29,7 @@ def _load_framework_rules() -> str:
         logger.error("Framework chunks file not found: %s", path)
         return "(Framework rules unavailable)"
 
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         chunks = json.load(f)
 
     rules = "\n\n".join(c["content"] for c in chunks)
@@ -114,7 +114,7 @@ def _load_known_terms() -> set[str]:
 
     for filepath in chunks_dir.glob("*.json"):
         try:
-            with open(filepath) as f:
+            with open(filepath, encoding="utf-8") as f:
                 data = json.load(f)
         except (OSError, json.JSONDecodeError) as exc:
             logger.warning("Skipping malformed chunk file %s: %s", filepath, exc)

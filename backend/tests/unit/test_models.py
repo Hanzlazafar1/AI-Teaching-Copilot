@@ -24,8 +24,11 @@ class TestChatRequest:
         assert req.session_id == "sess-123"
 
     def test_max_length_enforced(self):
+        # Long inputs up to 100,000 chars (e.g. video transcripts) pass validation
+        req = ChatRequest(message="x" * 50000)
+        assert len(req.message) == 50000
         with pytest.raises(ValidationError):
-            ChatRequest(message="x" * 2001)
+            ChatRequest(message="x" * 100001)
 
     def test_empty_message_allowed(self):
         # Empty string is technically valid — the route handles this

@@ -41,14 +41,58 @@ _REQUIRED_SECRETS: tuple[str, ...] = (
 class Settings(BaseSettings):
     """Centralized settings loaded from .env with sensible defaults."""
 
+    # --- LLM Provider Selection ("openrouter" or "openai") ---
+    llm_provider: str = "openrouter"
+
     # --- OpenAI / OpenRouter ---
     openai_api_key: str = ""
-    openai_base_url: str = ""  # Set to https://openrouter.ai/api/v1 for OpenRouter
-    openai_generation_model: str = "gpt-5.4"
-    openai_judge_model: str = "gpt-5.4-mini"
-    openai_query_model: str = "gpt-5.4-mini"
+    openrouter_api_key: str = ""
+    openrouter_base_url: str = "https://openrouter.ai/api/v1"
+    openai_base_url: str = ""  # Set to override base URL directly
+    openai_generation_model: str = "openai/gpt-4o"
+    openai_judge_model: str = "openai/gpt-4o-mini"
+    openai_query_model: str = "openai/gpt-4o-mini"
     openai_embedding_model: str = "text-embedding-3-large"
     embedding_dimensions: int = 3072
+
+    @property
+    def effective_api_key(self) -> str:
+        """Return the API key for the active provider."""
+        if self.llm_provider.lower() == "openrouter":
+            return self.openrouter_api_key or self.openai_api_key
+        return self.openai_api_key
+
+    @property
+    def effective_base_url(self) -> Optional[str]:
+        """Return the base URL for the active provider."""
+        if self.llm_provider.lower() == "openrouter":
+            return self.openrouter_base_url
+        return self.openai_base_url.strip() if self.openai_base_url.strip() else None
+
+    @property
+    def effective_generation_model(self) -> str:
+        """Return model identifier formatted for the active provider."""
+        if self.llm_provider.lower() == "openrouter":
+            if "/" not in self.openai_generation_model:
+                return f"openai/{self.openai_generation_model}"
+            return self.openai_generation_model
+        return self.openai_generation_model.replace("openai/", "")
+
+    @property
+    def effective_query_model(self) -> str:
+        if self.llm_provider.lower() == "openrouter":
+            if "/" not in self.openai_query_model:
+                return f"openai/{self.openai_query_model}"
+            return self.openai_query_model
+        return self.openai_query_model.replace("openai/", "")
+
+    @property
+    def effective_judge_model(self) -> str:
+        if self.llm_provider.lower() == "openrouter":
+            if "/" not in self.openai_judge_model:
+                return f"openai/{self.openai_judge_model}"
+            return self.openai_judge_model
+        return self.openai_judge_model.replace("openai/", "")
 
     # --- Validation ---
     judge_score_threshold: float = 85.0
@@ -81,7 +125,7 @@ class Settings(BaseSettings):
     # request at INFO by default — overwhelming at prod scale. Default WARNING
     # keeps their errors/warnings without drowning our app's own logs.
     log_thirdparty_level: str = "WARNING"
-    max_query_length: int = 2000
+    max_query_length: int = 100000
     rate_limit_per_hour: int = 50
     cors_origins: list[str] = [
         "http://localhost:3000",
@@ -97,6 +141,14 @@ class Settings(BaseSettings):
     ingest_exclude_files: list[str] = [
         "01-master-4step.json",  # loaded at startup into system prompt
     ]
+
+    # --- Database & Persistence ---
+    database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/brady_copilot"
+
+    # --- Authentication & JWT ---
+    jwt_secret_key: str = "brady-copilot-dev-secret-key-change-in-production-2026"
+    jwt_algorithm: str = "HS256"
+    jwt_access_token_expire_minutes: int = 1440  # 24 hours
 
     model_config = {
         "env_file": ".env",
@@ -127,8 +179,9 @@ def _validate_required_secrets(s: Settings) -> None:
     for name in _REQUIRED_SECRETS:
         raw = getattr(s, name, "")
         if not raw or not str(raw).strip():
-            # Report the env-var form (uppercase) since that's what operators
-            # set in their deploy tooling.
+            # If using openrouter, openrouter_api_key satisfies the primary key requirement
+            if name == "openai_api_key" and s.llm_provider.lower() == "openrouter" and s.effective_api_key:
+                continue
             missing.append(name.upper())
 
     if missing:

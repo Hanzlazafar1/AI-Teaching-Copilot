@@ -98,6 +98,13 @@ def test_rules_mention_details_and_story() -> None:
     assert "narrative" in GLOBAL_VOCAB_RULES.lower()
 
 
+def test_rules_mention_pronoun_agreement() -> None:
+    assert "singular/plural pronoun" in GLOBAL_VOCAB_RULES.lower()
+    assert "demonstrative" in GLOBAL_VOCAB_RULES.lower()
+    assert "these" in GLOBAL_VOCAB_RULES.lower()
+    assert "this" in GLOBAL_VOCAB_RULES.lower()
+
+
 def test_global_rules_spliced_into_every_builder() -> None:
     for prompt in _all_six_prompts():
         assert GLOBAL_VOCAB_RULES.strip() in prompt
@@ -380,3 +387,30 @@ def test_coaching_bespoke_frustration_block_removed_superseded_by_shared_rule() 
     )
     assert FRUSTRATION_VALIDATION_RULE.strip() in prompt
     assert "This is not unusual" in prompt
+
+
+# ---------------------------------------------------------------------------
+# FULFILL_OFFERED_DELIVERABLES_RULE — deliver promised deliverables when
+# accepted by teacher (chart of new-writing vs revisit days, unit tables, etc.)
+# ---------------------------------------------------------------------------
+
+
+def test_fulfill_offered_deliverables_rule_carries_key_instructions() -> None:
+    r = _prompt_rules.FULFILL_OFFERED_DELIVERABLES_RULE
+    assert "new-writing days vs. revisit days" in r
+    assert "PRODUCE AND DELIVER THE PROMISED DELIVERABLE IMMEDIATELY" in r
+    assert "NEVER ask the teacher to supply the details" in r
+    assert "1 skill takes 2-4 days" in r
+
+
+def test_fulfill_offered_deliverables_rule_spliced_into_text_handlers() -> None:
+    conv = Conversation(session_id="s1")
+    prompts = [
+        how_to_teach._build_prompt(_basic_intent(RequestType.HOW_TO_TEACH), "", conv, None),
+        plan_unit._build_prompt(_basic_intent(RequestType.PLAN_UNIT), "", conv, None),
+        coaching._build_prompt(_basic_intent(RequestType.COACHING), "", conv, None),
+    ]
+    for prompt in prompts:
+        assert _prompt_rules.FULFILL_OFFERED_DELIVERABLES_RULE.strip() in prompt
+        assert "PRODUCE AND DELIVER THE PROMISED DELIVERABLE IMMEDIATELY" in prompt
+

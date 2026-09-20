@@ -114,7 +114,7 @@ def load_corpus_chunks() -> dict[str, dict[str, Any]]:
     scripts/build_ml_library.py (chunk files are JSON lists)."""
     chunks: dict[str, dict[str, Any]] = {}
     for path in sorted(CHUNKS_DIR.glob("*.json")):
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             for chunk in json.load(f):
                 cid = chunk.get("chunk_id")
                 if cid:
@@ -123,7 +123,7 @@ def load_corpus_chunks() -> dict[str, dict[str, Any]]:
 
 
 def load_library() -> dict[str, Any]:
-    with open(LIBRARY_PATH) as f:
+    with open(LIBRARY_PATH, encoding="utf-8") as f:
         return json.load(f)
 
 

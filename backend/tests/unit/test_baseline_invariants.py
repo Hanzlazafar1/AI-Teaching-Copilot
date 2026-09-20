@@ -55,7 +55,7 @@ def test_stale_baseline_entries_name_real_cases_and_invariants():
 
 
 def test_golden_baseline_satisfies_all_invariants():
-    data = json.loads(_BASELINE.read_text())
+    data = json.loads(_BASELINE.read_text(encoding="utf-8"))
     by = {c["id"]: c["response"] for c in data}
     failures: list[str] = []
     expired: list[str] = []

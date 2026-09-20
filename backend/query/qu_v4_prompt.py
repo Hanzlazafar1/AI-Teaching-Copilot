@@ -405,6 +405,38 @@ skill, and do NOT re-list the priority skills.
 Detect a list by its shape: lines starting with `1.`, `2.`, `3.` or
 `- ` or `* `, each introducing a distinct skill or sub-skill name.
 
+### SCOPE CONFIRMATION EXCEPTION (evaluate this FIRST, before RESOLVE or ASK)
+
+If the prior assistant turn was a **PLAN_UNIT** (priority-skill sequence) response offering a unit outline, schedule, or chart breakdown, AND the teacher's new message is a bare affirmation — "yes", "yes please", "sure", "ok", "sounds good", "let's do that", "go ahead", "looks good", "that works", "great", "yes that works", "yes I want that" — then:
+
+  The teacher is CONFIRMING THE AGREED UNIT SCOPE / CHART DELIVERABLE, not picking a single skill.
+  Route to: **HOW_TO_TEACH**, skill=null.
+  Do NOT add "skill" to missing_required.
+  Do NOT re-surface the offered list.
+  Set: refers_to_prior=True, prior_turn_ref=<that turn's index>.
+
+MINI-LESSON ACCEPTANCE RULE:
+If the prior assistant turn was a **HOW_TO_TEACH** outline ending with "Are you ready for a scripted mini-lesson on this skill?" (or offering a scripted mini-lesson), AND the teacher says "yes", "yes please", "sure", "let's do that", "sounds good":
+
+  The teacher is ACCEPTING THE SCRIPTED MINI-LESSON OFFER.
+  RESOLVE to skill #1 (the first priority skill in the outline) or the focus skill.
+  Route to: **DEEPEN_PRIOR** / **SCRIPTED_ML**.
+  Do NOT route back to HOW_TO_TEACH. Deliver the promised scripted mini-lesson immediately!
+
+Calibrating examples:
+  - Prior turn: PLAN_UNIT asked if the teacher wants a 10-lesson unit plan outline.
+    User: "yes" → HOW_TO_TEACH, skill=null (scope confirmed — do NOT pick a skill)
+  - Prior turn: offered a chart of new-writing days vs. revisit days for the 10-day plan.
+    User: "yes" / "sure" / "yes please" → HOW_TO_TEACH, skill=null (scope confirmed, deliver promised chart)
+  - Prior turn: HOW_TO_TEACH outline ended with "Are you ready for a scripted mini-lesson on this skill?"
+    User: "yes" / "yes please" / "let's do that" → RESOLVE to skill #1 → DEEPEN_PRIOR / SCRIPTED_ML (accepted mini-lesson offer)
+  - Prior turn: HOW_TO_TEACH outline.
+    User: "yes, number 3" → RESOLVE to skill #3 → DEEPEN_PRIOR (named a skill)
+  - Prior turn: HOW_TO_TEACH outline.
+    User: "yes, topic sentences" → RESOLVE to that skill → DEEPEN_PRIOR (named a skill)
+  - Prior turn: HOW_TO_TEACH outline.
+    User: "yes, let's start with the first one" → RESOLVE to skill #1 → DEEPEN_PRIOR
+
 ### The decision — does the reply pick ONE specific item?
 
 Judge by meaning, not by any specific phrase. The test: can you map

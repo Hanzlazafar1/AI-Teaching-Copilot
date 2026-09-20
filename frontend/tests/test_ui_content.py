@@ -21,7 +21,7 @@ from ui_content import (
 # ui_content.py above was extracted as an importable module). So the model
 # assertions below read app.py's source statically instead of importing it.
 _APP_PY = Path(__file__).resolve().parent.parent / "app.py"
-_APP_SOURCE = _APP_PY.read_text()
+_APP_SOURCE = _APP_PY.read_text(encoding="utf-8")
 
 
 def _model_profiles() -> dict[str, str]:

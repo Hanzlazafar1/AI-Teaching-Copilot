@@ -21,9 +21,8 @@ import asyncio
 import time
 import uuid
 from collections import defaultdict
-from typing import Any
-
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from api.conversation_store import get_store
 from api.dependencies import (
@@ -32,6 +31,10 @@ from api.dependencies import (
     get_openai_client,
     retrieval_fn,
 )
+from auth.dependencies import get_optional_user
+from db.models import UserModel
+from db.repository import load_conversation, save_conversation
+from db.session import get_db_session
 from api.errors import AppError
 from api.models import (
     ChatRequest,
@@ -81,13 +84,22 @@ def _check_rate_limit(user_id: str) -> bool:
 
 
 @router.post("/chat", response_model=ChatResponse)
-async def chat(request: ChatRequest) -> ChatResponse:
-    """Main chat endpoint — QU-driven, conversation-as-memory."""
-    user_id = request.user_id or "anonymous"
+async def chat(
+    request: ChatRequest,
+    current_user: Optional[UserModel] = Depends(get_optional_user),
+    session: AsyncSession = Depends(get_db_session),
+) -> ChatResponse:
+    """Main chat endpoint — QU-driven, conversation-as-memory with DB persistence."""
+    effective_user_id = current_user.id if current_user else (request.user_id or "anonymous")
     session_id = request.session_id or str(uuid.uuid4())
 
-    if _check_rate_limit(user_id):
+    if _check_rate_limit(effective_user_id):
         raise AppError.rate_limited(retry_after=3600)
+
+    if len(request.message) > settings.max_query_length:
+        raise AppError.validation_error(
+            f"The input text is too long ({len(request.message):,} characters). Maximum allowed length is {settings.max_query_length:,} characters."
+        )
 
     models = resolve_models(request.model, settings)
 
@@ -96,16 +108,17 @@ async def chat(request: ChatRequest) -> ChatResponse:
     library = get_ml_library()
     store = get_store()
 
-    conversation, handshakes = store.load(session_id, user_id=user_id)
+    # Load from DB repository with sync to in-memory store
+    try:
+        conversation, handshakes = await load_conversation(
+            session, session_id, user_id=effective_user_id
+        )
+    except Exception as e:
+        conversation, handshakes = store.load(session_id, user_id=effective_user_id)
+
+    is_new_thread = len(conversation.turns) == 0
 
     # --- QU + dispatch under a hard deadline (finding F28) -------------
-    # The full QU -> dispatch sequence (query understanding + up to
-    # ``max_generation_attempts`` generation attempts + judge calls + an
-    # optional repair pass) must finish within ``route_timeout_seconds``.
-    # Without a deadline a pathological run (e.g. every attempt clipping the
-    # upstream 60s call timeout) could pin a worker far past the intended
-    # budget. Exceeding the deadline raises ``asyncio.TimeoutError``, which
-    # main.py's ``_asyncio_timeout_handler`` maps to a 504 (retry-worthy).
     async def _understand_and_dispatch() -> tuple[TurnIntent, TurnOutcome]:
         # --- Query Understanding ---------------------------------------
         intent = await understand(
@@ -116,6 +129,26 @@ async def chat(request: ChatRequest) -> ChatResponse:
             handshakes=handshakes,
             canonicalizer=canon,
         )
+
+        # --- Long-Term Memory: 3-Step Grade Decision Engine ---
+        # Step 1: Teacher specified grade in this message? (Checked by QU)
+        # Step 2: Teacher specified grade earlier in this chat? (Checked by QU)
+        # Step 3: Check teacher profile default_grade!
+        if (
+            intent.grade is None
+            and current_user
+            and current_user.default_grade
+        ):
+            from schemas.intent import GradeSpec
+            new_grade = GradeSpec(
+                value=current_user.default_grade,
+                stated_explicit=False,
+                confidence=0.95,
+            )
+            missing = [f for f in (intent.missing_required or []) if f != "grade"]
+            intent = intent.model_copy(
+                update={"grade": new_grade, "missing_required": missing}
+            )
 
         # --- Append user turn now that its intent is known -------------
         user_turn = Turn(
@@ -157,13 +190,33 @@ async def chat(request: ChatRequest) -> ChatResponse:
         quality=outcome.quality,
     )
     conversation.append(assistant_turn)
-    store.save(session_id, conversation, handshakes)
+    # Apply handler-produced handshake updates before persisting
+    saved_handshakes = outcome.handshake_updates if outcome.handshake_updates is not None else handshakes
+
+    # Auto-generate title for sidebar if this is the first turn
+    thread_title = None
+    if is_new_thread:
+        if isinstance(outcome.structured, dict) and outcome.structured.get("lesson_title"):
+            thread_title = outcome.structured.get("lesson_title")
+        elif isinstance(outcome.structured, dict) and outcome.structured.get("skill_focus"):
+            thread_title = outcome.structured.get("skill_focus")
+        else:
+            thread_title = request.message.strip()[:40]
+
+    try:
+        await save_conversation(
+            session, session_id, conversation, saved_handshakes, title=thread_title
+        )
+    except Exception:
+        pass
+
+    store.save(session_id, conversation, saved_handshakes)
 
     return _build_response(
         outcome=outcome,
         intent=intent,
         conversation=conversation,
-        handshakes=handshakes,
+        handshakes=saved_handshakes,
         session_id=session_id,
     )
 

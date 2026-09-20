@@ -35,7 +35,7 @@ from openai import AsyncOpenAI
 from pydantic import BaseModel, ConfigDict, Field
 
 from generation.lesson import MiniLesson
-from llm_params import temperature_kwargs
+from llm_params import call_params, temperature_kwargs
 
 logger = logging.getLogger(__name__)
 
@@ -209,7 +209,7 @@ async def judge_scripted_ml(
         model=model,
         messages=messages,
         response_format=JudgeVerdict,
-        **temperature_kwargs(model, 0),
+        **call_params(model, 0, max_tokens=2048),
     )
 
     verdict = completion.choices[0].message.parsed

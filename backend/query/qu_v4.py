@@ -30,10 +30,11 @@ from pydantic import ValidationError
 from canonicalizer import Canonicalizer, ResolutionKind, canonicalize_grade
 from handlers.formatting import MODE_ADJECTIVES
 from handlers.picklist import resolve_ordinal_pick, skill_name_from_offer
-from llm_params import temperature_kwargs
+from llm_params import call_params, temperature_kwargs
 from query.qu_v4_prompt import get_system_prompt
 from schemas import (
     Conversation,
+    PendingLessonSequence,
     RequestType,
     Role,
     SessionHandshakes,
@@ -93,7 +94,7 @@ async def understand(
         model=model,
         messages=messages,
         response_format=TurnIntent,
-        **temperature_kwargs(model, 0),
+        **call_params(model, 0, max_tokens=2048),
     )
 
     intent = completion.choices[0].message.parsed
@@ -118,6 +119,15 @@ async def understand(
     # Then let arithmetic overrule the model on ordinal picks (see below).
     intent = apply_ordinal_pick(
         intent, new_user_message, conversation, canonicalizer
+    )
+    # Lesson-sequence continuation: when an active sequence is pending and the
+    # teacher accepts the next lesson, fill the skill deterministically from the
+    # sequence rather than asking QU to infer it. Same pattern as
+    # apply_ordinal_pick — arithmetic/data over LLM judgment. Runs after the
+    # ordinal pick (so an explicit ordinal wins) and before clarify_resume (so
+    # a bare "yes" is interpreted as a continuation, not re-classified).
+    intent = apply_lesson_sequence_continuation(
+        intent, new_user_message, handshakes or SessionHandshakes(), canonicalizer, conversation
     )
     # Last: if the previous turn was a QUESTION we asked, a bare answer to it
     # belongs to the request that asked — not to a freshly-guessed one. Runs
@@ -331,6 +341,136 @@ def apply_clarify_resume(
 
 
 # ----------------------------------------------------------------------
+# Lesson-sequence continuation — next skill is data, not inference
+# ----------------------------------------------------------------------
+#
+# When an active PendingLessonSequence is present (the teacher requested a
+# multi-lesson plan and at least one lesson has been delivered), a bare
+# acceptance of the "Ready for Lesson N+1?" offer should route directly to
+# SCRIPTED_ML with the NEXT skill already filled in. Leaving this to QU's
+# LLM classification risks it being routed to COACHING (bare "yes" is a
+# catch-all for the LLM) or asking for a skill that is already known.
+#
+# Same pattern as apply_ordinal_pick: the data is on hand (sequence.skills),
+# and using code instead of the LLM makes the rule provably correct.
+
+# Bare acceptances that mean "yes, generate the next lesson in the sequence".
+# Deliberately narrow — a new request ("give me a lesson on X") must not match.
+_SEQUENCE_ACCEPTANCE_RE = re.compile(
+    r"^\s*(?:yes|yeah|yep|sure|ok|okay|ready|let'?s?\s+(?:do\s+)?(?:that|it)|go|go\s+ahead|sounds?\s+good|great|do\s+it|next|let'?s\s+go|continue|proceed)\s*[!.]?\s*$",
+    re.IGNORECASE,
+)
+
+# Explicit next-lesson requests — e.g. "generate the next lesson plan", "next lesson", "continue with the next skill".
+_EXPLICIT_NEXT_LESSON_RE = re.compile(
+    r"\b(?:next\s+(?:mini[- ]?)?lesson(?:\s+plan)?|next\s+skill|next\s+one|next\s+step|"
+    r"continue\s+(?:with\s+)?(?:the\s+)?(?:next\s+)?(?:sequence|lesson|plan|skill)|"
+    r"move\s+(?:on\s+)?to\s+(?:the\s+)?next\s+(?:lesson|skill|plan)|"
+    r"(?:give|generate|show|write|make)\s+(?:me\s+)?(?:the\s+)?next\s+(?:mini[- ]?)?lesson(?:\s+plan)?|"
+    r"second\s+lesson|third\s+lesson|fourth\s+lesson|fifth\s+lesson|"
+    r"lesson\s+[2-9]\b)\b",
+    re.IGNORECASE,
+)
+
+_GENERIC_NEXT_PHRASES = frozenset({"next skill", "next lesson", "the next skill", "the next lesson", "next"})
+
+
+def apply_lesson_sequence_continuation(
+    intent: TurnIntent,
+    new_user_message: str,
+    handshakes: SessionHandshakes,
+    canon: Canonicalizer,
+    conversation: Optional[Conversation] = None,
+) -> TurnIntent:
+    """Fill intent.skill from the active lesson sequence when the teacher
+    accepts or requests the next-lesson offer.
+
+    Fires when:
+      1. A PendingLessonSequence is active in the session handshakes.
+      2. There is a next lesson to deliver (current_index + 1 < total).
+      3. EITHER:
+         (a) The teacher explicitly requests the next lesson/skill
+             ("generate the next lesson plan", "next skill", "continue sequence").
+             This works EVEN IF an intervening turn occurred.
+         (b) The teacher provides a bare acceptance ("yes", "sure", "ready")
+             AND the last assistant turn was a sequence prompt.
+
+    When it fires, it rewrites the intent to SCRIPTED_ML with the next
+    skill already set, so the dispatcher routes straight to generation
+    without any clarify gate. When it does NOT fire, the intent is
+    returned unchanged.
+    """
+    seq = handshakes.lesson_sequence
+    if seq is None:
+        return intent
+
+    msg = (new_user_message or "").strip()
+    is_explicit = bool(_EXPLICIT_NEXT_LESSON_RE.search(msg))
+    is_bare_accept = bool(_SEQUENCE_ACCEPTANCE_RE.fullmatch(msg))
+
+    if not is_explicit and not is_bare_accept:
+        return intent
+
+    # If QU already extracted an explicit skill from the user message that differs from
+    # the expected sequence skill, do NOT override it with sequence continuation —
+    # UNLESS the extracted skill is just a generic pointer like "next skill".
+    if intent.skill is not None and intent.skill.as_stated:
+        as_stated_clean = intent.skill.as_stated.strip().lower()
+        if as_stated_clean not in _GENERIC_NEXT_PHRASES and not _EXPLICIT_NEXT_LESSON_RE.search(as_stated_clean):
+            next_idx = seq.current_index + 1
+            if 0 <= next_idx < seq.total:
+                exp_skill = seq.skills[next_idx]
+                if canon.canonicalize_skill(intent.skill.as_stated) != canon.canonicalize_skill(exp_skill):
+                    return intent
+
+    # For a bare acceptance ("yes", "sure"), verify that the LAST assistant turn was actually
+    # prompting for the sequence next lesson. If an intervening turn occurred where the assistant
+    # asked a different question (e.g. coaching), a bare "yes" belongs to THAT latest question.
+    # An explicit request ("generate the next lesson plan") is unambiguous and does not require this check.
+    if not is_explicit and conversation is not None:
+        last_turn = conversation.last_assistant_turn()
+        if last_turn is not None and last_turn.text:
+            last_text = last_turn.text.lower()
+            is_seq_prompt = any(
+                phrase in last_text
+                for phrase in (
+                    "ready for lesson",
+                    "of 2.",
+                    "of 3.",
+                    "of 4.",
+                    "of 5.",
+                    "of 6.",
+                    "of 7.",
+                    "of 8.",
+                    "of 9.",
+                    "of 10.",
+                    "scripting these",
+                    "start scripting",
+                )
+            )
+            if not is_seq_prompt:
+                return intent
+
+    next_index = seq.current_index + 1
+    if next_index >= seq.total:
+        # Last lesson was already delivered — nothing more to fill in.
+        return intent
+    next_skill_text = seq.skills[next_index]
+    canonical = canon.canonicalize_skill(next_skill_text)
+    return intent.model_copy(update={
+        "request_type": RequestType.SCRIPTED_ML,
+        "skill": SkillSpec(
+            canonical=canonical,
+            as_stated=next_skill_text,
+        ),
+        "refers_to_prior": True,
+        # The skill is unambiguous — no confirmation or clarification needed.
+        "needs_confirmation": False,
+        "missing_required": [],
+    })
+
+
+# ----------------------------------------------------------------------
 # Deictic resolution — a pointer is not vocabulary
 # ----------------------------------------------------------------------
 #
@@ -357,6 +497,11 @@ _BARE_DEICTICS: frozenset[str] = _DEICTIC_DETERMINERS | {"it"}
 # → "Those transition words…" was silently rewritten to the prior lesson's skill.
 _DEICTIC_PHRASE_MAX_WORDS = 4
 
+_GENERIC_POINTER_PATTERNS: tuple[re.Pattern[str], ...] = (
+    re.compile(r"\b(?:above|provided|mentioned|listed|previous|prior|next\s+skill|next\s+lesson)\b", re.IGNORECASE),
+    re.compile(r"^\s*(?:the\s+)?(?:skills?|lessons?|plans?|strategy|strategies)(?:\s+(?:you\s+)?(?:provide[ds]?|mention(?:ed)?|list(?:ed)?|above))*\s*$", re.IGNORECASE),
+)
+
 
 def _normalize_deictic(text: Optional[str]) -> str:
     """Lowercase, collapse whitespace, and drop surrounding punctuation so
@@ -367,18 +512,19 @@ def _normalize_deictic(text: Optional[str]) -> str:
 
 
 def _is_deictic_pointer(text: Optional[str], canon: Canonicalizer) -> bool:
-    """True when ``text`` is a bare deictic pointer, or a leading deictic-
-    determiner phrase that names no known skill/trigger.
-
-    A phrase that merely CONTAINS a deictic ("Transitions between those
-    paragraphs") is not a pointer — it must START with the determiner. A
-    leading-determiner phrase that canonicalizes to a real skill/trigger is
-    left alone (it names a skill, it doesn't point at one)."""
+    """True when ``text`` is a bare deictic pointer, a leading deictic-
+    determiner phrase, or a generic backward-referencing pointer phrase
+    ("the skills you provide above", "the mentioned skills", etc.) that
+    names no known skill/trigger."""
     norm = _normalize_deictic(text)
     if not norm:
         return False
     if norm in _BARE_DEICTICS:
         return True
+    if any(p.search(norm) for p in _GENERIC_POINTER_PATTERNS):
+        resolution = canon.resolve(norm)
+        if resolution.kind not in (ResolutionKind.SKILL, ResolutionKind.TRIGGER):
+            return True
     tokens = norm.split()
     if (
         1 < len(tokens) <= _DEICTIC_PHRASE_MAX_WORDS
@@ -411,10 +557,10 @@ def _resolve_deictic_referent(
 ) -> Optional[str]:
     """Find the skill a deictic points at, in priority order:
 
-      1. the prior scripted-ML turn's ``skill_focus`` (the teacher's own words
-         from the lesson on screen),
-      2. the prior user turn's ``skill.as_stated`` if it is not itself a deictic,
-      3. this turn's own ``skill.canonical`` if it stayed resolved.
+      1. the prior scripted-ML turn's ``skill_focus`` (the actual lesson on screen),
+      2. the prior assistant turn's first offered skill (if an outline was on screen),
+      3. the prior user turn's ``skill.as_stated`` if non-deictic,
+      4. this turn's own ``skill.canonical`` if it stayed resolved.
 
     Returns None when nothing non-deictic is available — the caller then leaves
     the pointer rather than inventing a skill.
@@ -431,7 +577,20 @@ def _resolve_deictic_referent(
             ):
                 return skill_focus
 
-    # 2. prior user turn's intent skill (explicit override or derived)
+    # 2. prior assistant turn's offered_skills (if prior turn was outline/list)
+    if conversation is not None and conversation.turns:
+        last_ast = conversation.last_assistant_turn()
+        if last_ast is not None and last_ast.offered_skills:
+            first_offered = last_ast.offered_skills[0]
+            if (
+                isinstance(first_offered, str)
+                and first_offered.strip()
+                and not _is_deictic_pointer(first_offered, canon)
+            ):
+                from handlers.picklist import skill_name_from_offer
+                return skill_name_from_offer(first_offered)
+
+    # 3. prior user turn's intent skill (when no scripted ML turn)
     pi = prior_intent if prior_intent is not None else _last_user_intent(conversation)
     if pi is not None and pi.skill is not None:
         prior_as_stated = pi.skill.as_stated
@@ -442,7 +601,7 @@ def _resolve_deictic_referent(
         ):
             return prior_as_stated
 
-    # 3. this turn's own canonical, if it did not also degrade to a deictic
+    # 4. this turn's own canonical, if it did not also degrade to a deictic
     canonical = intent.skill.canonical if intent.skill is not None else None
     if (
         isinstance(canonical, str)
@@ -608,6 +767,33 @@ def _render_handshakes(handshakes: SessionHandshakes) -> str:
             f"- Clarification pending: waiting_for={cl.waiting_for}, "
             f"asked at turn {cl.asked_at_turn}"
         )
+    if handshakes.lesson_sequence:
+        seq = handshakes.lesson_sequence
+        next_idx = seq.current_index + 1
+        if next_idx < seq.total:
+            next_skill = seq.skills[next_idx]
+            if seq.current_index == -1:
+                # No lesson delivered yet — plan was just offered
+                parts.append(
+                    f"- Active lesson sequence: {seq.total}-lesson plan just generated. "
+                    f"NO lessons delivered yet. Lesson 1 is: {next_skill!r}. "
+                    f"If the teacher says yes/sure/ready or asks for the next lesson plan, route to SCRIPTED_ML "
+                    f"with skill={next_skill!r}. Do NOT ask for grade or skill."
+                )
+            else:
+                parts.append(
+                    f"- Active lesson sequence: {seq.total}-lesson plan, "
+                    f"Lesson {seq.current_index + 1} of {seq.total} just delivered. "
+                    f"Next (Lesson {next_idx + 1}) is: {next_skill!r}. "
+                    f"If the teacher says yes/sure/ready, asks for the next lesson, or says continue/next skill, "
+                    f"route to SCRIPTED_ML with skill={next_skill!r}. Do NOT ask for grade or skill. "
+                    f"If the teacher asks to revise/simplify or asks questions about the current lesson, "
+                    f"address that lesson while keeping this sequence active."
+                )
+        else:
+            parts.append(
+                f"- Lesson sequence COMPLETE: all {seq.total} lessons delivered."
+            )
     return "\n".join(parts)
 
 

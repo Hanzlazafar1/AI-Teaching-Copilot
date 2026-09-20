@@ -1,10 +1,10 @@
 """Deterministic soft book-citation construction (Brady Fm5).
 
-Builds the teacher-facing "If you have the '<book>' book, you'll find this
-lesson on p.N." pointer from TYPED chunk metadata — never by asking the LLM to
-reformat raw "Book:/Page:" context headers (the reverted Fm5 attempt did that
-and leaked the header label words + blank page slots). ONE template, ONE place:
-a demo reword is a one-line change to build_soft_citation.
+Builds the teacher-facing "Look within your digital copy of the '<book>' book —
+you'll find this lesson on p.N." pointer from TYPED chunk metadata — never by
+asking the LLM to reformat raw "Book:/Page:" context headers (the reverted Fm5
+attempt did that and leaked the header label words + blank page slots).
+ONE template, ONE place: a demo reword is a one-line change to build_soft_citation.
 """
 from __future__ import annotations
 
@@ -75,6 +75,9 @@ def build_soft_citation(book_title: Optional[str], pages: int | list[int] | None
     de-duplicate. The caller that assembles the list knows whether the order is
     by relevance or by page, and silently rewriting its input here would hide an
     upstream selection bug rather than surface it.
+
+    Wording: subscribers receive a digital copy of the Launch book, so the
+    phrasing directs them to it rather than asking whether they have it.
     """
     if not book_title or pages is None:
         return ""

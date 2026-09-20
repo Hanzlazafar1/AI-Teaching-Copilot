@@ -23,6 +23,8 @@ from typing import Literal, Optional
 from pydantic import BaseModel, ConfigDict, Field
 
 
+
+
 class PendingLibraryOffer(BaseModel):
     """The assistant offered a library-matched scripted ML and is
     waiting for the user to accept or decline.
@@ -73,11 +75,36 @@ class PendingClarification(BaseModel):
     asked_at_turn: int = Field(ge=0)
 
 
+class PendingLessonSequence(BaseModel):
+    """Active multi-lesson sequence — e.g. a 10-day plan.
+
+    Created when the teacher requests a multi-lesson plan and Brady
+    generates the skill list. Incremented each time SCRIPTED_ML delivers
+    a lesson in the sequence. Cleared when the final lesson is delivered.
+
+    ``skills`` is the ordered list of skill names (teacher's words) for
+    every lesson in the plan. ``current_index`` is the 0-based index of
+    the lesson that was JUST delivered — so the NEXT lesson to generate
+    is skills[current_index + 1]. A value of -1 means no lesson has been
+    delivered yet (the plan was just generated and is waiting for the
+    teacher's first "yes").
+    """
+
+    model_config = ConfigDict(frozen=True)
+
+    skills: list[str]
+    total: int = Field(ge=1)
+    current_index: int = Field(ge=-1)  # -1 = plan offered, no lesson delivered yet
+    grade: str
+    mode: Optional[str] = None
+    started_at_turn: int = Field(ge=0)
+
+
 class SessionHandshakes(BaseModel):
     """Transient multi-turn handshake state.
 
     Everything NOT here is in the conversation (Layer 1). This struct
-    should never grow beyond these three fields — if a new handshake
+    should never grow beyond these four fields — if a new handshake
     emerges, add a field and document it. If "session state" tempts
     you to add something else, it probably belongs in the conversation.
     """
@@ -87,6 +114,11 @@ class SessionHandshakes(BaseModel):
     library_offer: Optional[PendingLibraryOffer] = None
     ml_confirmation: Optional[PendingMLConfirmation] = None
     clarification: Optional[PendingClarification] = None
+    # Multi-lesson sequence (e.g. a 10-day plan). Set when the teacher
+    # requests a multi-lesson plan and Brady produces the skill list.
+    # Incremented each time SCRIPTED_ML delivers a lesson. Cleared
+    # when the final lesson is delivered or the teacher starts a new topic.
+    lesson_sequence: Optional[PendingLessonSequence] = None
 
     def is_empty(self) -> bool:
         """True when no handshake is pending. Fast check for handlers
@@ -95,6 +127,7 @@ class SessionHandshakes(BaseModel):
             self.library_offer is None
             and self.ml_confirmation is None
             and self.clarification is None
+            and self.lesson_sequence is None
         )
 
     def clear(self) -> "SessionHandshakes":

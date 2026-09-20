@@ -53,12 +53,11 @@ class ModelSet:
 def resolve_models(requested: str | None, settings) -> ModelSet:
     """Translate a frontend profile name into the turn's three model IDs.
     Known profile -> its (generation, query, judge). None/unknown -> the
-    configured defaults, per-field so a partial profile can't crash. An
-    unknown non-empty name logs a warning (a stale UI must not error)."""
+    configured defaults. Honors active provider prefixing."""
     defaults = ModelSet(
-        generation=settings.openai_generation_model,
-        query=settings.openai_query_model,
-        judge=settings.openai_judge_model,
+        generation=settings.effective_generation_model,
+        query=settings.effective_query_model,
+        judge=settings.effective_judge_model,
     )
     if not requested:
         return defaults
@@ -66,16 +65,30 @@ def resolve_models(requested: str | None, settings) -> ModelSet:
     if not profile:
         logger.warning("Unknown model profile %r — falling back to defaults", requested)
         return defaults
-    return ModelSet(
-        generation=profile.get("generation", defaults.generation),
-        query=profile.get("query", defaults.query),
-        judge=profile.get("judge", defaults.judge),
-    )
+
+    gen = profile.get("generation", defaults.generation)
+    q = profile.get("query", defaults.query)
+    j = profile.get("judge", defaults.judge)
+
+    is_openrouter = getattr(settings, "llm_provider", "openrouter").lower() == "openrouter"
+    if is_openrouter:
+        if "/" not in gen:
+            gen = f"openai/{gen}"
+        if "/" not in q:
+            q = f"openai/{q}"
+        if "/" not in j:
+            j = f"openai/{j}"
+    else:
+        gen = gen.replace("openai/", "")
+        q = q.replace("openai/", "")
+        j = j.replace("openai/", "")
+
+    return ModelSet(generation=gen, query=q, judge=j)
 
 
 class ChatRequest(BaseModel):
     """POST /api/chat request body."""
-    message: str = Field(max_length=2000)
+    message: str = Field(max_length=100000)
     session_id: Optional[str] = None
     user_id: Optional[str] = None
     # Optional model-profile override. When set and present in MODEL_PROFILES,

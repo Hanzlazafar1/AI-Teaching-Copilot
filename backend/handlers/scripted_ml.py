@@ -36,10 +36,11 @@ from handlers.scripted_ml_prompt import (
     build_scripted_ml_prompt,
     build_retry_preamble,
 )
-from llm_params import temperature_kwargs
+from llm_params import call_params, temperature_kwargs
 from schemas import (
     ChunkRef,
     Conversation,
+    PendingLessonSequence,
     Quality,
     SessionHandshakes,
     TurnIntent,
@@ -137,7 +138,7 @@ async def handle_scripted_ml(
     # --- 1. Library-verbatim precheck -------------------------------------
     lib_result = await _try_library_verbatim(intent, library, new_user_message)
     if lib_result is not None:
-        return _finalize_ml_delivery(lib_result, intent)
+        return _finalize_ml_delivery(lib_result, intent, handshakes)
 
     # --- 2. Retrieval -----------------------------------------------------
     chunks: list[Any] = []
@@ -189,6 +190,7 @@ async def handle_scripted_ml(
                     ),
                 ),
                 intent,
+                handshakes,
             )
         # Trust-the-LLM fallback (§LLM-trustable rules):
         # after ≥1 contextual retry, if the remaining policy errors are
@@ -234,6 +236,7 @@ async def handle_scripted_ml(
                         ),
                     ),
                     intent,
+                    handshakes,
                 )
         # Not passing — compose repair feedback for next attempt
         repair_feedback = build_retry_preamble(attempt.policy, attempt.judge)
@@ -263,6 +266,7 @@ async def handle_scripted_ml(
             book_citation=_citation_for(best, context_chunks, retrieved_context),
         ),
         intent,
+        handshakes,
     )
 
 
@@ -465,7 +469,7 @@ async def _single_attempt(
         model=model,
         messages=messages,
         response_format=MiniLesson,
-        **temperature_kwargs(model, 0.2),
+        **call_params(model, 0.2, max_tokens=4096),
     )
     lesson = completion.choices[0].message.parsed
     if lesson is None:
@@ -613,7 +617,11 @@ _E2_FOLLOWUP = (
 )
 
 
-def _finalize_ml_delivery(outcome: TurnOutcome, intent: TurnIntent) -> TurnOutcome:
+def _finalize_ml_delivery(
+    outcome: TurnOutcome,
+    intent: TurnIntent,
+    handshakes: Optional[SessionHandshakes] = None,
+) -> TurnOutcome:
     """THE delivery seam — the ONE place a SCRIPTED_ML payload is finalized
     with every deterministic Brady transform.
 
@@ -639,6 +647,10 @@ def _finalize_ml_delivery(outcome: TurnOutcome, intent: TurnIntent) -> TurnOutco
       * Fm3 — the title, capitalized (first character only).
       * E2  — the teacher-facing customization follow-up, as its own field.
       * Fm4 — the intent-computed 'Grade X | <Mode>' header.
+      * Lesson-sequence progress — when handshakes carries an active
+        PendingLessonSequence, the followup is replaced with the
+        sequence-progress prompt ("Lesson N of M — ready for N+1?") and
+        handshake_updates is set to advance (or clear) the sequence.
     (Fm5's ``book_citation`` is producer-specific — it needs the retrieved
     chunks / library entry — so each producer puts it on ``structured`` at the
     point it is known; the lock covers it from there.)
@@ -677,11 +689,122 @@ def _finalize_ml_delivery(outcome: TurnOutcome, intent: TurnIntent) -> TurnOutco
     if isinstance(lesson_title, str) and lesson_title:
         structured["lesson_title"] = _titlecase_first(lesson_title)
 
-    # E2 — already appended to response_text by BOTH producers (_build_outcome /
-    # build_verbatim_response); surfaced here as its own key so it survives
-    # delivery and the frontend can render it as its own closing paragraph.
-    # Unconditional: Brady wants it on every delivered scripted ML.
-    structured["followup"] = _E2_FOLLOWUP
+    # E2 / Lesson-sequence followup —
+    #
+    # Default: the static E2 customization question. Brady wants it on every
+    # delivered scripted ML unless a multi-lesson sequence is active.
+    #
+    # Sequence override: when an active PendingLessonSequence is in the
+    # session handshakes, we replace the E2 followup with a sequence-progress
+    # prompt ("That's Lesson N of M. Ready for Lesson N+1?") and set
+    # handshake_updates to advance the stored index. When the final lesson
+    # is delivered, the completion message fires and the sequence is cleared.
+    #
+    # Rationale: Brady E2 invites the teacher to customize the single lesson;
+    # inside a sequence the teacher's immediate question is always "what's
+    # next?" — the customization follow-up belongs AFTER they've seen all
+    # lessons and can compare, not after each one.
+    followup = _E2_FOLLOWUP
+    handshake_updates: Optional[SessionHandshakes] = None
+
+    seq = handshakes.lesson_sequence if handshakes is not None else None
+    if seq is not None:
+        # Check if the delivered lesson's skill matches the active sequence.
+        # It can either advance to next lesson (current_index + 1), or revise current lesson (current_index).
+        from canonicalizer import get_canonicalizer
+        canon = get_canonicalizer()
+
+        delivered_skill = (structured.get("skill_focus") or (intent.skill.as_stated if intent.skill else "")).strip().lower()
+
+        def _skill_matches(s1: str, s2: str) -> bool:
+            s1_l, s2_l = s1.strip().lower(), s2.strip().lower()
+            if s1_l and (s1_l in s2_l or s2_l in s1_l):
+                return True
+            return canon.canonicalize_skill(s1_l) == canon.canonicalize_skill(s2_l)
+
+        next_idx = seq.current_index + 1
+        is_advance = 0 <= next_idx < seq.total and _skill_matches(delivered_skill, seq.skills[next_idx])
+        is_revision = 0 <= seq.current_index < seq.total and _skill_matches(delivered_skill, seq.skills[seq.current_index])
+
+        if is_advance:
+            lesson_number = next_idx + 1        # 1-based for display
+            remaining = seq.total - lesson_number
+
+            if remaining > 0:
+                # More lessons to go — prompt for the next one.
+                next_lesson_number = lesson_number + 1
+                next_skill = seq.skills[next_idx + 1]
+                followup = (
+                    f"That's Lesson {lesson_number} of {seq.total}. "
+                    f"Ready for Lesson {next_lesson_number} — {next_skill}?"
+                )
+                # Advance the sequence index in the handshakes.
+                advanced_seq = seq.model_copy(update={"current_index": next_idx})
+                handshake_updates = (
+                    handshakes.model_copy(update={"lesson_sequence": advanced_seq})
+                )
+            else:
+                # All lessons delivered — close the sequence.
+                followup = (
+                    f"That's Lesson {lesson_number} of {seq.total} — all done! "
+                    f"You now have a complete {seq.total}-lesson sequence. "
+                    f"Would you like to revisit any lesson or customize one for a "
+                    f"specific group of students?"
+                )
+                # Clear the sequence from handshakes.
+                handshake_updates = handshakes.model_copy(
+                    update={"lesson_sequence": None}
+                )
+        elif is_revision:
+            # Revised the current lesson — sequence stays active at current_index!
+            lesson_number = seq.current_index + 1
+            remaining = seq.total - lesson_number
+            if remaining > 0:
+                next_lesson_number = lesson_number + 1
+                next_skill = seq.skills[seq.current_index + 1]
+                followup = (
+                    f"That's revised Lesson {lesson_number} of {seq.total}. "
+                    f"Ready for Lesson {next_lesson_number} — {next_skill}?"
+                )
+                # Retain the sequence at current_index
+                handshake_updates = handshakes
+            else:
+                followup = (
+                    f"That's revised Lesson {lesson_number} of {seq.total} — all done! "
+                    f"You now have a complete {seq.total}-lesson sequence."
+                )
+                handshake_updates = handshakes.model_copy(
+                    update={"lesson_sequence": None}
+                )
+        else:
+            # Check if it matches any other position in the sequence
+            matched_idx = None
+            for idx, s in enumerate(seq.skills):
+                if _skill_matches(delivered_skill, s):
+                    matched_idx = idx
+                    break
+            if matched_idx is not None:
+                lesson_number = matched_idx + 1
+                remaining = seq.total - lesson_number
+                if remaining > 0:
+                    next_skill = seq.skills[matched_idx + 1]
+                    followup = (
+                        f"That's Lesson {lesson_number} of {seq.total}. "
+                        f"Ready for Lesson {lesson_number + 1} — {next_skill}?"
+                    )
+                    advanced_seq = seq.model_copy(update={"current_index": matched_idx})
+                    handshake_updates = handshakes.model_copy(update={"lesson_sequence": advanced_seq})
+                else:
+                    followup = f"That's Lesson {lesson_number} of {seq.total} — all done!"
+                    handshake_updates = handshakes.model_copy(update={"lesson_sequence": None})
+            else:
+                # Teacher requested a skill outside the active sequence — clear sequence.
+                followup = _E2_FOLLOWUP
+                handshake_updates = handshakes.model_copy(
+                    update={"lesson_sequence": None}
+                )
+
+    structured["followup"] = followup
 
     # Fm4 — the mode segment comes from ``intent.mode``, NEVER from the
     # LLM-authored ``lesson.writing_mode``. When the teacher stated no mode the
@@ -699,8 +822,25 @@ def _finalize_ml_delivery(outcome: TurnOutcome, intent: TurnIntent) -> TurnOutco
         structured["header"] = header
         text = f"{header}\n{text}" if text else header
 
+    # Keep response_text in sync with the actual followup shown to the teacher.
+    # _build_outcome always appends _E2_FOLLOWUP at the end of response_text,
+    # but when a sequence is active that text is replaced in structured["followup"].
+    # response_text is what gets stored in the conversation turn (Turn.text) and
+    # what QU reads as the assistant's last words when processing the NEXT user
+    # message. If it still says "Does this script seem appropriate?" while the
+    # teacher's screen shows "Ready for Lesson 2?", QU will misinterpret a bare
+    # "yes" as approval of the script quality — bypassing the deterministic
+    # apply_lesson_sequence_continuation entirely on subsequent turns.
+    # Swapping it here keeps the stored text honest.
+    if followup != _E2_FOLLOWUP and _E2_FOLLOWUP in text:
+        text = text.replace(_E2_FOLLOWUP, followup, 1)
+
     return outcome.model_copy(
-        update={"structured": structured, "response_text": text}
+        update={
+            "structured": structured,
+            "response_text": text,
+            "handshake_updates": handshake_updates,
+        }
     )
 
 

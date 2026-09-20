@@ -432,6 +432,29 @@ async def dispatch(
             # additional_skills) leaves structured untouched (back-compat).
             if isinstance(outcome.structured, dict):
                 outcome.structured["one_skill_guard"] = guard
+
+    # Clear stale lesson_sequence ONLY if a new explicit lesson/plan outside the active sequence was requested.
+    # Non-competing request types (COACHING, MANAGEMENT, META, THINK_ALOUD, HOW_TO_TEACH, CORRECTION, DEEPEN_PRIOR) or
+    # requests addressing an existing skill in the sequence (such as revising the current lesson) must NOT clear it.
+    if handshakes.lesson_sequence is not None:
+        seq = handshakes.lesson_sequence
+        should_clear = False
+        if intent.request_type is RequestType.PLAN_UNIT:
+            # Teacher started a brand-new unit plan
+            should_clear = True
+        elif intent.request_type is RequestType.SCRIPTED_ML and intent.skill is not None and intent.skill.as_stated:
+            skill_canon = canonicalizer.canonicalize_skill(intent.skill.as_stated)
+            seq_canons = [canonicalizer.canonicalize_skill(s) for s in seq.skills]
+            # If the requested skill is in the active sequence (e.g. current lesson or next lesson), keep it!
+            if skill_canon not in seq_canons:
+                should_clear = True
+
+        if should_clear:
+            base_handshakes = outcome.handshake_updates if outcome.handshake_updates is not None else handshakes
+            outcome = outcome.model_copy(update={
+                "handshake_updates": base_handshakes.model_copy(update={"lesson_sequence": None})
+            })
+
     return outcome
 
 

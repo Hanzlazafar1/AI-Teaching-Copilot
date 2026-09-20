@@ -25,17 +25,21 @@ _client: Optional[AsyncOpenAI] = None
 
 
 def get_openai_client() -> AsyncOpenAI:
-    """Lazy singleton. Honors openai_api_key + openai_base_url from
-    settings. Timeout 60s — long enough for gpt-4o with a SCRIPTED_ML
-    retry cycle, short enough to bound worst-case latency."""
+    """Lazy singleton. Honors active LLM provider (OpenRouter / OpenAI)."""
     global _client
     if _client is None:
+        base_url = settings.effective_base_url
         kwargs: dict[str, Any] = {
-            "api_key": settings.openai_api_key,
+            "api_key": settings.effective_api_key,
             "timeout": 60.0,
         }
-        if settings.openai_base_url:
-            kwargs["base_url"] = settings.openai_base_url
+        if base_url:
+            kwargs["base_url"] = base_url
+            if "openrouter" in base_url.lower():
+                kwargs["default_headers"] = {
+                    "HTTP-Referer": "https://brady-copilot.local",
+                    "X-Title": "Brady AI Writing Co-Pilot",
+                }
         _client = AsyncOpenAI(**kwargs)
     return _client
 

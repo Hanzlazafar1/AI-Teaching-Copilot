@@ -10,3 +10,16 @@ def temperature_kwargs(model: str, temperature: float) -> dict:
     if model.startswith("gpt-5.6"):
         return {}
     return {"temperature": temperature}
+
+
+def call_params(model: str, temperature: float, max_tokens: int = 4096) -> dict:
+    """Return temperature and max_tokens kwargs compatible with the model and provider.
+
+    OpenRouter enforces key balance limits against the theoretical maximum output
+    tokens (up to 65536) if max_tokens is omitted. Providing a sensible bound
+    (2048 for query understanding/judge, 4096 for lesson generation) prevents
+    HTTP 402 Payment Required credit-reservation errors.
+    """
+    params = temperature_kwargs(model, temperature)
+    params["max_tokens"] = max_tokens
+    return params

@@ -256,7 +256,7 @@ def _p09_turn(turn_index):
     """Reconstruct (chunks, retrieved_context) from a real P09 turn the way the
     resolver reads them: chunk_id + book title + page parsed out of the
     assembled context's block headers (``sources`` carries no page)."""
-    rec = [json.loads(l) for l in _P09.read_text().splitlines() if l.strip()][turn_index]
+    rec = [json.loads(l) for l in _P09.read_text(encoding="utf-8").splitlines() if l.strip()][turn_index]
     ctx = rec["retrieved_context"]
     chunks = []
     for line in ctx.splitlines():

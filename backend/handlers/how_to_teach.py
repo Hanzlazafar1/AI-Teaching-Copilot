@@ -29,6 +29,7 @@ from handlers._prompt_rules import (
     EARLY_WRITER_STAGE_PER_BULLET_RULE,
     EARLY_WRITER_STAGE_RULE,
     FRUSTRATION_VALIDATION_RULE,
+    FULFILL_OFFERED_DELIVERABLES_RULE,
     GLOBAL_VOCAB_RULES,
     LIST_FORMAT_RULE,
     PER_CLAIM_SOURCE_MARKER_RULE,
@@ -105,7 +106,7 @@ added for you automatically. Never invent a page number or book title.
   * step_1_introduce / step_2a_tell / step_2b_show / step_3_interact /
     step_4_close — that's SCRIPTED_ML territory
   * A paragraph of prose — use the bulleted-list format
-  * A daily unit calendar — that's PLAN_UNIT
+  * A daily unit calendar — unless the teacher explicitly requested or accepted a chart/table/calendar breakdown of the plan
 """
 
 
@@ -126,6 +127,7 @@ def _build_prompt(
         GLOBAL_VOCAB_RULES,
         LIST_FORMAT_RULE,
         PER_CLAIM_SOURCE_MARKER_RULE,
+        FULFILL_OFFERED_DELIVERABLES_RULE,
     ]
 
     # Brady SG2/SG3 — only when the teacher gave a developmental writing level

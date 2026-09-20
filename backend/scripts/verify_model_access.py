@@ -28,13 +28,13 @@ async def main() -> None:
     from validation.judge_v4 import JudgeVerdict
 
     client = get_openai_client()
-    print(f"base_url={settings.openai_base_url!r} (empty => OpenAI-direct) key_present={bool(settings.openai_api_key)}")
-    gen, nano = settings.openai_generation_model, settings.openai_query_model
+    print(f"provider={settings.llm_provider} base_url={settings.effective_base_url!r} key_present={bool(settings.effective_api_key)}")
+    gen, nano = settings.effective_generation_model, settings.effective_query_model
     results: dict[str, bool] = {}
 
     async def plain(model: str) -> bool:
         try:
-            await client.chat.completions.create(model=model, messages=[{"role": "user", "content": "Reply: ok"}])
+            await client.chat.completions.create(model=model, messages=[{"role": "user", "content": "Reply: ok"}], max_tokens=50)
             return True
         except Exception as e:  # noqa: BLE001
             print(f"  {model} generate FAIL: {type(e).__name__}: {e}")
@@ -46,7 +46,7 @@ async def main() -> None:
                 model=model,
                 messages=[{"role": "system", "content": "Judge a mini-lesson."},
                           {"role": "user", "content": "a short 4-step mini-lesson"}],
-                response_format=JudgeVerdict, temperature=0,
+                response_format=JudgeVerdict, temperature=0, max_tokens=1024,
             )
             return True
         except Exception as e:  # noqa: BLE001

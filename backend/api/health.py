@@ -110,9 +110,9 @@ def _get_openai_probe_client() -> AsyncOpenAI:
     share state with the generation clients."""
     global _openai_probe_client
     if _openai_probe_client is None:
-        kwargs = {"api_key": settings.openai_api_key, "timeout": PROBE_TIMEOUT}
-        if settings.openai_base_url:
-            kwargs["base_url"] = settings.openai_base_url
+        kwargs = {"api_key": settings.effective_api_key, "timeout": PROBE_TIMEOUT}
+        if settings.effective_base_url:
+            kwargs["base_url"] = settings.effective_base_url
         _openai_probe_client = AsyncOpenAI(**kwargs)
     return _openai_probe_client
 

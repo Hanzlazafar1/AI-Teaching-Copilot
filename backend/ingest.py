@@ -110,7 +110,7 @@ def load_chunks() -> list[dict]:
             logger.info("Skipping excluded file: %s", filepath.name)
             continue
 
-        with open(filepath) as f:
+        with open(filepath, encoding="utf-8") as f:
             data = json.load(f)
 
         for i, chunk in enumerate(data):

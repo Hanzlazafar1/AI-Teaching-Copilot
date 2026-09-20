@@ -21,12 +21,12 @@ _client: AsyncOpenAI | None = None
 
 
 def get_openai_async_client() -> AsyncOpenAI:
-    """Lazy singleton for the async OpenAI client."""
+    """Lazy singleton for the async embedding client."""
     global _client
     if _client is None:
-        kwargs = {"api_key": settings.openai_api_key, "timeout": 10.0}
-        if settings.openai_base_url:
-            kwargs["base_url"] = settings.openai_base_url
+        kwargs = {"api_key": settings.effective_api_key, "timeout": 10.0}
+        if settings.effective_base_url:
+            kwargs["base_url"] = settings.effective_base_url
         _client = AsyncOpenAI(**kwargs)
     return _client
 

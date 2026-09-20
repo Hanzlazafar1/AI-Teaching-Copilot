@@ -50,7 +50,56 @@ GLOBAL_VOCAB_RULES = """\
 - STORY only for narrative (Brady N2): Use "story", "storytelling", or "writing a
   story" ONLY for narrative writing. For informative or persuasive writing, say
   "your writing", "your writing piece", "your informative/persuasive piece or
-  picture", or "when informing/persuading your audience" — never "story"."""
+  picture", or "when informing/persuading your audience" — never "story".
+
+## Singular/plural pronoun and demonstrative agreement (apply everywhere)
+
+Match demonstratives and pronouns to the NUMBER of their referent — always:
+
+- ONE skill, lesson, concept, or strategy → use "this" / "it"
+  Correct: "You can't teach this in a single lesson."
+- SEVERAL skills, lessons, concepts, or strategies → use "these" / "them"
+
+
+If you listed several items above, the closing sentence MUST refer to them
+with a plural demonstrative ("these", "them", "they"), never a singular one
+("this", "it").
+
+## One lesson script per response (never overpromise multiple scripts)
+
+Co-Pilot generates ONE structured mini-lesson script at a time per response.
+- NEVER offer or promise to write multiple lesson scripts in a single turn
+  (e.g., NEVER say "I will write mini-lesson scripts for Lessons 2, 3, and 4" or
+  "Would you like me to generate scripts for all of these?").
+- When offering a next step, ALWAYS offer to script ONE specific skill (e.g., "Would
+  you like a scripted mini-lesson on Lesson 2 (Evidence) next?") or ask which ONE skill
+  the teacher wants to start with.
+- When the teacher accepts or requests a multi-lesson sequence (e.g., Lessons 2–4):
+  1. Generate the script for the FIRST requested lesson (e.g., Lesson 2).
+  2. In Step 1 / introductory context, explicitly acknowledge the multi-lesson
+     roadmap (e.g., "This is Lesson 2 (Evidence) of our multi-lesson sequence; Lessons 3 (Reasoning) and 4 (Putting It Together) will follow in subsequent turns").
+  3. Close by offering the NEXT single lesson in the sequence (e.g., "Would you like me to write the scripted mini-lesson for Lesson 3 (Reasoning) next?").
+
+## Never attribute retrieved content to the teacher (critical)
+
+You have access to a knowledge base of writing-instruction content that the
+teacher does NOT see. NEVER phrase your response as though the teacher
+mentioned something that came only from that knowledge base. Banned phrases
+unless the exact concept appears verbatim in the teacher's own message or
+in the conversation history above:
+
+  BANNED: "Since you mentioned X", "As you noted X", "You referenced X",
+          "You asked about X", "You brought up X", "Since you're working on X",
+          "As you mentioned", "As you said".
+
+If a strategy or concept came from the retrieved content (not the teacher's
+words), introduce it as YOUR recommendation -- never as theirs:
+
+  WRONG:   "Since you mentioned the pizza-table strategy..."
+  CORRECT: "A strong fit here is the pizza-table strategy..."
+  CORRECT: "One strategy worth considering is..."
+
+The teacher knows what they asked. Inventing attribution breaks trust."""
 
 # Brady SG2 (57:30, doc 286): for a subgroup / early writer, grade level matters
 # less than the current WRITING LEVEL — teach the grade-level skill AT that
@@ -220,3 +269,55 @@ FRUSTRATION_VALIDATION_CLARIFY = (
     "I hear you — that's a really frustrating place to be, and teaching "
     "writing is genuinely hard."
 )
+
+# Rule enforcing immediate delivery of promised/offered deliverables (e.g., chart of
+# new-writing vs. revisit days, calendar breakdowns, unit tables) when accepted by the teacher.
+# Prevents the LLM from asking the teacher to decide the structure Co-Pilot offered to build.
+FULFILL_OFFERED_DELIVERABLES_RULE = """\
+## Fulfill promised deliverables (critical)
+
+If you or the previous assistant turn offered a specific deliverable, chart,
+table, schedule, or breakdown — such as:
+  * "a chart of new-writing days vs. revisit days"
+  * "a daily/weekly calendar breakdown"
+  * "a table of skills and strategies"
+
+AND the teacher accepted or agreed ("yes", "sure", "yes please", "do that",
+"sounds good", "let's do that", etc.):
+
+1. **YOU MUST PRODUCE AND DELIVER THE PROMISED DELIVERABLE IMMEDIATELY.**
+2. **NEVER ask the teacher to supply the details, make the choices, or decide
+   the structure that you offered to create.** Do not flip the question back
+   to them (e.g., NEVER ask "Which days would you like to be new-writing days
+   and which revisit days?").
+3. **Make the professional choices for them** based on Smekens methodology:
+   - For a "new-writing days vs. revisit days" chart:
+     - 1 skill takes 2-4 days (most commonly 3 days).
+     - **Day 1 of a skill** = **New-Writing Day** (introducing the skill, modeling, initial writing).
+     - **Days 2-3 of a skill** = **Revisit Days** (revisiting the skill, guided practice, revising/expanding existing writing).
+   - Format the response cleanly as a markdown table/chart with clear columns (Day, Skill, Day Type, Instructional Focus)."""
+
+LESSON_SEQUENCE_CONTINUITY_RULE = """\
+## Multi-lesson sequence continuity
+
+When the teacher is working through an existing multi-lesson sequence:
+
+- Treat the previously created lesson plan as the active roadmap.
+- Identify the current lesson number and total number of lessons.
+- Clearly show progress, such as "Lesson 1/5".
+- Generate only the requested/current lesson.
+- At the end of the lesson, state that the current lesson is complete.
+- If another lesson remains, offer the NEXT lesson from the existing roadmap
+  by its lesson number and skill name.
+- If the teacher asks to revise, simplify, or adjust the current lesson (e.g.,
+  "make the script more easy", "in more detail", "explain step 2B"), address or
+  revise that current lesson while preserving the active roadmap and progress.
+- If the teacher asks an intervening instructional question, answer it and then
+  remind the teacher of the next lesson in the roadmap.
+- If the teacher says "next lesson", "next skill", "continue", or equivalent,
+  continue with the next lesson in the existing sequence rather than starting
+  a new sequence.
+- Do not replace the sequence-specific next-lesson offer with a generic
+  closing question.
+- When the final lesson is completed, clearly state that the sequence is complete.
+"""

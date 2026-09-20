@@ -46,7 +46,7 @@ def _load_triggers() -> dict:
     global _TRIGGERS
     if _TRIGGERS is None:
         try:
-            _TRIGGERS = json.loads(_TRIGGERS_PATH.read_text()).get("triggers", {})
+            _TRIGGERS = json.loads(_TRIGGERS_PATH.read_text(encoding="utf-8")).get("triggers", {})
         except FileNotFoundError:
             logger.warning("skill_triggers.json missing — trigger expansion disabled")
             _TRIGGERS = {}
@@ -266,15 +266,18 @@ async def hybrid_search(
     # reranker's tier sort enough population to work with.
     candidate_k = max(50, final_k * 5)
 
+    # Cap long query text (e.g. pasted transcripts) to first 4000 chars for dense/sparse embedding
+    search_query = (query or "")[:4000]
+
     # 1. Dense embedding (use pre-computed if available)
     if dense_vector is None:
-        dense_vector = await embed_query(query)
+        dense_vector = await embed_query(search_query)
 
     # 2. Sparse encoding with Smekens term + trigger-synonym expansion.
     # Trigger expansion lets queries like "how do I teach paragraphing" surface
     # table-top / pizza-table chunks even when the user never says "pizza table".
-    expansion_syns, expansion_triggers = expand_query_with_triggers(query, smekens_terms)
-    sparse_input = query
+    expansion_syns, expansion_triggers = expand_query_with_triggers(search_query, smekens_terms)
+    sparse_input = search_query
     if smekens_terms:
         sparse_input = f"{sparse_input} {' '.join(smekens_terms)}"
     if expansion_syns:
